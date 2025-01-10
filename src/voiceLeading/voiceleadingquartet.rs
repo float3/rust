@@ -1,4 +1,4 @@
-pub struct VoiceLeadingQuartet {
+pub(crate)  struct VoiceLeadingQuartet {
     base::music21object: base::Music21Object,
 
     v1n1: ,
@@ -8,10 +8,10 @@ pub struct VoiceLeadingQuartet {
 }
 
 impl VoiceLeadingQuartet {
-    pub fn new() -> VoiceLeadingQuartet {
+    pub(crate)  fn new() -> VoiceLeadingQuartet {
         VoiceLeadingQuartet {
             base::music21object: base::Music21Object::new(),
-            _DOC_ATTR: todo!(),
+
             v1n1: todo!(),
             v1n2: todo!(),
             v2n1: todo!(),
@@ -19,115 +19,115 @@ impl VoiceLeadingQuartet {
         }
     }
     
-    pub fn new(&self, v1n1: ) {
+    pub(crate)  fn new(&self, v1n1: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn key(&self) {
+    pub(crate)  fn key(&self) {
         todo!()
     }
-    pub fn key(&self, keyValue: ) {
+    pub(crate)  fn key(&self, keyValue: ) {
         todo!()
     }
-    pub fn _setVoiceNote(&self, value: ) {
+    pub(crate)  fn _setVoiceNote(&self, value: ) {
         todo!()
     }
-    pub fn _getV1n1(&self) {
+    pub(crate)  fn _getV1n1(&self) {
         todo!()
     }
-    pub fn _setV1n1(&self, value: ) {
+    pub(crate)  fn _setV1n1(&self, value: ) {
         todo!()
     }
-    pub fn _getV1n2(&self) {
+    pub(crate)  fn _getV1n2(&self) {
         todo!()
     }
-    pub fn _setV1n2(&self, value: ) {
+    pub(crate)  fn _setV1n2(&self, value: ) {
         todo!()
     }
-    pub fn _getV2n1(&self) {
+    pub(crate)  fn _getV2n1(&self) {
         todo!()
     }
-    pub fn _setV2n1(&self, value: ) {
+    pub(crate)  fn _setV2n1(&self, value: ) {
         todo!()
     }
-    pub fn _getV2n2(&self) {
+    pub(crate)  fn _getV2n2(&self) {
         todo!()
     }
-    pub fn _setV2n2(&self, value: ) {
+    pub(crate)  fn _setV2n2(&self, value: ) {
         todo!()
     }
-    pub fn _findIntervals(&self) {
+    pub(crate)  fn _findIntervals(&self) {
         todo!()
     }
-    pub fn motionType(&self) {
+    pub(crate)  fn motionType(&self) {
         todo!()
     }
-    pub fn noMotion(&self) -> bool {
+    pub(crate)  fn noMotion(&self) -> bool {
         todo!()
     }
-    pub fn obliqueMotion(&self) -> bool {
+    pub(crate)  fn obliqueMotion(&self) -> bool {
         todo!()
     }
-    pub fn similarMotion(&self) -> bool {
+    pub(crate)  fn similarMotion(&self) -> bool {
         todo!()
     }
-    pub fn parallelMotion(&self, requiredInterval: ) -> bool {
+    pub(crate)  fn parallelMotion(&self, requiredInterval: ) -> bool {
         todo!()
     }
-    pub fn contraryMotion(&self) -> bool {
+    pub(crate)  fn contraryMotion(&self) -> bool {
         todo!()
     }
-    pub fn outwardContraryMotion(&self) -> bool {
+    pub(crate)  fn outwardContraryMotion(&self) -> bool {
         todo!()
     }
-    pub fn inwardContraryMotion(&self) -> bool {
+    pub(crate)  fn inwardContraryMotion(&self) -> bool {
         todo!()
     }
-    pub fn antiParallelMotion(&self, simpleName: ) -> bool {
+    pub(crate)  fn antiParallelMotion(&self, simpleName: ) -> bool {
         todo!()
     }
-    pub fn parallelInterval(&self, thisInterval: ) -> bool {
+    pub(crate)  fn parallelInterval(&self, thisInterval: ) -> bool {
         todo!()
     }
-    pub fn parallelFifth(&self) -> bool {
+    pub(crate)  fn parallelFifth(&self) -> bool {
         todo!()
     }
-    pub fn parallelOctave(&self) -> bool {
+    pub(crate)  fn parallelOctave(&self) -> bool {
         todo!()
     }
-    pub fn parallelUnison(&self) -> bool {
+    pub(crate)  fn parallelUnison(&self) -> bool {
         todo!()
     }
-    pub fn parallelUnisonOrOctave(&self) -> bool {
+    pub(crate)  fn parallelUnisonOrOctave(&self) -> bool {
         todo!()
     }
-    pub fn hiddenInterval(&self, thisInterval: ) -> bool {
+    pub(crate)  fn hiddenInterval(&self, thisInterval: ) -> bool {
         todo!()
     }
-    pub fn hiddenFifth(&self) -> bool {
+    pub(crate)  fn hiddenFifth(&self) -> bool {
         todo!()
     }
-    pub fn hiddenOctave(&self) -> bool {
+    pub(crate)  fn hiddenOctave(&self) -> bool {
         todo!()
     }
-    pub fn voiceOverlap(&self) -> bool {
+    pub(crate)  fn voiceOverlap(&self) -> bool {
         todo!()
     }
-    pub fn voiceCrossing(&self) -> bool {
+    pub(crate)  fn voiceCrossing(&self) -> bool {
         todo!()
     }
-    pub fn isProperResolution(&self) -> bool {
+    pub(crate)  fn isProperResolution(&self) -> bool {
         todo!()
     }
-    pub fn leapNotSetWithStep(&self) -> bool {
+    pub(crate)  fn leapNotSetWithStep(&self) -> bool {
         todo!()
     }
-    pub fn opensIncorrectly(&self) -> bool {
+    pub(crate)  fn opensIncorrectly(&self) -> bool {
         todo!()
     }
-    pub fn closesIncorrectly(&self) -> bool {
+    pub(crate)  fn closesIncorrectly(&self) -> bool {
         todo!()
     }
 }

@@ -1,4 +1,4 @@
-pub struct PropertyDescription {
+pub(crate)  struct PropertyDescription {
     uniqueName: ,
     name: String,
     namespace: String,
@@ -10,7 +10,7 @@ pub struct PropertyDescription {
 }
 
 impl PropertyDescription {
-    pub fn new() -> PropertyDescription {
+    pub(crate)  fn new() -> PropertyDescription {
         PropertyDescription {
             uniqueName: todo!(),
             name: todo!(),

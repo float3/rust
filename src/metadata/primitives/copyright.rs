@@ -1,18 +1,18 @@
-pub struct Copyright {
+pub(crate)  struct Copyright {
     text: Text,
 }
 
 impl Copyright {
-    pub fn new() -> Copyright {
+    pub(crate)  fn new() -> Copyright {
         Copyright {
             text: Text::new(),
         }
     }
     
-    pub fn new(&self, data: ) {
+    pub(crate)  fn new(&self, data: ) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) -> bool {
+    pub(crate)  fn __eq__(&self, other: ) -> bool {
         todo!()
     }
 }

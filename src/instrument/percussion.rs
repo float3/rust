@@ -1,15 +1,15 @@
-pub struct Percussion {
+pub(crate)  struct Percussion {
     instrument: Instrument,
 }
 
 impl Percussion {
-    pub fn new() -> Percussion {
+    pub(crate)  fn new() -> Percussion {
         Percussion {
             instrument: Instrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

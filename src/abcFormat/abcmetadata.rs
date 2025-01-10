@@ -1,74 +1,74 @@
-pub struct ABCMetadata {
+pub(crate)  struct ABCMetadata {
     abctoken: ABCToken,
     __slots__: ,
 }
 
 impl ABCMetadata {
-    pub fn new() -> ABCMetadata {
+    pub(crate)  fn new() -> ABCMetadata {
         ABCMetadata {
             abctoken: ABCToken::new(),
             __slots__: todo!(),
         }
     }
     
-    pub fn new(&self, src: String) {
+    pub(crate)  fn new(&self, src: String) {
         todo!()
     }
-    pub fn preParse(&self) {
+    pub(crate)  fn preParse(&self) {
         todo!()
     }
-    pub fn parse(&self) {
+    pub(crate)  fn parse(&self) {
         todo!()
     }
-    pub fn isDefaultNoteLength(&self) -> bool {
+    pub(crate)  fn isDefaultNoteLength(&self) -> bool {
         todo!()
     }
-    pub fn isReferenceNumber(&self) -> bool {
+    pub(crate)  fn isReferenceNumber(&self) -> bool {
         todo!()
     }
-    pub fn isVersion(&self) -> bool {
+    pub(crate)  fn isVersion(&self) -> bool {
         todo!()
     }
-    pub fn isMeter(&self) -> bool {
+    pub(crate)  fn isMeter(&self) -> bool {
         todo!()
     }
-    pub fn isTitle(&self) -> bool {
+    pub(crate)  fn isTitle(&self) -> bool {
         todo!()
     }
-    pub fn isComposer(&self) -> bool {
+    pub(crate)  fn isComposer(&self) -> bool {
         todo!()
     }
-    pub fn isOrigin(&self) -> bool {
+    pub(crate)  fn isOrigin(&self) -> bool {
         todo!()
     }
-    pub fn isVoice(&self) -> bool {
+    pub(crate)  fn isVoice(&self) -> bool {
         todo!()
     }
-    pub fn isKey(&self) -> bool {
+    pub(crate)  fn isKey(&self) -> bool {
         todo!()
     }
-    pub fn isTempo(&self) -> bool {
+    pub(crate)  fn isTempo(&self) -> bool {
         todo!()
     }
-    pub fn getTimeSignatureParameters(&self) {
+    pub(crate)  fn getTimeSignatureParameters(&self) {
         todo!()
     }
-    pub fn getTimeSignatureObject(&self) {
+    pub(crate)  fn getTimeSignatureObject(&self) {
         todo!()
     }
-    pub fn getKeySignatureParameters(&self) {
+    pub(crate)  fn getKeySignatureParameters(&self) {
         todo!()
     }
-    pub fn getKeySignatureObject(&self) {
+    pub(crate)  fn getKeySignatureObject(&self) {
         todo!()
     }
-    pub fn getClefObject(&self) {
+    pub(crate)  fn getClefObject(&self) {
         todo!()
     }
-    pub fn getMetronomeMarkObject(&self) {
+    pub(crate)  fn getMetronomeMarkObject(&self) {
         todo!()
     }
-    pub fn getDefaultQuarterLength(&self) -> f64 {
+    pub(crate)  fn getDefaultQuarterLength(&self) -> f64 {
         todo!()
     }
 }

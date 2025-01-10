@@ -1,4 +1,4 @@
-pub struct GraceDuration {
+pub(crate)  struct GraceDuration {
     duration: Duration,
 
     isGrace: bool,
@@ -6,28 +6,28 @@ pub struct GraceDuration {
 }
 
 impl GraceDuration {
-    pub fn new() -> GraceDuration {
+    pub(crate)  fn new() -> GraceDuration {
         GraceDuration {
             duration: Duration::new(),
-            _DOC_ATTR: todo!(),
+
             isGrace: todo!(),
             __slots__: todo!(),
         }
     }
     
-    pub fn new(&self, typeOrDuration: ) {
+    pub(crate)  fn new(&self, typeOrDuration: ) {
         todo!()
     }
-    pub fn makeTime(&self) {
+    pub(crate)  fn makeTime(&self) {
         todo!()
     }
-    pub fn makeTime(&self, expr: ) {
+    pub(crate)  fn makeTime(&self, expr: ) {
         todo!()
     }
-    pub fn slash(&self) {
+    pub(crate)  fn slash(&self) {
         todo!()
     }
-    pub fn slash(&self, expr: ) {
+    pub(crate)  fn slash(&self, expr: ) {
         todo!()
     }
 }

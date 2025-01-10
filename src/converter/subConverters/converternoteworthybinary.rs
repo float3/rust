@@ -1,4 +1,4 @@
-pub struct ConverterNoteworthyBinary {
+pub(crate)  struct ConverterNoteworthyBinary {
     subconverter: SubConverter,
     readBinary: bool,
     registerFormats: ,
@@ -6,7 +6,7 @@ pub struct ConverterNoteworthyBinary {
 }
 
 impl ConverterNoteworthyBinary {
-    pub fn new() -> ConverterNoteworthyBinary {
+    pub(crate)  fn new() -> ConverterNoteworthyBinary {
         ConverterNoteworthyBinary {
             subconverter: SubConverter::new(),
             readBinary: todo!(),
@@ -15,10 +15,10 @@ impl ConverterNoteworthyBinary {
         }
     }
     
-    pub fn parseData(&self, nwcData: ) {
+    pub(crate)  fn parseData(&self, nwcData: ) {
         todo!()
     }
-    pub fn parseFile(&self, filePath: ) {
+    pub(crate)  fn parseFile(&self, filePath: ) {
         todo!()
     }
 }

@@ -1,63 +1,63 @@
-pub struct SpineCollection {
+pub(crate)  struct SpineCollection {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl SpineCollection {
-    pub fn new() -> SpineCollection {
+    pub(crate)  fn new() -> SpineCollection {
         SpineCollection {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn __iter__(&self) {
+    pub(crate)  fn __iter__(&self) {
         todo!()
     }
-    pub fn __next__(&self) {
+    pub(crate)  fn __next__(&self) {
         todo!()
     }
-    pub fn addSpine(&self, streamClass: ) {
+    pub(crate)  fn addSpine(&self, streamClass: ) {
         todo!()
     }
-    pub fn appendSpine(&self, spine: ) {
+    pub(crate)  fn appendSpine(&self, spine: ) {
         todo!()
     }
-    pub fn getSpineById(&self, spineId: ) {
+    pub(crate)  fn getSpineById(&self, spineId: ) {
         todo!()
     }
-    pub fn removeSpineById(&self, spineId: ) {
+    pub(crate)  fn removeSpineById(&self, spineId: ) {
         todo!()
     }
-    pub fn createMusic21Streams(&self) {
+    pub(crate)  fn createMusic21Streams(&self) {
         todo!()
     }
-    pub fn assignIds(&self) {
+    pub(crate)  fn assignIds(&self) {
         todo!()
     }
-    pub fn performInsertions(&self) {
+    pub(crate)  fn performInsertions(&self) {
         todo!()
     }
-    pub fn performSpineInsertion(&self, thisSpine: ) {
+    pub(crate)  fn performSpineInsertion(&self, thisSpine: ) {
         todo!()
     }
-    pub fn reclassSpines(&self) {
+    pub(crate)  fn reclassSpines(&self) {
         todo!()
     }
-    pub fn getOffsetsAndPrioritiesByPosition(&self) {
+    pub(crate)  fn getOffsetsAndPrioritiesByPosition(&self) {
         todo!()
     }
-    pub fn moveObjectsToMeasures(&self) {
+    pub(crate)  fn moveObjectsToMeasures(&self) {
         todo!()
     }
-    pub fn moveDynamicsAndLyricsToStreams(&self) {
+    pub(crate)  fn moveDynamicsAndLyricsToStreams(&self) {
         todo!()
     }
-    pub fn makeVoices(&self) {
+    pub(crate)  fn makeVoices(&self) {
         todo!()
     }
-    pub fn parseMusic21(&self) {
+    pub(crate)  fn parseMusic21(&self) {
         todo!()
     }
 }

@@ -1,15 +1,15 @@
-pub struct Sampler {
+pub(crate)  struct Sampler {
     keyboardinstrument: KeyboardInstrument,
 }
 
 impl Sampler {
-    pub fn new() -> Sampler {
+    pub(crate)  fn new() -> Sampler {
         Sampler {
             keyboardinstrument: KeyboardInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

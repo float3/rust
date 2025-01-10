@@ -1,15 +1,15 @@
-pub struct Taiko {
+pub(crate)  struct Taiko {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Taiko {
-    pub fn new() -> Taiko {
+    pub(crate)  fn new() -> Taiko {
         Taiko {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

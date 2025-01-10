@@ -1,11 +1,11 @@
-pub struct ConverterTinyNotation {
+pub(crate)  struct ConverterTinyNotation {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
 }
 
 impl ConverterTinyNotation {
-    pub fn new() -> ConverterTinyNotation {
+    pub(crate)  fn new() -> ConverterTinyNotation {
         ConverterTinyNotation {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,10 +13,10 @@ impl ConverterTinyNotation {
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn parseData(&self, tnData: ) {
+    pub(crate)  fn parseData(&self, tnData: ) {
         todo!()
     }
 }

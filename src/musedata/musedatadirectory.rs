@@ -1,24 +1,24 @@
-pub struct MuseDataDirectory {
+pub(crate)  struct MuseDataDirectory {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl MuseDataDirectory {
-    pub fn new() -> MuseDataDirectory {
+    pub(crate)  fn new() -> MuseDataDirectory {
         MuseDataDirectory {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self, dirOrList: ) {
+    pub(crate)  fn new(&self, dirOrList: ) {
         todo!()
     }
-    pub fn _prepareGroups(&self, dirOrList: ) {
+    pub(crate)  fn _prepareGroups(&self, dirOrList: ) {
         todo!()
     }
-    pub fn isMusedataFile(&self, fp: ) {
+    pub(crate)  fn isMusedataFile(&self, fp: ) {
         todo!()
     }
-    pub fn getPaths(&self, group: ) {
+    pub(crate)  fn getPaths(&self, group: ) {
         todo!()
     }
 }

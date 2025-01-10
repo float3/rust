@@ -1,4 +1,4 @@
-pub struct MotionType {
+pub(crate)  struct MotionType {
     str: str,
     antiParallel: ,
     contrary: ,
@@ -9,7 +9,7 @@ pub struct MotionType {
 }
 
 impl MotionType {
-    pub fn new() -> MotionType {
+    pub(crate)  fn new() -> MotionType {
         MotionType {
             str: str::new(),
             antiParallel: todo!(),

@@ -1,21 +1,21 @@
-pub struct NChordLinearSegment {
+pub(crate)  struct NChordLinearSegment {
     nobjectlinearsegment: NObjectLinearSegment,
 }
 
 impl NChordLinearSegment {
-    pub fn new() -> NChordLinearSegment {
+    pub(crate)  fn new() -> NChordLinearSegment {
         NChordLinearSegment {
             nobjectlinearsegment: NObjectLinearSegment::new(),
         }
     }
     
-    pub fn new(&self, chordList: ) {
+    pub(crate)  fn new(&self, chordList: ) {
         todo!()
     }
-    pub fn chordList(&self) {
+    pub(crate)  fn chordList(&self) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
 }

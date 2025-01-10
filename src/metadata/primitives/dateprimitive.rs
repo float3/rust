@@ -1,33 +1,33 @@
-pub struct DatePrimitive {
+pub(crate)  struct DatePrimitive {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl DatePrimitive {
-    pub fn new() -> DatePrimitive {
+    pub(crate)  fn new() -> DatePrimitive {
         DatePrimitive {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self, relevance: String) {
+    pub(crate)  fn new(&self, relevance: String) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) -> bool {
+    pub(crate)  fn __eq__(&self, other: ) -> bool {
         todo!()
     }
-    pub fn _reprInternal(&self) -> String {
+    pub(crate)  fn _reprInternal(&self) -> String {
         todo!()
     }
-    pub fn __str__(&self) {
+    pub(crate)  fn __str__(&self) {
         todo!()
     }
-    pub fn datetime(&self) {
+    pub(crate)  fn datetime(&self) {
         todo!()
     }
-    pub fn relevance(&self) {
+    pub(crate)  fn relevance(&self) {
         todo!()
     }
-    pub fn relevance(&self, value: ) {
+    pub(crate)  fn relevance(&self, value: ) {
         todo!()
     }
 }

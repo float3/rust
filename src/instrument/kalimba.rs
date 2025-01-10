@@ -1,15 +1,15 @@
-pub struct Kalimba {
+pub(crate)  struct Kalimba {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Kalimba {
-    pub fn new() -> Kalimba {
+    pub(crate)  fn new() -> Kalimba {
         Kalimba {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

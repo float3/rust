@@ -1,9 +1,9 @@
-pub struct PartStaff {
+pub(crate)  struct PartStaff {
     part: Part,
 }
 
 impl PartStaff {
-    pub fn new() -> PartStaff {
+    pub(crate)  fn new() -> PartStaff {
         PartStaff { part: Part::new() }
     }
 }

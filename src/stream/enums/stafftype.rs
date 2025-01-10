@@ -1,4 +1,4 @@
-pub struct StaffType {
+pub(crate)  struct StaffType {
     enum::enum: enum::Enum,
     REGULAR: ,
     OSSIA: ,
@@ -9,7 +9,7 @@ pub struct StaffType {
 }
 
 impl StaffType {
-    pub fn new() -> StaffType {
+    pub(crate)  fn new() -> StaffType {
         StaffType {
             enum::enum: enum::Enum::new(),
             REGULAR: todo!(),

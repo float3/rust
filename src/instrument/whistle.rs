@@ -1,15 +1,15 @@
-pub struct Whistle {
+pub(crate)  struct Whistle {
     flute: Flute,
 }
 
 impl Whistle {
-    pub fn new() -> Whistle {
+    pub(crate)  fn new() -> Whistle {
         Whistle {
             flute: Flute::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

@@ -1,15 +1,15 @@
-pub struct Sitar {
+pub(crate)  struct Sitar {
     stringinstrument: StringInstrument,
 }
 
 impl Sitar {
-    pub fn new() -> Sitar {
+    pub(crate)  fn new() -> Sitar {
         Sitar {
             stringinstrument: StringInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

@@ -1,15 +1,15 @@
-pub struct ImmutableStreamException {
+pub(crate)  struct ImmutableStreamException {
     streamexception: StreamException,
 }
 
 impl ImmutableStreamException {
-    pub fn new() -> ImmutableStreamException {
+    pub(crate)  fn new() -> ImmutableStreamException {
         ImmutableStreamException {
             streamexception: StreamException::new(),
         }
     }
     
-    pub fn new(&self, msg: ) {
+    pub(crate)  fn new(&self, msg: ) {
         todo!()
     }
 }

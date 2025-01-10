@@ -1,11 +1,11 @@
-pub struct OrnamentDelay {
+pub(crate)  struct OrnamentDelay {
     strenum: StrEnum,
     NO_DELAY: ,
     DEFAULT_DELAY: ,
 }
 
 impl OrnamentDelay {
-    pub fn new() -> OrnamentDelay {
+    pub(crate)  fn new() -> OrnamentDelay {
         OrnamentDelay {
             strenum: StrEnum::new(),
             NO_DELAY: todo!(),

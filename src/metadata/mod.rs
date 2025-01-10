@@ -1,2 +1,2 @@
-pub mod metadata;
-pub mod richmetadata;
+pub(crate)  mod metadata;
+pub(crate)  mod richmetadata;

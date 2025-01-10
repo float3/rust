@@ -1,36 +1,36 @@
-pub struct MuseDataMeasure {
+pub(crate)  struct MuseDataMeasure {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl MuseDataMeasure {
-    pub fn new() -> MuseDataMeasure {
+    pub(crate)  fn new() -> MuseDataMeasure {
         MuseDataMeasure {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self, src: ) {
+    pub(crate)  fn new(&self, src: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn getBarObject(&self) {
+    pub(crate)  fn getBarObject(&self) {
         todo!()
     }
-    pub fn getMeasureObject(&self) {
+    pub(crate)  fn getMeasureObject(&self) {
         todo!()
     }
-    pub fn hasNotes(&self) {
+    pub(crate)  fn hasNotes(&self) {
         todo!()
     }
-    pub fn hasVoices(&self) {
+    pub(crate)  fn hasVoices(&self) {
         todo!()
     }
-    pub fn __iter__(&self) {
+    pub(crate)  fn __iter__(&self) {
         todo!()
     }
-    pub fn getRecords(&self) {
+    pub(crate)  fn getRecords(&self) {
         todo!()
     }
 }

@@ -1,24 +1,24 @@
-pub struct VerticalityTriplet {
+pub(crate)  struct VerticalityTriplet {
     verticalityntuplet: VerticalityNTuplet,
 }
 
 impl VerticalityTriplet {
-    pub fn new() -> VerticalityTriplet {
+    pub(crate)  fn new() -> VerticalityTriplet {
         VerticalityTriplet {
             verticalityntuplet: VerticalityNTuplet::new(),
         }
     }
     
-    pub fn new(&self, listOfVerticalities: ) {
+    pub(crate)  fn new(&self, listOfVerticalities: ) {
         todo!()
     }
-    pub fn _calcTNLS(&self) {
+    pub(crate)  fn _calcTNLS(&self) {
         todo!()
     }
-    pub fn hasPassingTone(&self, partNumToIdentify: ) {
+    pub(crate)  fn hasPassingTone(&self, partNumToIdentify: ) {
         todo!()
     }
-    pub fn hasNeighborTone(&self, partNumToIdentify: ) {
+    pub(crate)  fn hasNeighborTone(&self, partNumToIdentify: ) {
         todo!()
     }
 }

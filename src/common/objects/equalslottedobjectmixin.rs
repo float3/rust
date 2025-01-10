@@ -1,20 +1,20 @@
-pub struct EqualSlottedObjectMixin {
+pub(crate)  struct EqualSlottedObjectMixin {
     slottedobjectmixin: SlottedObjectMixin,
     __slots__: ,
 }
 
 impl EqualSlottedObjectMixin {
-    pub fn new() -> EqualSlottedObjectMixin {
+    pub(crate)  fn new() -> EqualSlottedObjectMixin {
         EqualSlottedObjectMixin {
             slottedobjectmixin: SlottedObjectMixin::new(),
             __slots__: todo!(),
         }
     }
     
-    pub fn __eq__(&self, other: ) {
+    pub(crate)  fn __eq__(&self, other: ) {
         todo!()
     }
-    pub fn __ne__(&self, other: ) {
+    pub(crate)  fn __ne__(&self, other: ) {
         todo!()
     }
 }

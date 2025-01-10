@@ -1,4 +1,4 @@
-pub struct GlobalCommentLine {
+pub(crate)  struct GlobalCommentLine {
     humdrumline: HumdrumLine,
     position: ,
     contents: ,
@@ -11,7 +11,7 @@ pub struct GlobalCommentLine {
 }
 
 impl GlobalCommentLine {
-    pub fn new() -> GlobalCommentLine {
+    pub(crate)  fn new() -> GlobalCommentLine {
         GlobalCommentLine {
             humdrumline: HumdrumLine::new(),
             position: todo!(),
@@ -25,7 +25,7 @@ impl GlobalCommentLine {
         }
     }
     
-    pub fn new(&self, position: i32, contents: String) {
+    pub(crate)  fn new(&self, position: i32, contents: String) {
         todo!()
     }
 }

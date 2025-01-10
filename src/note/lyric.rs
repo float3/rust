@@ -1,11 +1,11 @@
-pub struct Lyric {
+pub(crate)  struct Lyric {
     prebase::protom21object: prebase::ProtoM21Object,
     _styleClass: ,
     __slots__: ,
 }
 
 impl Lyric {
-    pub fn new() -> Lyric {
+    pub(crate)  fn new() -> Lyric {
         Lyric {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             _styleClass: todo!(),
@@ -13,46 +13,46 @@ impl Lyric {
         }
     }
     
-    pub fn new(&self, text: String, number: i32) {
+    pub(crate)  fn new(&self, text: String, number: i32) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn isComposite(&self) -> bool {
+    pub(crate)  fn isComposite(&self) -> bool {
         todo!()
     }
-    pub fn text(&self) -> String {
+    pub(crate)  fn text(&self) -> String {
         todo!()
     }
-    pub fn text(&self, newText: String) {
+    pub(crate)  fn text(&self, newText: String) {
         todo!()
     }
-    pub fn syllabic(&self) {
+    pub(crate)  fn syllabic(&self) {
         todo!()
     }
-    pub fn syllabic(&self, newSyllabic: ) {
+    pub(crate)  fn syllabic(&self, newSyllabic: ) {
         todo!()
     }
-    pub fn identifier(&self) {
+    pub(crate)  fn identifier(&self) {
         todo!()
     }
-    pub fn identifier(&self, value: ) {
+    pub(crate)  fn identifier(&self, value: ) {
         todo!()
     }
-    pub fn rawText(&self) -> String {
+    pub(crate)  fn rawText(&self) -> String {
         todo!()
     }
-    pub fn rawText(&self, rawTextIn: String) {
+    pub(crate)  fn rawText(&self, rawTextIn: String) {
         todo!()
     }
-    pub fn number(&self) -> i32 {
+    pub(crate)  fn number(&self) -> i32 {
         todo!()
     }
-    pub fn number(&self, value: i32) {
+    pub(crate)  fn number(&self, value: i32) {
         todo!()
     }
-    pub fn setTextAndSyllabic(&self, rawText: String, applyRaw: bool) {
+    pub(crate)  fn setTextAndSyllabic(&self, rawText: String, applyRaw: bool) {
         todo!()
     }
 }

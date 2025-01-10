@@ -1,4 +1,4 @@
-pub struct ActiveInformation {
+pub(crate)  struct ActiveInformation {
     t::typeddict: t::TypedDict,
     stream: ,
     elementIndex: i32,
@@ -8,7 +8,7 @@ pub struct ActiveInformation {
 }
 
 impl ActiveInformation {
-    pub fn new() -> ActiveInformation {
+    pub(crate)  fn new() -> ActiveInformation {
         ActiveInformation {
             t::typeddict: t::TypedDict::new(),
             stream: todo!(),

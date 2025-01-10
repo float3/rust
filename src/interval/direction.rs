@@ -1,18 +1,16 @@
-pub struct Direction {
-    enum::intenum: enum::IntEnum,
-    DESCENDING: ,
-    OBLIQUE: ,
-    ASCENDING: ,
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub(crate) enum Direction {
+    DESCENDING = -1,
+    OBLIQUE = 0,
+    ASCENDING = 1,
 }
 
 impl Direction {
-    pub fn new() -> Direction {
-        Direction {
-            enum::intenum: enum::IntEnum::new(),
-            DESCENDING: todo!(),
-            OBLIQUE: todo!(),
-            ASCENDING: todo!(),
+    pub(crate) fn term(&self) -> String {
+        match self {
+            Direction::ASCENDING => "Ascending".to_owned(),
+            Direction::DESCENDING => "Descending".to_owned(),
+            Direction::OBLIQUE => "Oblique".to_owned(),
         }
     }
-    
 }

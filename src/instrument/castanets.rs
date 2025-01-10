@@ -1,15 +1,15 @@
-pub struct Castanets {
+pub(crate)  struct Castanets {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Castanets {
-    pub fn new() -> Castanets {
+    pub(crate)  fn new() -> Castanets {
         Castanets {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

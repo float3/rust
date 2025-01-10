@@ -1,4 +1,4 @@
-pub struct ContextSortTuple {
+pub(crate)  struct ContextSortTuple {
     t::namedtuple: t::NamedTuple,
     site: ,
     offset: SortTuple,
@@ -6,7 +6,7 @@ pub struct ContextSortTuple {
 }
 
 impl ContextSortTuple {
-    pub fn new() -> ContextSortTuple {
+    pub(crate)  fn new() -> ContextSortTuple {
         ContextSortTuple {
             t::namedtuple: t::NamedTuple::new(),
             site: todo!(),

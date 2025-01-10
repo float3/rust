@@ -1,4 +1,4 @@
-pub struct ConverterVolpiano {
+pub(crate)  struct ConverterVolpiano {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
@@ -6,7 +6,7 @@ pub struct ConverterVolpiano {
 }
 
 impl ConverterVolpiano {
-    pub fn new() -> ConverterVolpiano {
+    pub(crate)  fn new() -> ConverterVolpiano {
         ConverterVolpiano {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -15,16 +15,16 @@ impl ConverterVolpiano {
         }
     }
     
-    pub fn parseData(&self, dataString: ) {
+    pub(crate)  fn parseData(&self, dataString: ) {
         todo!()
     }
-    pub fn getDataStr(&self, obj: ) {
+    pub(crate)  fn getDataStr(&self, obj: ) {
         todo!()
     }
-    pub fn write(&self, obj: ) {
+    pub(crate)  fn write(&self, obj: ) {
         todo!()
     }
-    pub fn show(&self, obj: ) {
+    pub(crate)  fn show(&self, obj: ) {
         todo!()
     }
 }

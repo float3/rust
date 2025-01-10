@@ -1,15 +1,15 @@
-pub struct Dulcimer {
+pub(crate)  struct Dulcimer {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Dulcimer {
-    pub fn new() -> Dulcimer {
+    pub(crate)  fn new() -> Dulcimer {
         Dulcimer {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

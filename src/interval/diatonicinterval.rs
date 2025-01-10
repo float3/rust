@@ -1,101 +1,119 @@
-pub struct DiatonicInterval {
+use crate::common::enums::intstring::IntString;
+
+use super::{chromaticinterval::ChromaticInterval, direction::Direction, genericinterval::GenericInterval, intervalbase::IntervalBase, intervalexception::IntervalException, specifier::Specifier};
+
+pub(crate)  struct DiatonicInterval {
     intervalbase: IntervalBase,
+    specifier: Specifier,
+    generic: GenericInterval,
 
 }
 
+impl PartialEq for DiatonicInterval {
+    fn eq(&self, other: &Self) -> bool {
+        self.generic == other.generic && self.specifier == other.specifier && self.direction() == other.direction()
+    }
+}
+
 impl DiatonicInterval {
-    pub fn new() -> DiatonicInterval {
-        DiatonicInterval {
-            intervalbase: IntervalBase::new(),
-            _DOC_ATTR: todo!(),
+    pub(crate)  fn new(specifier: IntString, generic: GenericInterval) -> Result<DiatonicInterval, IntervalException> {
+        let specifier = Specifier::parse_specifier(specifier)?;
+
+        if [Specifier::MAJOR,Specifier::MINOR].contains(&specifier) && generic.perfectable() {
+           return Err(IntervalException::new(format!("Cannot create a {} {}", specifier.nice_name()?, generic.nice_name()?)));
         }
+
+        if specifier == Specifier::PERFECT && generic.value() == -1 {
+            return Err(IntervalException::new("There is no such thing as a descending Perfect Unison".to_string()));
+        }
+
+        Ok(DiatonicInterval {
+            intervalbase: IntervalBase::new(),
+            specifier,
+            generic
+        })
     }
     
-    pub fn new(&self, specifier: ) {
+    pub(crate)  fn _reprInternal(&self) -> String {
         todo!()
     }
-    pub fn _reprInternal(&self) -> String {
+
+    pub(crate)  fn __hash__(&self) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) {
+    pub(crate)  fn name(&self) -> String {
         todo!()
     }
-    pub fn __hash__(&self) {
+    pub(crate)  fn niceName(&self) -> String {
         todo!()
     }
-    pub fn name(&self) -> String {
+    pub(crate)  fn specificName(&self) -> String {
         todo!()
     }
-    pub fn niceName(&self) -> String {
+    pub(crate)  fn simpleName(&self) -> String {
         todo!()
     }
-    pub fn specificName(&self) -> String {
+    pub(crate)  fn simpleNiceName(&self) -> String {
         todo!()
     }
-    pub fn simpleName(&self) -> String {
+    pub(crate)  fn semiSimpleName(&self) -> String {
         todo!()
     }
-    pub fn simpleNiceName(&self) -> String {
+    pub(crate)  fn semiSimpleNiceName(&self) -> String {
         todo!()
     }
-    pub fn semiSimpleName(&self) -> String {
+    pub(crate)  fn direction(&self) -> Direction {
         todo!()
     }
-    pub fn semiSimpleNiceName(&self) -> String {
+    pub(crate)  fn directedName(&self) -> String {
         todo!()
     }
-    pub fn direction(&self) -> Direction {
+    pub(crate)  fn directedNiceName(&self) -> String {
         todo!()
     }
-    pub fn directedName(&self) -> String {
+    pub(crate)  fn directedSimpleName(&self) -> String {
         todo!()
     }
-    pub fn directedNiceName(&self) -> String {
+    pub(crate)  fn directedSimpleNiceName(&self) -> String {
         todo!()
     }
-    pub fn directedSimpleName(&self) -> String {
+    pub(crate)  fn directedSemiSimpleName(&self) -> String {
         todo!()
     }
-    pub fn directedSimpleNiceName(&self) -> String {
+    pub(crate)  fn directedSemiSimpleNiceName(&self) -> String {
         todo!()
     }
-    pub fn directedSemiSimpleName(&self) -> String {
+    pub(crate)  fn isStep(&self) -> bool {
         todo!()
     }
-    pub fn directedSemiSimpleNiceName(&self) -> String {
+    pub(crate)  fn isDiatonicStep(&self) -> bool {
         todo!()
     }
-    pub fn isStep(&self) -> bool {
+    pub(crate)  fn isSkip(&self) -> bool {
         todo!()
     }
-    pub fn isDiatonicStep(&self) -> bool {
+    pub(crate)  fn perfectable(&self) -> bool {
         todo!()
     }
-    pub fn isSkip(&self) -> bool {
+    pub(crate)  fn mod7inversion(&self) -> String {
         todo!()
     }
-    pub fn perfectable(&self) -> bool {
+    pub(crate)  fn mod7(&self) -> String {
         todo!()
     }
-    pub fn mod7inversion(&self) -> String {
+    pub(crate)  fn reverse(&self) -> DiatonicInterval {
         todo!()
     }
-    pub fn mod7(&self) -> String {
+    pub(crate)  fn getChromatic(&self) -> ChromaticInterval {
         todo!()
     }
-    pub fn reverse(&self) -> DiatonicInterval {
+    pub(crate)  fn transposePitch(&self, p: ) {
         todo!()
     }
-    pub fn getChromatic(&self) -> ChromaticInterval {
+    pub(crate)  fn specifierAbbreviation(&self) -> String {
         todo!()
     }
-    pub fn transposePitch(&self, p: ) {
-        todo!()
-    }
-    pub fn specifierAbbreviation(&self) -> String {
-        todo!()
-    }
-    pub fn cents(&self) -> f64 {
+    pub(crate)  fn cents(&self) -> f64 {
         todo!()
     }
 }

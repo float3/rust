@@ -1,15 +1,15 @@
-pub struct TenorDrum {
+pub(crate)  struct TenorDrum {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl TenorDrum {
-    pub fn new() -> TenorDrum {
+    pub(crate)  fn new() -> TenorDrum {
         TenorDrum {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

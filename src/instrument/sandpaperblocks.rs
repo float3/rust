@@ -1,15 +1,15 @@
-pub struct SandpaperBlocks {
+pub(crate)  struct SandpaperBlocks {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl SandpaperBlocks {
-    pub fn new() -> SandpaperBlocks {
+    pub(crate)  fn new() -> SandpaperBlocks {
         SandpaperBlocks {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

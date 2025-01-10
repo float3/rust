@@ -1,15 +1,15 @@
-pub struct BassClarinet {
+pub(crate)  struct BassClarinet {
     clarinet: Clarinet,
 }
 
 impl BassClarinet {
-    pub fn new() -> BassClarinet {
+    pub(crate)  fn new() -> BassClarinet {
         BassClarinet {
             clarinet: Clarinet::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

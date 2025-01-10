@@ -1,11 +1,11 @@
-pub struct ConverterMuseData {
+pub(crate)  struct ConverterMuseData {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
 }
 
 impl ConverterMuseData {
-    pub fn new() -> ConverterMuseData {
+    pub(crate)  fn new() -> ConverterMuseData {
         ConverterMuseData {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,10 +13,10 @@ impl ConverterMuseData {
         }
     }
     
-    pub fn parseData(&self, strData: ) {
+    pub(crate)  fn parseData(&self, strData: ) {
         todo!()
     }
-    pub fn parseFile(&self, filePath: ) {
+    pub(crate)  fn parseFile(&self, filePath: ) {
         todo!()
     }
 }

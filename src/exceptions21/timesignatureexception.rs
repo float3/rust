@@ -1,9 +1,9 @@
-pub struct TimeSignatureException {
+pub(crate)  struct TimeSignatureException {
     meterexception: MeterException,
 }
 
 impl TimeSignatureException {
-    pub fn new() -> TimeSignatureException {
+    pub(crate)  fn new() -> TimeSignatureException {
         TimeSignatureException {
             meterexception: MeterException::new(),
         }

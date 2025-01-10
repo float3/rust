@@ -1,4 +1,4 @@
-pub struct MeterDivision {
+pub(crate)  struct MeterDivision {
     strenum: StrEnum,
     FAST: ,
     SLOW: ,
@@ -6,7 +6,7 @@ pub struct MeterDivision {
 }
 
 impl MeterDivision {
-    pub fn new() -> MeterDivision {
+    pub(crate)  fn new() -> MeterDivision {
         MeterDivision {
             strenum: StrEnum::new(),
             FAST: todo!(),

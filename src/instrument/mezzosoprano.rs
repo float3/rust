@@ -1,15 +1,15 @@
-pub struct MezzoSoprano {
+pub(crate)  struct MezzoSoprano {
     soprano: Soprano,
 }
 
 impl MezzoSoprano {
-    pub fn new() -> MezzoSoprano {
+    pub(crate)  fn new() -> MezzoSoprano {
         MezzoSoprano {
             soprano: Soprano::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

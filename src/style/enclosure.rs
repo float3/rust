@@ -1,5 +1,5 @@
-#[derive(PartialEq)]
-pub struct Enclosure {
+#[derive(PartialEq, Clone, Debug)]
+pub(crate)  struct Enclosure {
     // common::strenum: common::StrEnum,
     // RECTANGLE: ,
     // SQUARE: ,
@@ -19,7 +19,7 @@ pub struct Enclosure {
 }
 
 impl Enclosure {
-    // pub fn new() -> Enclosure {
+    // pub(crate)  fn new() -> Enclosure {
     //     Enclosure {
     //         common::strenum: common::StrEnum::new(),
     //         RECTANGLE: todo!(),

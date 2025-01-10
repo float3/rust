@@ -1,4 +1,4 @@
-pub struct OffsetTree {
+pub(crate)  struct OffsetTree {
     elementtree: ElementTree,
     __slots__: ,
     rootNode: ,
@@ -6,7 +6,7 @@ pub struct OffsetTree {
 }
 
 impl OffsetTree {
-    pub fn new() -> OffsetTree {
+    pub(crate)  fn new() -> OffsetTree {
         OffsetTree {
             elementtree: ElementTree::new(),
             __slots__: todo!(),
@@ -15,58 +15,58 @@ impl OffsetTree {
         }
     }
     
-    pub fn __contains__(&self, element: ) {
+    pub(crate)  fn __contains__(&self, element: ) {
         todo!()
     }
-    pub fn __getitem__(&self, i: ) {
+    pub(crate)  fn __getitem__(&self, i: ) {
         todo!()
     }
-    pub fn __iter__(&self) {
+    pub(crate)  fn __iter__(&self) {
         todo!()
     }
-    pub fn elementEndTime(&self, el: ) {
+    pub(crate)  fn elementEndTime(&self, el: ) {
         todo!()
     }
-    pub fn getPositionFromElementUnsafe(&self, el: ) {
+    pub(crate)  fn getPositionFromElementUnsafe(&self, el: ) {
         todo!()
     }
-    pub fn append(&self, el: ) {
+    pub(crate)  fn append(&self, el: ) {
         todo!()
     }
-    pub fn _insertCorePayloadSortKey(&self, x: ) {
+    pub(crate)  fn _insertCorePayloadSortKey(&self, x: ) {
         todo!()
     }
-    pub fn _insertCore(&self, position: ) {
+    pub(crate)  fn _insertCore(&self, position: ) {
         todo!()
     }
-    pub fn copy(&self) {
+    pub(crate)  fn copy(&self) {
         todo!()
     }
-    pub fn elementsStartingAt(&self, position: ) {
+    pub(crate)  fn elementsStartingAt(&self, position: ) {
         todo!()
     }
-    pub fn elementsStoppingAt(&self, offset: ) {
+    pub(crate)  fn elementsStoppingAt(&self, offset: ) {
         todo!()
     }
-    pub fn elementsOverlappingOffset(&self, offset: ) {
+    pub(crate)  fn elementsOverlappingOffset(&self, offset: ) {
         todo!()
     }
-    pub fn removeElements(&self, elements: ) {
+    pub(crate)  fn removeElements(&self, elements: ) {
         todo!()
     }
-    pub fn allOffsets(&self) {
+    pub(crate)  fn allOffsets(&self) {
         todo!()
     }
-    pub fn allTimePoints(&self) {
+    pub(crate)  fn allTimePoints(&self) {
         todo!()
     }
-    pub fn overlapTimePoints(&self, includeStopPoints: ) {
+    pub(crate)  fn overlapTimePoints(&self, includeStopPoints: ) {
         todo!()
     }
-    pub fn getVerticalityAt(&self, offset: ) {
+    pub(crate)  fn getVerticalityAt(&self, offset: ) {
         todo!()
     }
-    pub fn simultaneityDict(&self) {
+    pub(crate)  fn simultaneityDict(&self) {
         todo!()
     }
 }

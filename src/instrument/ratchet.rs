@@ -1,15 +1,15 @@
-pub struct Ratchet {
+pub(crate)  struct Ratchet {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Ratchet {
-    pub fn new() -> Ratchet {
+    pub(crate)  fn new() -> Ratchet {
         Ratchet {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

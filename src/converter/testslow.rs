@@ -1,15 +1,15 @@
-pub struct TestSlow {
+pub(crate)  struct TestSlow {
     unittest::testcase: unittest::TestCase,
 }
 
 impl TestSlow {
-    pub fn new() -> TestSlow {
+    pub(crate)  fn new() -> TestSlow {
         TestSlow {
             unittest::testcase: unittest::TestCase::new(),
         }
     }
     
-    pub fn testMusicXMLConversion(&self) {
+    pub(crate)  fn testMusicXMLConversion(&self) {
         todo!()
     }
 }

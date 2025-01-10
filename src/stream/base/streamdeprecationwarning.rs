@@ -1,9 +1,9 @@
-pub struct StreamDeprecationWarning {
+pub(crate)  struct StreamDeprecationWarning {
     userwarning: UserWarning,
 }
 
 impl StreamDeprecationWarning {
-    pub fn new() -> StreamDeprecationWarning {
+    pub(crate)  fn new() -> StreamDeprecationWarning {
         StreamDeprecationWarning {
             userwarning: UserWarning::new(),
         }

@@ -1,4 +1,4 @@
-pub struct Verticality {
+pub(crate)  struct Verticality {
     base::music21object: base::Music21Object,
 
     lyric: ,
@@ -6,67 +6,67 @@ pub struct Verticality {
 }
 
 impl Verticality {
-    pub fn new() -> Verticality {
+    pub(crate)  fn new() -> Verticality {
         Verticality {
             base::music21object: base::Music21Object::new(),
-            _DOC_ATTR: todo!(),
+
             lyric: todo!(),
             color: todo!(),
         }
     }
     
-    pub fn new(&self, contentDict: ) {
+    pub(crate)  fn new(&self, contentDict: ) {
         todo!()
     }
-    pub fn isConsonant(&self) {
+    pub(crate)  fn isConsonant(&self) {
         todo!()
     }
-    pub fn getChord(&self) {
+    pub(crate)  fn getChord(&self) {
         todo!()
     }
-    pub fn makeAllSmallestDuration(&self) {
+    pub(crate)  fn makeAllSmallestDuration(&self) {
         todo!()
     }
-    pub fn makeAllLargestDuration(&self) {
+    pub(crate)  fn makeAllLargestDuration(&self) {
         todo!()
     }
-    pub fn getShortestDuration(&self) {
+    pub(crate)  fn getShortestDuration(&self) {
         todo!()
     }
-    pub fn getLongestDuration(&self) {
+    pub(crate)  fn getLongestDuration(&self) {
         todo!()
     }
-    pub fn changeDurationOfAllObjects(&self, newQuarterLength: ) {
+    pub(crate)  fn changeDurationOfAllObjects(&self, newQuarterLength: ) {
         todo!()
     }
-    pub fn getObjectsByPart(&self, partNum: ) {
+    pub(crate)  fn getObjectsByPart(&self, partNum: ) {
         todo!()
     }
-    pub fn getObjectsByClass(&self, classFilterList: ) {
+    pub(crate)  fn getObjectsByClass(&self, classFilterList: ) {
         todo!()
     }
-    pub fn objects(&self) {
+    pub(crate)  fn objects(&self) {
         todo!()
     }
-    pub fn getStream(&self) {
+    pub(crate)  fn getStream(&self) {
         todo!()
     }
-    pub fn getVerticalityOffset(&self) {
+    pub(crate)  fn getVerticalityOffset(&self) {
         todo!()
     }
-    pub fn _setLyric(&self, value: ) {
+    pub(crate)  fn _setLyric(&self, value: ) {
         todo!()
     }
-    pub fn _getLyric(&self) {
+    pub(crate)  fn _getLyric(&self) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn _setColor(&self, color: ) {
+    pub(crate)  fn _setColor(&self, color: ) {
         todo!()
     }
-    pub fn _getColor(&self) {
+    pub(crate)  fn _getColor(&self) {
         todo!()
     }
 }

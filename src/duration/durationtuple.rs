@@ -1,4 +1,4 @@
-pub struct DurationTuple {
+pub(crate)  struct DurationTuple {
     t::namedtuple: t::NamedTuple,
     type: String,
     dots: i32,
@@ -6,7 +6,7 @@ pub struct DurationTuple {
 }
 
 impl DurationTuple {
-    pub fn new() -> DurationTuple {
+    pub(crate)  fn new() -> DurationTuple {
         DurationTuple {
             t::namedtuple: t::NamedTuple::new(),
             type: todo!(),
@@ -15,10 +15,10 @@ impl DurationTuple {
         }
     }
     
-    pub fn augmentOrDiminish(&self, amountToScale: ) {
+    pub(crate)  fn augmentOrDiminish(&self, amountToScale: ) {
         todo!()
     }
-    pub fn ordinal(&self) {
+    pub(crate)  fn ordinal(&self) {
         todo!()
     }
 }

@@ -1,4 +1,4 @@
-pub struct MetaEvents {
+pub(crate)  struct MetaEvents {
     _containsenum: _ContainsEnum,
     SEQUENCE_NUMBER: ,
     TEXT_EVENT: ,
@@ -22,7 +22,7 @@ pub struct MetaEvents {
 }
 
 impl MetaEvents {
-    pub fn new() -> MetaEvents {
+    pub(crate)  fn new() -> MetaEvents {
         MetaEvents {
             _containsenum: _ContainsEnum::new(),
             SEQUENCE_NUMBER: todo!(),

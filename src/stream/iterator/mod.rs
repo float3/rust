@@ -1,5 +1,5 @@
-pub mod streamiteratorinefficientwarning;
-pub mod activeinformation;
-pub mod streamiterator;
-pub mod offsetiterator;
-pub mod recursiveiterator;
+pub(crate)  mod streamiteratorinefficientwarning;
+pub(crate)  mod activeinformation;
+pub(crate)  mod streamiterator;
+pub(crate)  mod offsetiterator;
+pub(crate)  mod recursiveiterator;

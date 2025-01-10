@@ -1,15 +1,15 @@
-pub struct ElectricOrgan {
+pub(crate)  struct ElectricOrgan {
     organ: Organ,
 }
 
 impl ElectricOrgan {
-    pub fn new() -> ElectricOrgan {
+    pub(crate)  fn new() -> ElectricOrgan {
         ElectricOrgan {
             organ: Organ::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

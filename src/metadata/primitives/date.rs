@@ -1,4 +1,4 @@
-pub struct Date {
+pub(crate)  struct Date {
     prebase::protom21object: prebase::ProtoM21Object,
     approximateSymbols: ,
     uncertainSymbols: ,
@@ -6,7 +6,7 @@ pub struct Date {
 }
 
 impl Date {
-    pub fn new() -> Date {
+    pub(crate)  fn new() -> Date {
         Date {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             approximateSymbols: todo!(),
@@ -15,43 +15,43 @@ impl Date {
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) -> bool {
+    pub(crate)  fn __eq__(&self, other: ) -> bool {
         todo!()
     }
-    pub fn __str__(&self) {
+    pub(crate)  fn __str__(&self) {
         todo!()
     }
-    pub fn _stripError(&self, value: ) {
+    pub(crate)  fn _stripError(&self, value: ) {
         todo!()
     }
-    pub fn _sanityCheck(&self) {
+    pub(crate)  fn _sanityCheck(&self) {
         todo!()
     }
-    pub fn errorToSymbol(&self, value: ) {
+    pub(crate)  fn errorToSymbol(&self, value: ) {
         todo!()
     }
-    pub fn load(&self, value: ) {
+    pub(crate)  fn load(&self, value: ) {
         todo!()
     }
-    pub fn loadDatetime(&self, dt: ) {
+    pub(crate)  fn loadDatetime(&self, dt: ) {
         todo!()
     }
-    pub fn loadOther(&self, other: Date) {
+    pub(crate)  fn loadOther(&self, other: Date) {
         todo!()
     }
-    pub fn loadStr(&self, dateStr: String) {
+    pub(crate)  fn loadStr(&self, dateStr: String) {
         todo!()
     }
-    pub fn datetime(&self) {
+    pub(crate)  fn datetime(&self) {
         todo!()
     }
-    pub fn hasTime(&self) {
+    pub(crate)  fn hasTime(&self) {
         todo!()
     }
-    pub fn hasError(&self) {
+    pub(crate)  fn hasError(&self) {
         todo!()
     }
 }

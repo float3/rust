@@ -1,9 +1,9 @@
-pub struct VerticalityException {
+pub(crate)  struct VerticalityException {
     exceptions21::treeexception: exceptions21::TreeException,
 }
 
 impl VerticalityException {
-    pub fn new() -> VerticalityException {
+    pub(crate)  fn new() -> VerticalityException {
         VerticalityException {
             exceptions21::treeexception: exceptions21::TreeException::new(),
         }

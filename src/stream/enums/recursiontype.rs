@@ -1,4 +1,4 @@
-pub struct RecursionType {
+pub(crate)  struct RecursionType {
     strenum: StrEnum,
     ELEMENTS_FIRST: ,
     FLATTEN: ,
@@ -6,7 +6,7 @@ pub struct RecursionType {
 }
 
 impl RecursionType {
-    pub fn new() -> RecursionType {
+    pub(crate)  fn new() -> RecursionType {
         RecursionType {
             strenum: StrEnum::new(),
             ELEMENTS_FIRST: todo!(),

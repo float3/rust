@@ -1,16 +1,15 @@
-pub struct NoteStyle {
+pub(crate)  struct NoteStyle {
     style: Style,
 }
 
 impl NoteStyle {
-    pub fn new() -> NoteStyle {
+    pub(crate)  fn new() -> NoteStyle {
         NoteStyle {
             style: Style::new(),
-            _DOC_ATTR: todo!(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

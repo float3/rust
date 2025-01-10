@@ -1,9 +1,9 @@
-pub struct Test {
+pub(crate)  struct Test {
     unittest::testcase: unittest::TestCase,
 }
 
 impl Test {
-    pub fn new() -> Test {
+    pub(crate)  fn new() -> Test {
         Test {
             unittest::testcase: unittest::TestCase::new(),
         }

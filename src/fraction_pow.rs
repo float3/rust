@@ -1,8 +1,9 @@
 use fraction::GenericFraction;
+use num::Integer;
 use num_traits::{One, Pow, Zero};
 use std::cmp::Ordering;
 
-pub trait FractionPow {
+pub(crate) trait FractionPow {
     type Output;
 
     fn pow(self, exponent: i32) -> Self::Output;
@@ -10,21 +11,37 @@ pub trait FractionPow {
 
 impl<T> FractionPow for GenericFraction<T>
 where
-    T: Pow<u32, Output = T> + Clone + PartialEq + Zero + One + num::Integer,
+    T: Pow<u32, Output = T> + Clone + PartialEq + Zero + One + Integer,
 {
     type Output = GenericFraction<T>;
 
     fn pow(self, exponent: i32) -> GenericFraction<T> {
-        match exponent.cmp(&0) {
-            Ordering::Greater => GenericFraction::new(
-                self.numer().unwrap().clone().pow(exponent as u32),
-                self.denom().unwrap().clone().pow(exponent as u32),
-            ),
-            Ordering::Less => GenericFraction::new(
-                self.denom().unwrap().clone().pow((-exponent) as u32),
-                self.numer().unwrap().clone().pow((-exponent) as u32),
-            ),
-            Ordering::Equal => GenericFraction::one(),
+        let (numer, denom) = match exponent.cmp(&0) {
+            Ordering::Greater => (self.numer(), self.denom()),
+            Ordering::Less => (self.denom(), self.numer()),
+            Ordering::Equal => return GenericFraction::one(),
+        };
+
+        let numer = match numer {
+            Some(n) => n.clone().pow(exponent.abs() as u32),
+            None => {
+                eprintln!("Error: numerator is None");
+                return GenericFraction::zero();
+            }
+        };
+
+        let denom = match denom {
+            Some(d) => d.clone().pow(exponent.abs() as u32),
+            None => {
+                eprintln!("Error: denominator is None");
+                return GenericFraction::zero();
+            }
+        };
+
+        if exponent.is_negative() {
+            GenericFraction::new(denom, numer)
+        } else {
+            GenericFraction::new(numer, denom)
         }
     }
 }
@@ -40,6 +57,27 @@ mod tests {
         let frac: GenericFraction<i32> = GenericFraction::new(2, 3);
         let result = frac.pow(3);
         let expected = GenericFraction::new(8, 27);
+        assert_eq!(
+            result, expected,
+            "2/3 raised to the power of 3 should be 8/27"
+        );
+    }
+
+    #[test]
+    fn fraction_i64() {
+        let frac: GenericFraction<i64> = GenericFraction::new(2, 3);
+        let result = frac.pow(3);
+        let expected = GenericFraction::new(8, 27);
+        assert_eq!(
+            result, expected,
+            "2/3 raised to the power of 3 should be 8/27"
+        );
+    }
+
+    fn fraction_u32() {
+        let frac: GenericFraction<u32> = GenericFraction::new(2u32, 3u32);
+        let result = frac.pow(3);
+        let expected = GenericFraction::new(8u32, 27u32);
         assert_eq!(
             result, expected,
             "2/3 raised to the power of 3 should be 8/27"

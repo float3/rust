@@ -1,15 +1,15 @@
-pub struct Shakuhachi {
+pub(crate)  struct Shakuhachi {
     flute: Flute,
 }
 
 impl Shakuhachi {
-    pub fn new() -> Shakuhachi {
+    pub(crate)  fn new() -> Shakuhachi {
         Shakuhachi {
             flute: Flute::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

@@ -1,4 +1,4 @@
-pub struct Pitch {
+pub(crate)  struct Pitch {
     prebase::protom21object: prebase::ProtoM21Object,
     _DOC_ORDER: ,
     _twelfth_root_of_two: ,
@@ -9,256 +9,256 @@ pub struct Pitch {
 }
 
 impl Pitch {
-    pub fn new() -> Pitch {
+    pub(crate)  fn new() -> Pitch {
         Pitch {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             _DOC_ORDER: todo!(),
             _twelfth_root_of_two: todo!(),
-            _DOC_ATTR: todo!(),
+
             _SPANISH_DICT: todo!(),
             _FRENCH_DICT: todo!(),
             _transpositionIntervals: todo!(),
         }
     }
     
-    pub fn new(&self, name: ) {
+    pub(crate)  fn new(&self, name: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn __str__(&self) {
+    pub(crate)  fn __str__(&self) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) {
+    pub(crate)  fn __eq__(&self, other: ) {
         todo!()
     }
-    pub fn __deepcopy__(&self, memo: ) {
+    pub(crate)  fn __deepcopy__(&self, memo: ) {
         todo!()
     }
-    pub fn __hash__(&self) {
+    pub(crate)  fn __hash__(&self) {
         todo!()
     }
-    pub fn __lt__(&self, other: ) -> bool {
+    pub(crate)  fn __lt__(&self, other: ) -> bool {
         todo!()
     }
-    pub fn __le__(&self, other: ) -> bool {
+    pub(crate)  fn __le__(&self, other: ) -> bool {
         todo!()
     }
-    pub fn __gt__(&self, other: ) -> bool {
+    pub(crate)  fn __gt__(&self, other: ) -> bool {
         todo!()
     }
-    pub fn __ge__(&self, other: ) -> bool {
+    pub(crate)  fn __ge__(&self, other: ) -> bool {
         todo!()
     }
-    pub fn groups(&self) {
+    pub(crate)  fn groups(&self) {
         todo!()
     }
-    pub fn groups(&self, new: ) {
+    pub(crate)  fn groups(&self, new: ) {
         todo!()
     }
-    pub fn accidental(&self) {
+    pub(crate)  fn accidental(&self) {
         todo!()
     }
-    pub fn accidental(&self, value: ) {
+    pub(crate)  fn accidental(&self, value: ) {
         todo!()
     }
-    pub fn microtone(&self) -> Microtone {
+    pub(crate)  fn microtone(&self) -> Microtone {
         todo!()
     }
-    pub fn microtone(&self, value: ) {
+    pub(crate)  fn microtone(&self, value: ) {
         todo!()
     }
-    pub fn isTwelveTone(&self) -> bool {
+    pub(crate)  fn isTwelveTone(&self) -> bool {
         todo!()
     }
-    pub fn getCentShiftFromMidi(&self) -> i32 {
+    pub(crate)  fn getCentShiftFromMidi(&self) -> i32 {
         todo!()
     }
-    pub fn alter(&self) -> f64 {
+    pub(crate)  fn alter(&self) -> f64 {
         todo!()
     }
-    pub fn convertQuarterTonesToMicrotones(&self) {
+    pub(crate)  fn convertQuarterTonesToMicrotones(&self) {
         todo!()
     }
-    pub fn convertMicrotonesToQuarterTones(&self) {
+    pub(crate)  fn convertMicrotonesToQuarterTones(&self) {
         todo!()
     }
-    pub fn ps(&self) {
+    pub(crate)  fn ps(&self) {
         todo!()
     }
-    pub fn ps(&self, value: ) {
+    pub(crate)  fn ps(&self, value: ) {
         todo!()
     }
-    pub fn midi(&self) {
+    pub(crate)  fn midi(&self) {
         todo!()
     }
-    pub fn midi(&self, value: ) {
+    pub(crate)  fn midi(&self, value: ) {
         todo!()
     }
-    pub fn name(&self) -> String {
+    pub(crate)  fn name(&self) -> String {
         todo!()
     }
-    pub fn name(&self, usrStr: String) {
+    pub(crate)  fn name(&self, usrStr: String) {
         todo!()
     }
-    pub fn unicodeName(&self) -> String {
+    pub(crate)  fn unicodeName(&self) -> String {
         todo!()
     }
-    pub fn nameWithOctave(&self) -> String {
+    pub(crate)  fn nameWithOctave(&self) -> String {
         todo!()
     }
-    pub fn nameWithOctave(&self, value: String) {
+    pub(crate)  fn setNameWithOctave(&self, value: String) {
         todo!()
     }
-    pub fn unicodeNameWithOctave(&self) -> String {
+    pub(crate)  fn unicodeNameWithOctave(&self) -> String {
         todo!()
     }
-    pub fn fullName(&self) {
+    pub(crate)  fn fullName(&self) {
         todo!()
     }
-    pub fn step(&self) {
+    pub(crate)  fn step(&self) {
         todo!()
     }
-    pub fn step(&self, usrStr: ) {
+    pub(crate)  fn set_step(&self, usrStr: ) {
         todo!()
     }
-    pub fn pitchClass(&self) -> i32 {
+    pub(crate)  fn pitchClass(&self) -> i32 {
         todo!()
     }
-    pub fn pitchClass(&self, value: ) {
+    pub(crate)  fn set_pitchClass(&self, value: ) {
         todo!()
     }
-    pub fn pitchClassString(&self) -> String {
+    pub(crate)  fn pitchClassString(&self) -> String {
         todo!()
     }
-    pub fn pitchClassString(&self, v: ) {
+    pub(crate)  fn setPitchClassString(&self, v: ) {
         todo!()
     }
-    pub fn octave(&self) {
+    pub(crate)  fn octave(&self) {
         todo!()
     }
-    pub fn octave(&self, value: ) {
+    pub(crate)  fn setOctave(&self, value: ) {
         todo!()
     }
-    pub fn implicitOctave(&self) -> i32 {
+    pub(crate)  fn implicitOctave(&self) -> i32 {
         todo!()
     }
-    pub fn german(&self) -> String {
+    pub(crate)  fn german(&self) -> String {
         todo!()
     }
-    pub fn italian(&self) -> String {
+    pub(crate)  fn italian(&self) -> String {
         todo!()
     }
-    pub fn _getSpanishCardinal(&self) -> String {
+    pub(crate)  fn _getSpanishCardinal(&self) -> String {
         todo!()
     }
-    pub fn spanish(&self) -> String {
+    pub(crate)  fn spanish(&self) -> String {
         todo!()
     }
-    pub fn french(&self) -> String {
+    pub(crate)  fn french(&self) -> String {
         todo!()
     }
-    pub fn frequency(&self) -> f64 {
+    pub(crate)  fn frequency(&self) -> f64 {
         todo!()
     }
-    pub fn frequency(&self, value: ) {
+    pub(crate)  fn setFrequency(&self, value: ) {
         todo!()
     }
-    pub fn freq440(&self) -> f64 {
+    pub(crate)  fn freq440(&self) -> f64 {
         todo!()
     }
-    pub fn freq440(&self, value: ) {
+    pub(crate)  fn setFreq440(&self, value: ) {
         todo!()
     }
-    pub fn getHarmonic(&self, number: i32) -> Pitch {
+    pub(crate)  fn getHarmonic(&self, number: i32) -> Pitch {
         todo!()
     }
-    pub fn harmonicFromFundamental(&self, fundamental: ) {
+    pub(crate)  fn harmonicFromFundamental(&self, fundamental: ) -> (i32,f64) {
         todo!()
     }
-    pub fn harmonicString(&self, fundamental: ) -> String {
+    pub(crate)  fn harmonicString(&self, fundamental: ) -> String {
         todo!()
     }
-    pub fn harmonicAndFundamentalFromPitch(&self, target: ) {
+    pub(crate)  fn harmonicAndFundamentalFromPitch(&self, target: ) {
         todo!()
     }
-    pub fn harmonicAndFundamentalStringFromPitch(&self, fundamental: ) -> String {
+    pub(crate)  fn harmonicAndFundamentalStringFromPitch(&self, fundamental: ) -> String {
         todo!()
     }
-    pub fn isEnharmonic(&self, other: Pitch) -> bool {
+    pub(crate)  fn isEnharmonic(&self, other: Pitch) -> bool {
         todo!()
     }
-    pub fn _getEnharmonicHelper(&self, inPlace: , up: bool) {
+    pub(crate)  fn _getEnharmonicHelper(&self, inPlace: , up: bool) {
         todo!()
     }
-    pub fn _getEnharmonicHelper(&self, inPlace: , up: bool) {
+    pub(crate)  fn _getEnharmonicHelper(&self, inPlace: , up: bool) {
         todo!()
     }
-    pub fn _getEnharmonicHelper(&self, inPlace: bool, up: bool) {
+    pub(crate)  fn _getEnharmonicHelper(&self, inPlace: bool, up: bool) {
         todo!()
     }
-    pub fn getHigherEnharmonic(&self) {
+    pub(crate)  fn getHigherEnharmonic(&self) {
         todo!()
     }
-    pub fn getHigherEnharmonic(&self) {
+    pub(crate)  fn getHigherEnharmonic(&self) {
         todo!()
     }
-    pub fn getHigherEnharmonic(&self) {
+    pub(crate)  fn getHigherEnharmonic(&self) {
         todo!()
     }
-    pub fn getLowerEnharmonic(&self) {
+    pub(crate)  fn getLowerEnharmonic(&self) {
         todo!()
     }
-    pub fn getLowerEnharmonic(&self) {
+    pub(crate)  fn getLowerEnharmonic(&self) {
         todo!()
     }
-    pub fn getLowerEnharmonic(&self) {
+    pub(crate)  fn getLowerEnharmonic(&self) {
         todo!()
     }
-    pub fn simplifyEnharmonic(&self) {
+    pub(crate)  fn simplifyEnharmonic(&self) {
         todo!()
     }
-    pub fn getEnharmonic(&self) {
+    pub(crate)  fn getEnharmonic(&self) {
         todo!()
     }
-    pub fn informClient(&self) {
+    pub(crate)  fn informClient(&self) {
         todo!()
     }
-    pub fn getAllCommonEnharmonics(&self, alterLimit: i32) {
+    pub(crate)  fn getAllCommonEnharmonics(&self, alterLimit: i32) {
         todo!()
     }
-    pub fn diatonicNoteNum(&self) -> i32 {
+    pub(crate)  fn diatonicNoteNum(&self) -> i32 {
         todo!()
     }
-    pub fn diatonicNoteNum(&self, newNum: i32) {
+    pub(crate)  fn diatonicNoteNum(&self, newNum: i32) {
         todo!()
     }
-    pub fn transpose(&self, value: ) {
+    pub(crate)  fn transpose(&self, value: ) {
         todo!()
     }
-    pub fn transpose(&self, value: ) {
+    pub(crate)  fn transpose(&self, value: ) {
         todo!()
     }
-    pub fn transpose(&self, value: ) {
+    pub(crate)  fn transpose(&self, value: ) {
         todo!()
     }
-    pub fn transposeBelowTarget(&self, target: ) {
+    pub(crate)  fn transposeBelowTarget(&self, target: ) {
         todo!()
     }
-    pub fn transposeAboveTarget(&self, target: ) {
+    pub(crate)  fn transposeAboveTarget(&self, target: ) {
         todo!()
     }
-    pub fn _nameInKeySignature(&self, alteredPitches: ) {
+    pub(crate)  fn _nameInKeySignature(&self, alteredPitches: ) {
         todo!()
     }
-    pub fn _stepInKeySignature(&self, alteredPitches: ) {
+    pub(crate)  fn _stepInKeySignature(&self, alteredPitches: ) {
         todo!()
     }
-    pub fn updateAccidentalDisplay(&self) {
+    pub(crate)  fn updateAccidentalDisplay(&self) {
         todo!()
     }
-    pub fn getStringHarmonic(&self, chordIn: ) {
+    pub(crate)  fn getStringHarmonic(&self, chordIn: ) {
         todo!()
     }
 }

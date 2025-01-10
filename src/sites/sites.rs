@@ -1,86 +1,86 @@
-pub struct Sites {
+pub(crate)  struct Sites {
     common::slottedobjectmixin: common::SlottedObjectMixin,
     __slots__: ,
 }
 
 impl Sites {
-    pub fn new() -> Sites {
+    pub(crate)  fn new() -> Sites {
         Sites {
             common::slottedobjectmixin: common::SlottedObjectMixin::new(),
             __slots__: todo!(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn __deepcopy__(&self, memo: ) {
+    pub(crate)  fn __deepcopy__(&self, memo: ) {
         todo!()
     }
-    pub fn __len__(&self) {
+    pub(crate)  fn __len__(&self) {
         todo!()
     }
-    pub fn __contains__(&self, checkSite: ) {
+    pub(crate)  fn __contains__(&self, checkSite: ) {
         todo!()
     }
-    pub fn __iter__(&self) {
+    pub(crate)  fn __iter__(&self) {
         todo!()
     }
-    pub fn add(&self, obj: ) {
+    pub(crate)  fn add(&self, obj: ) {
         todo!()
     }
-    pub fn clear(&self) {
+    pub(crate)  fn clear(&self) {
         todo!()
     }
-    pub fn yieldSites(&self) {
+    pub(crate)  fn yieldSites(&self) {
         todo!()
     }
-    pub fn yieldSites(&self) {
+    pub(crate)  fn yieldSites(&self) {
         todo!()
     }
-    pub fn yieldSites(&self) {
+    pub(crate)  fn yieldSites(&self) {
         todo!()
     }
-    pub fn get(&self) {
+    pub(crate)  fn get(&self) {
         todo!()
     }
-    pub fn getAttrByName(&self, attrName: ) {
+    pub(crate)  fn getAttrByName(&self, attrName: ) {
         todo!()
     }
-    pub fn getObjByClass(&self, className: ) {
+    pub(crate)  fn getObjByClass(&self, className: ) {
         todo!()
     }
-    pub fn getById(&self, siteId: ) {
+    pub(crate)  fn getById(&self, siteId: ) {
         todo!()
     }
-    pub fn getSiteCount(&self) {
+    pub(crate)  fn getSiteCount(&self) {
         todo!()
     }
-    pub fn getSiteIds(&self) {
+    pub(crate)  fn getSiteIds(&self) {
         todo!()
     }
-    pub fn getSitesByClass(&self, className: ) {
+    pub(crate)  fn getSitesByClass(&self, className: ) {
         todo!()
     }
-    pub fn hasSiteId(&self, siteId: ) {
+    pub(crate)  fn hasSiteId(&self, siteId: ) {
         todo!()
     }
-    pub fn hasSpannerSite(&self) {
+    pub(crate)  fn hasSpannerSite(&self) {
         todo!()
     }
-    pub fn hasVariantSite(&self) {
+    pub(crate)  fn hasVariantSite(&self) {
         todo!()
     }
-    pub fn purgeLocations(&self, rescanIsDead: ) {
+    pub(crate)  fn purgeLocations(&self, rescanIsDead: ) {
         todo!()
     }
-    pub fn remove(&self, site: ) {
+    pub(crate)  fn remove(&self, site: ) {
         todo!()
     }
-    pub fn removeById(&self, idKey: ) {
+    pub(crate)  fn removeById(&self, idKey: ) {
         todo!()
     }
-    pub fn setAttrByName(&self, attrName: ) {
+    pub(crate)  fn setAttrByName(&self, attrName: ) {
         todo!()
     }
 }

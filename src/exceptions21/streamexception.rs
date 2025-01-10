@@ -1,9 +1,9 @@
-pub struct StreamException {
+pub(crate)  struct StreamException {
     music21exception: Music21Exception,
 }
 
 impl StreamException {
-    pub fn new() -> StreamException {
+    pub(crate)  fn new() -> StreamException {
         StreamException {
             music21exception: Music21Exception::new(),
         }

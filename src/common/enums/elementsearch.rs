@@ -1,4 +1,4 @@
-pub struct ElementSearch {
+pub(crate)  struct ElementSearch {
     strenum: StrEnum,
     BEFORE: ,
     AFTER: ,
@@ -14,7 +14,7 @@ pub struct ElementSearch {
 }
 
 impl ElementSearch {
-    pub fn new() -> ElementSearch {
+    pub(crate)  fn new() -> ElementSearch {
         ElementSearch {
             strenum: StrEnum::new(),
             BEFORE: todo!(),

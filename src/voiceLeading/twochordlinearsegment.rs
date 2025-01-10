@@ -1,21 +1,21 @@
-pub struct TwoChordLinearSegment {
+pub(crate)  struct TwoChordLinearSegment {
     nchordlinearsegment: NChordLinearSegment,
 }
 
 impl TwoChordLinearSegment {
-    pub fn new() -> TwoChordLinearSegment {
+    pub(crate)  fn new() -> TwoChordLinearSegment {
         TwoChordLinearSegment {
             nchordlinearsegment: NChordLinearSegment::new(),
         }
     }
     
-    pub fn new(&self, chordList: ) {
+    pub(crate)  fn new(&self, chordList: ) {
         todo!()
     }
-    pub fn rootInterval(&self) {
+    pub(crate)  fn rootInterval(&self) {
         todo!()
     }
-    pub fn bassInterval(&self) {
+    pub(crate)  fn bassInterval(&self) {
         todo!()
     }
 }

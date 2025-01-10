@@ -1,4 +1,4 @@
-pub struct ContextTuple {
+pub(crate)  struct ContextTuple {
     t::namedtuple: t::NamedTuple,
     site: ,
     offset: ,
@@ -6,7 +6,7 @@ pub struct ContextTuple {
 }
 
 impl ContextTuple {
-    pub fn new() -> ContextTuple {
+    pub(crate)  fn new() -> ContextTuple {
         ContextTuple {
             t::namedtuple: t::NamedTuple::new(),
             site: todo!(),

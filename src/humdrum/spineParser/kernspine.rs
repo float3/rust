@@ -1,30 +1,30 @@
-pub struct KernSpine {
+pub(crate)  struct KernSpine {
     humdrumspine: HumdrumSpine,
 }
 
 impl KernSpine {
-    pub fn new() -> KernSpine {
+    pub(crate)  fn new() -> KernSpine {
         KernSpine {
             humdrumspine: HumdrumSpine::new(),
         }
     }
     
-    pub fn new(&self, spineId: i32, eventList: ) {
+    pub(crate)  fn new(&self, spineId: i32, eventList: ) {
         todo!()
     }
-    pub fn parse(&self) {
+    pub(crate)  fn parse(&self) {
         todo!()
     }
-    pub fn processNoteEvent(&self, eventC: ) {
+    pub(crate)  fn processNoteEvent(&self, eventC: ) {
         todo!()
     }
-    pub fn processChordEvent(&self, eventC: ) {
+    pub(crate)  fn processChordEvent(&self, eventC: ) {
         todo!()
     }
-    pub fn setBeamsForNote(&self, n: ) {
+    pub(crate)  fn setBeamsForNote(&self, n: ) {
         todo!()
     }
-    pub fn setTupletTypeForNote(&self, n: ) {
+    pub(crate)  fn setTupletTypeForNote(&self, n: ) {
         todo!()
     }
 }

@@ -1,7 +1,7 @@
 use super::notrest::NotRest;
 
-#[derive(PartialEq)]
-pub struct Note {
+#[derive(PartialEq, Clone, Debug)]
+pub(crate)  struct Note {
     notrest: NotRest,
     isNote: bool,
     equalityAttributes: ,
@@ -9,64 +9,64 @@ pub struct Note {
 }
 
 impl Note {
-    pub fn new(&self, pitch: ) {
+    pub(crate)  fn new(&self, pitch: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn __lt__(&self, other: ) {
+    pub(crate)  fn __lt__(&self, other: ) {
         todo!()
     }
-    pub fn __gt__(&self, other: ) {
+    pub(crate)  fn __gt__(&self, other: ) {
         todo!()
     }
-    pub fn __le__(&self, other: ) {
+    pub(crate)  fn __le__(&self, other: ) {
         todo!()
     }
-    pub fn __ge__(&self, other: ) {
+    pub(crate)  fn __ge__(&self, other: ) {
         todo!()
     }
-    pub fn __deepcopy__(&self, memo: ) -> Note {
+    pub(crate)  fn __deepcopy__(&self, memo: ) -> Note {
         todo!()
     }
-    pub fn name(&self) -> String {
+    pub(crate)  fn name(&self) -> String {
         todo!()
     }
-    pub fn name(&self, value: String) {
+    pub(crate)  fn name(&self, value: String) {
         todo!()
     }
-    pub fn nameWithOctave(&self) -> String {
+    pub(crate)  fn nameWithOctave(&self) -> String {
         todo!()
     }
-    pub fn nameWithOctave(&self, value: String) {
+    pub(crate)  fn nameWithOctave(&self, value: String) {
         todo!()
     }
-    pub fn step(&self) {
+    pub(crate)  fn step(&self) {
         todo!()
     }
-    pub fn step(&self, value: ) {
+    pub(crate)  fn step(&self, value: ) {
         todo!()
     }
-    pub fn octave(&self) {
+    pub(crate)  fn octave(&self) {
         todo!()
     }
-    pub fn octave(&self, value: ) {
+    pub(crate)  fn octave(&self, value: ) {
         todo!()
     }
-    pub fn pitches(&self) {
+    pub(crate)  fn pitches(&self) {
         todo!()
     }
-    pub fn pitches(&self, value: ) {
+    pub(crate)  fn pitches(&self, value: ) {
         todo!()
     }
-    pub fn transpose(&self, value: ) {
+    pub(crate)  fn transpose(&self, value: ) {
         todo!()
     }
-    pub fn fullName(&self) -> String {
+    pub(crate)  fn fullName(&self) -> String {
         todo!()
     }
-    pub fn pitchChanged(&self) {
+    pub(crate)  fn pitchChanged(&self) {
         todo!()
     }
 }

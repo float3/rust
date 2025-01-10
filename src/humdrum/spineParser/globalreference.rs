@@ -1,23 +1,23 @@
-pub struct GlobalReference {
+pub(crate)  struct GlobalReference {
     base::music21object: base::Music21Object,
     humdrumKeyToUniqueName: ,
 }
 
 impl GlobalReference {
-    pub fn new() -> GlobalReference {
+    pub(crate)  fn new() -> GlobalReference {
         GlobalReference {
             base::music21object: base::Music21Object::new(),
             humdrumKeyToUniqueName: todo!(),
         }
     }
     
-    pub fn new(&self, codeOrAll: ) {
+    pub(crate)  fn new(&self, codeOrAll: ) {
         todo!()
     }
-    pub fn updateMetadata(&self, md: ) {
+    pub(crate)  fn updateMetadata(&self, md: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
 }

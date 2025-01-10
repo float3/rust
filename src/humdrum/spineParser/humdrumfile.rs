@@ -1,21 +1,21 @@
-pub struct HumdrumFile {
+pub(crate)  struct HumdrumFile {
     humdrumdatacollection: HumdrumDataCollection,
 }
 
 impl HumdrumFile {
-    pub fn new() -> HumdrumFile {
+    pub(crate)  fn new() -> HumdrumFile {
         HumdrumFile {
             humdrumdatacollection: HumdrumDataCollection::new(),
         }
     }
     
-    pub fn new(&self, filename: ) {
+    pub(crate)  fn new(&self, filename: ) {
         todo!()
     }
-    pub fn parseFilename(&self, filename: ) {
+    pub(crate)  fn parseFilename(&self, filename: ) {
         todo!()
     }
-    pub fn parseFileHandle(&self, fileHandle: ) {
+    pub(crate)  fn parseFileHandle(&self, fileHandle: ) {
         todo!()
     }
 }

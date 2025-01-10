@@ -1,9 +1,9 @@
-pub struct MeterException {
+pub(crate)  struct MeterException {
     music21exception: Music21Exception,
 }
 
 impl MeterException {
-    pub fn new() -> MeterException {
+    pub(crate)  fn new() -> MeterException {
         MeterException {
             music21exception: Music21Exception::new(),
         }

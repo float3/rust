@@ -1,15 +1,15 @@
-pub struct BaritoneSaxophone {
+pub(crate)  struct BaritoneSaxophone {
     saxophone: Saxophone,
 }
 
 impl BaritoneSaxophone {
-    pub fn new() -> BaritoneSaxophone {
+    pub(crate)  fn new() -> BaritoneSaxophone {
         BaritoneSaxophone {
             saxophone: Saxophone::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

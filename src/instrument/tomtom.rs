@@ -1,15 +1,15 @@
-pub struct TomTom {
+pub(crate)  struct TomTom {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl TomTom {
-    pub fn new() -> TomTom {
+    pub(crate)  fn new() -> TomTom {
         TomTom {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

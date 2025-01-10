@@ -1,15 +1,15 @@
-pub struct Cowbell {
+pub(crate)  struct Cowbell {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Cowbell {
-    pub fn new() -> Cowbell {
+    pub(crate)  fn new() -> Cowbell {
         Cowbell {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

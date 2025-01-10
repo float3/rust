@@ -1,15 +1,15 @@
-pub struct Harpsichord {
+pub(crate)  struct Harpsichord {
     keyboardinstrument: KeyboardInstrument,
 }
 
 impl Harpsichord {
-    pub fn new() -> Harpsichord {
+    pub(crate)  fn new() -> Harpsichord {
         Harpsichord {
             keyboardinstrument: KeyboardInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

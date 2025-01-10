@@ -1,51 +1,51 @@
-pub struct RecursiveIterator {
+pub(crate)  struct RecursiveIterator {
     streamiterator: StreamIterator,
 }
 
 impl RecursiveIterator {
-    pub fn new() -> RecursiveIterator {
+    pub(crate)  fn new() -> RecursiveIterator {
         RecursiveIterator {
             streamiterator: StreamIterator::new(),
         }
     }
     
-    pub fn new(&self, srcStream: ) {
+    pub(crate)  fn new(&self, srcStream: ) {
         todo!()
     }
-    pub fn __next__(&self) {
+    pub(crate)  fn __next__(&self) {
         todo!()
     }
-    pub fn reset(&self) {
+    pub(crate)  fn reset(&self) {
         todo!()
     }
-    pub fn matchingElements(&self) {
+    pub(crate)  fn matchingElements(&self) {
         todo!()
     }
-    pub fn iteratorStack(&self) {
+    pub(crate)  fn iteratorStack(&self) {
         todo!()
     }
-    pub fn streamStack(&self) {
+    pub(crate)  fn streamStack(&self) {
         todo!()
     }
-    pub fn currentHierarchyOffset(&self) {
+    pub(crate)  fn currentHierarchyOffset(&self) {
         todo!()
     }
-    pub fn getElementsByOffsetInHierarchy(&self, offsetStart: ) {
+    pub(crate)  fn getElementsByOffsetInHierarchy(&self, offsetStart: ) {
         todo!()
     }
-    pub fn getElementsByClass(&self, classFilterList: String) {
+    pub(crate)  fn getElementsByClass(&self, classFilterList: String) {
         todo!()
     }
-    pub fn getElementsByClass(&self, classFilterList: ) {
+    pub(crate)  fn getElementsByClass(&self, classFilterList: ) {
         todo!()
     }
-    pub fn getElementsByClass(&self, classFilterList: ) {
+    pub(crate)  fn getElementsByClass(&self, classFilterList: ) {
         todo!()
     }
-    pub fn getElementsByClass(&self, classFilterList: ) {
+    pub(crate)  fn getElementsByClass(&self, classFilterList: ) {
         todo!()
     }
-    pub fn getElementsByClass(&self, classFilterList: ) {
+    pub(crate)  fn getElementsByClass(&self, classFilterList: ) {
         todo!()
     }
 }

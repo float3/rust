@@ -1,15 +1,15 @@
-pub struct TubularBells {
+pub(crate)  struct TubularBells {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl TubularBells {
-    pub fn new() -> TubularBells {
+    pub(crate)  fn new() -> TubularBells {
         TubularBells {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

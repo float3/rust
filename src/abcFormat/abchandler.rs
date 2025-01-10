@@ -1,82 +1,82 @@
-pub struct ABCHandler {
+pub(crate)  struct ABCHandler {
 }
 
 impl ABCHandler {
-    pub fn new() -> ABCHandler {
+    pub(crate)  fn new() -> ABCHandler {
         ABCHandler {
         }
     }
     
-    pub fn new(&self, abcVersion: ) {
+    pub(crate)  fn new(&self, abcVersion: ) {
         todo!()
     }
-    pub fn _getLinearContext(&self, source: , i: i32) {
+    pub(crate)  fn _getLinearContext(&self, source: , i: i32) {
         todo!()
     }
-    pub fn _getNextLineBreak(&self, strSrc: String, i: i32) -> i32 {
+    pub(crate)  fn _getNextLineBreak(&self, strSrc: String, i: i32) -> i32 {
         todo!()
     }
-    pub fn barlineTokenFilter(&self, token: String) {
+    pub(crate)  fn barlineTokenFilter(&self, token: String) {
         todo!()
     }
-    pub fn _accidentalPropagation(&self) -> String {
+    pub(crate)  fn _accidentalPropagation(&self) -> String {
         todo!()
     }
-    pub fn parseHeaderForVersionInformation(&self, inputSearch: String) {
+    pub(crate)  fn parseHeaderForVersionInformation(&self, inputSearch: String) {
         todo!()
     }
-    pub fn returnAbcVersionFromMatch(&self, verMats: ) {
+    pub(crate)  fn returnAbcVersionFromMatch(&self, verMats: ) {
         todo!()
     }
-    pub fn processComment(&self) {
+    pub(crate)  fn processComment(&self) {
         todo!()
     }
-    pub fn startsMetadata(&self, c: String, cNext: ) -> bool {
+    pub(crate)  fn startsMetadata(&self, c: String, cNext: ) -> bool {
         todo!()
     }
-    pub fn tokenize(&self, strSrc: String) {
+    pub(crate)  fn tokenize(&self, strSrc: String) {
         todo!()
     }
-    pub fn tokenProcess(&self) {
+    pub(crate)  fn tokenProcess(&self) {
         todo!()
     }
-    pub fn process(&self, strSrc: String) {
+    pub(crate)  fn process(&self, strSrc: String) {
         todo!()
     }
-    pub fn __len__(&self) {
+    pub(crate)  fn __len__(&self) {
         todo!()
     }
-    pub fn __add__(&self, other: ) {
+    pub(crate)  fn __add__(&self, other: ) {
         todo!()
     }
-    pub fn definesReferenceNumbers(&self) {
+    pub(crate)  fn definesReferenceNumbers(&self) {
         todo!()
     }
-    pub fn splitByReferenceNumber(&self) {
+    pub(crate)  fn splitByReferenceNumber(&self) {
         todo!()
     }
-    pub fn getReferenceNumber(&self) {
+    pub(crate)  fn getReferenceNumber(&self) {
         todo!()
     }
-    pub fn definesMeasures(&self) {
+    pub(crate)  fn definesMeasures(&self) {
         todo!()
     }
-    pub fn splitByVoice(&self) {
+    pub(crate)  fn splitByVoice(&self) {
         todo!()
     }
-    pub fn _buildMeasureBoundaryIndices(&self, positionList: , lastValidIndex: i32) {
+    pub(crate)  fn _buildMeasureBoundaryIndices(&self, positionList: , lastValidIndex: i32) {
         todo!()
     }
-    pub fn splitByMeasure(&self) {
+    pub(crate)  fn splitByMeasure(&self) {
         todo!()
     }
-    pub fn tokensToBarIndices(&self) {
+    pub(crate)  fn tokensToBarIndices(&self) {
         todo!()
     }
-    pub fn hasNotes(&self) -> bool {
+    pub(crate)  fn hasNotes(&self) -> bool {
         todo!()
     }
-    pub fn getTitle(&self) {
+    pub(crate)  fn getTitle(&self) {
         todo!()
     }
 }

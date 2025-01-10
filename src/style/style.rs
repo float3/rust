@@ -2,18 +2,18 @@ use crate::prebase::protom21object::ProtoM21Object;
 
 use super::enclosure::Enclosure;
 
-#[derive(PartialEq)]
-pub struct Style {
+#[derive(PartialEq, Clone, Debug)]
+pub(crate)  struct Style {
     protom21object: ProtoM21Object,
-    relative_x: Option<f32>,
-    relative_y: Option<f32>,
-    absolute_x: Option<f32>,
-    _absolute_y: Option<f32>,
+    relative_x: Option<f64>,
+    relative_y: Option<f64>,
+    absolute_x: Option<f64>,
+    _absolute_y: Option<f64>,
     _enclosure: Option<Enclosure>,
 }
 
 impl Style {
-    pub fn new() -> Style {
+    pub(crate)  fn new() -> Style {
         Style {
             protom21object: ProtoM21Object::new_without_id(),
             relative_x: None,
@@ -24,24 +24,24 @@ impl Style {
         }
     }
 
-    pub fn enclosure(&self) -> &Option<Enclosure> {
+    pub(crate)  fn enclosure(&self) -> &Option<Enclosure> {
         &self._enclosure
     }
-    pub fn set_enclosure(&mut self, value: Option<Enclosure>) {
+    pub(crate)  fn set_enclosure(&mut self, value: Option<Enclosure>) {
         self._enclosure = value;
     }
 
-    pub fn _get_absolute_y(&self) -> Option<f32> {
+    pub(crate)  fn _get_absolute_y(&self) -> Option<f64> {
         self._absolute_y.clone()
     }
-    pub fn _set_absolute_y(&mut self, value: Option<f32>) {
+    pub(crate)  fn _set_absolute_y(&mut self, value: Option<f64>) {
         self._absolute_y = value;
     }
-    pub fn _set_absolute_y_from_string(&mut self, value: &str) {
+    pub(crate)  fn _set_absolute_y_from_string(&mut self, value: &str) {
         match value {
             "above" => self._absolute_y = Some(10.0),
             "below" => self._absolute_y = Some(-70.0),
-            _ => self._set_absolute_y(value.parse::<f32>().ok()),
+            _ => self._set_absolute_y(value.parse::<f64>().ok()),
         }
     }
 }

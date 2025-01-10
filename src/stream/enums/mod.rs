@@ -1,4 +1,4 @@
-pub mod stafftype;
-pub mod givenelementsbehavior;
-pub mod recursiontype;
-pub mod shownumber;
+pub(crate)  mod stafftype;
+pub(crate)  mod givenelementsbehavior;
+pub(crate)  mod recursiontype;
+pub(crate)  mod shownumber;

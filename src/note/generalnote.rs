@@ -1,20 +1,21 @@
-use crate::base::music21object::Music21Object;
+use crate::style::StyleType;
 
-#[derive(PartialEq)]
-pub struct GeneralNote {
+
+#[derive(PartialEq, Clone, Debug)]
+pub(crate)  struct GeneralNote {
     music21object: Music21Object,
     isNote: bool,
     isRest: bool,
     isChord: bool,
-    _styleClass: ,
-    equalityAttributes: ,
+    _styleClass: StyleType ,
+    equalityAttributes: String,
 
 }
 
 impl GeneralNote {
-    pub fn new() -> GeneralNote {
+    pub(crate)  fn new() -> GeneralNote {
         GeneralNote {
-            base::music21object: base::Music21Object::new(),
+            music21object:Music21Object::new(),
             isNote: todo!(),
             isRest: todo!(),
             isChord: todo!(),
@@ -24,46 +25,46 @@ impl GeneralNote {
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) {
+    pub(crate)  fn __eq__(&self, other: ) {
         todo!()
     }
-    pub fn __hash__(&self) {
+    pub(crate)  fn __hash__(&self) {
         todo!()
     }
-    pub fn tie(&self) {
+    pub(crate)  fn tie(&self) {
         todo!()
     }
-    pub fn tie(&self, value: ) {
+    pub(crate)  fn tie(&self, value: ) {
         todo!()
     }
-    pub fn lyric(&self) {
+    pub(crate)  fn lyric(&self) {
         todo!()
     }
-    pub fn lyric(&self, value: ) {
+    pub(crate)  fn lyric(&self, value: ) {
         todo!()
     }
-    pub fn addLyric(&self, text: ) {
+    pub(crate)  fn addLyric(&self, text: ) {
         todo!()
     }
-    pub fn insertLyric(&self, text: ) {
+    pub(crate)  fn insertLyric(&self, text: ) {
         todo!()
     }
-    pub fn fullName(&self) -> String {
+    pub(crate)  fn fullName(&self) -> String {
         todo!()
     }
-    pub fn pitches(&self) {
+    pub(crate)  fn pitches(&self) {
         todo!()
     }
-    pub fn pitches(&self, _value: ) {
+    pub(crate)  fn pitches(&self, _value: ) {
         todo!()
     }
-    pub fn augmentOrDiminish(&self, scalar: ) {
+    pub(crate)  fn augmentOrDiminish(&self, scalar: ) {
         todo!()
     }
-    pub fn getGrace(&self) {
+    pub(crate)  fn getGrace(&self) {
         todo!()
     }
 }

@@ -1,12 +1,13 @@
-pub struct Music21ObjectException {
+use crate::exceptions21::music21exception::Music21Exception;
+
+pub(crate)  struct Music21ObjectException {
     music21exception: Music21Exception,
 }
 
 impl Music21ObjectException {
-    pub fn new() -> Music21ObjectException {
+    pub(crate)  fn new(error_message: String) -> Music21ObjectException {
         Music21ObjectException {
-            exceptions21::music21exception: exceptions21::Music21Exception::new(),
+            music21exception: Music21Exception::new(error_message),
         }
     }
-    
 }

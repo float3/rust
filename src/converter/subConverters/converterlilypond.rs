@@ -1,4 +1,4 @@
-pub struct ConverterLilypond {
+pub(crate)  struct ConverterLilypond {
     subconverter: SubConverter,
     registerFormats: ,
     registerOutputExtensions: ,
@@ -7,7 +7,7 @@ pub struct ConverterLilypond {
 }
 
 impl ConverterLilypond {
-    pub fn new() -> ConverterLilypond {
+    pub(crate)  fn new() -> ConverterLilypond {
         ConverterLilypond {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -17,10 +17,10 @@ impl ConverterLilypond {
         }
     }
     
-    pub fn write(&self, obj: ) {
+    pub(crate)  fn write(&self, obj: ) {
         todo!()
     }
-    pub fn show(&self, obj: ) {
+    pub(crate)  fn show(&self, obj: ) {
         todo!()
     }
 }

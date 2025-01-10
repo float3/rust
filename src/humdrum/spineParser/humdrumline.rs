@@ -1,4 +1,4 @@
-pub struct HumdrumLine {
+pub(crate)  struct HumdrumLine {
     isReference: bool,
     isGlobal: bool,
     isComment: bool,
@@ -6,7 +6,7 @@ pub struct HumdrumLine {
 }
 
 impl HumdrumLine {
-    pub fn new() -> HumdrumLine {
+    pub(crate)  fn new() -> HumdrumLine {
         HumdrumLine {
             isReference: todo!(),
             isGlobal: todo!(),

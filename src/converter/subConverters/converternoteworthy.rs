@@ -1,11 +1,11 @@
-pub struct ConverterNoteworthy {
+pub(crate)  struct ConverterNoteworthy {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
 }
 
 impl ConverterNoteworthy {
-    pub fn new() -> ConverterNoteworthy {
+    pub(crate)  fn new() -> ConverterNoteworthy {
         ConverterNoteworthy {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,10 +13,10 @@ impl ConverterNoteworthy {
         }
     }
     
-    pub fn parseData(&self, nwcData: ) {
+    pub(crate)  fn parseData(&self, nwcData: ) {
         todo!()
     }
-    pub fn parseFile(&self, filePath: ) {
+    pub(crate)  fn parseFile(&self, filePath: ) {
         todo!()
     }
 }

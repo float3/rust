@@ -1,15 +1,15 @@
-pub struct ReedOrgan {
+pub(crate)  struct ReedOrgan {
     organ: Organ,
 }
 
 impl ReedOrgan {
-    pub fn new() -> ReedOrgan {
+    pub(crate)  fn new() -> ReedOrgan {
         ReedOrgan {
             organ: Organ::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

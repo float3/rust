@@ -1,25 +1,25 @@
-pub struct ArchiveManager {
+pub(crate)  struct ArchiveManager {
 }
 
 impl ArchiveManager {
-    pub fn new() -> ArchiveManager {
+    pub(crate)  fn new() -> ArchiveManager {
         ArchiveManager {
         }
     }
     
-    pub fn new(&self, fp: ) {
+    pub(crate)  fn new(&self, fp: ) {
         todo!()
     }
-    pub fn isArchive(&self) -> bool {
+    pub(crate)  fn isArchive(&self) -> bool {
         todo!()
     }
-    pub fn getNames(&self) {
+    pub(crate)  fn getNames(&self) {
         todo!()
     }
-    pub fn getData(&self, dataFormat: ) {
+    pub(crate)  fn getData(&self, dataFormat: ) {
         todo!()
     }
-    pub fn _extractContents(&self, f: , dataFormat: String) {
+    pub(crate)  fn _extractContents(&self, f: , dataFormat: String) {
         todo!()
     }
 }

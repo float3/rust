@@ -1,4 +1,4 @@
-pub struct Duration {
+pub(crate)  struct Duration {
     prebase::protom21object: prebase::ProtoM21Object,
     isGrace: bool,
     __slots__: ,
@@ -8,126 +8,126 @@ pub struct Duration {
 }
 
 impl Duration {
-    pub fn new() -> Duration {
+    pub(crate)  fn new() -> Duration {
         Duration {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             isGrace: todo!(),
             __slots__: todo!(),
-            _DOC_ATTR: todo!(),
+
             linked: todo!(),
             quarterLength: todo!(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) {
+    pub(crate)  fn __eq__(&self, other: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn __deepcopy__(&self, memo: ) {
+    pub(crate)  fn __deepcopy__(&self, memo: ) {
         todo!()
     }
-    pub fn _updateComponents(&self) {
+    pub(crate)  fn _updateComponents(&self) {
         todo!()
     }
-    pub fn _getLinked(&self) -> bool {
+    pub(crate)  fn _getLinked(&self) -> bool {
         todo!()
     }
-    pub fn _setLinked(&self, value: bool) {
+    pub(crate)  fn _setLinked(&self, value: bool) {
         todo!()
     }
-    pub fn addDurationTuple(&self, dur: ) {
+    pub(crate)  fn addDurationTuple(&self, dur: ) {
         todo!()
     }
-    pub fn appendTuplet(&self, newTuplet: Tuplet) {
+    pub(crate)  fn appendTuplet(&self, newTuplet: Tuplet) {
         todo!()
     }
-    pub fn augmentOrDiminish(&self, amountToScale: ) {
+    pub(crate)  fn augmentOrDiminish(&self, amountToScale: ) {
         todo!()
     }
-    pub fn clear(&self) {
+    pub(crate)  fn clear(&self) {
         todo!()
     }
-    pub fn componentIndexAtQtrPosition(&self, quarterPosition: ) {
+    pub(crate)  fn componentIndexAtQtrPosition(&self, quarterPosition: ) {
         todo!()
     }
-    pub fn componentStartTime(&self, componentIndex: i32) -> f64 {
+    pub(crate)  fn componentStartTime(&self, componentIndex: i32) -> f64 {
         todo!()
     }
-    pub fn consolidate(&self) {
+    pub(crate)  fn consolidate(&self) {
         todo!()
     }
-    pub fn getGraceDuration(&self, appoggiatura: ) {
+    pub(crate)  fn getGraceDuration(&self, appoggiatura: ) {
         todo!()
     }
-    pub fn informClient(&self) -> bool {
+    pub(crate)  fn informClient(&self) -> bool {
         todo!()
     }
-    pub fn sliceComponentAtPosition(&self, quarterPosition: ) {
+    pub(crate)  fn sliceComponentAtPosition(&self, quarterPosition: ) {
         todo!()
     }
-    pub fn currentComponents(&self) {
+    pub(crate)  fn currentComponents(&self) {
         todo!()
     }
-    pub fn splitDotGroups(&self) {
+    pub(crate)  fn splitDotGroups(&self) {
         todo!()
     }
-    pub fn _updateQuarterLength(&self) {
+    pub(crate)  fn _updateQuarterLength(&self) {
         todo!()
     }
-    pub fn components(&self) {
+    pub(crate)  fn components(&self) {
         todo!()
     }
-    pub fn components(&self, value: ) {
+    pub(crate)  fn components(&self, value: ) {
         todo!()
     }
-    pub fn dotGroups(&self) {
+    pub(crate)  fn dotGroups(&self) {
         todo!()
     }
-    pub fn dotGroups(&self, value: ) {
+    pub(crate)  fn dotGroups(&self, value: ) {
         todo!()
     }
-    pub fn dots(&self) -> i32 {
+    pub(crate)  fn dots(&self) -> i32 {
         todo!()
     }
-    pub fn dots(&self, value: i32) {
+    pub(crate)  fn dots(&self, value: i32) {
         todo!()
     }
-    pub fn fullName(&self) -> String {
+    pub(crate)  fn fullName(&self) -> String {
         todo!()
     }
-    pub fn isComplex(&self) -> bool {
+    pub(crate)  fn isComplex(&self) -> bool {
         todo!()
     }
-    pub fn ordinal(&self) {
+    pub(crate)  fn ordinal(&self) {
         todo!()
     }
-    pub fn quarterLengthNoTuplets(&self) -> f64 {
+    pub(crate)  fn quarterLengthNoTuplets(&self) -> f64 {
         todo!()
     }
-    pub fn _getQuarterLength(&self) {
+    pub(crate)  fn _getQuarterLength(&self) {
         todo!()
     }
-    pub fn _setQuarterLength(&self, value: ) {
+    pub(crate)  fn _setQuarterLength(&self, value: ) {
         todo!()
     }
-    pub fn tuplets(&self) {
+    pub(crate)  fn tuplets(&self) {
         todo!()
     }
-    pub fn tuplets(&self, tupletTuple: ) {
+    pub(crate)  fn tuplets(&self, tupletTuple: ) {
         todo!()
     }
-    pub fn aggregateTupletMultiplier(&self) {
+    pub(crate)  fn aggregateTupletMultiplier(&self) {
         todo!()
     }
-    pub fn type(&self) -> String {
+    pub(crate)  fn type(&self) -> String {
         todo!()
     }
-    pub fn type(&self, value: String) {
+    pub(crate)  fn type(&self, value: String) {
         todo!()
     }
 }

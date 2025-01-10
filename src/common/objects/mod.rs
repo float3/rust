@@ -1,7 +1,7 @@
-pub mod relativecounter;
-pub mod defaultlist;
-pub mod singletoncounter;
-pub mod slottedobjectmixin;
-pub mod equalslottedobjectmixin;
-pub mod frozenobject;
-pub mod timer;
+pub(crate)  mod relativecounter;
+pub(crate)  mod defaultlist;
+pub(crate)  mod singletoncounter;
+pub(crate)  mod slottedobjectmixin;
+pub(crate)  mod equalslottedobjectmixin;
+pub(crate)  mod frozenobject;
+pub(crate)  mod timer;

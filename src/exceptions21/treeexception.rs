@@ -1,9 +1,9 @@
-pub struct TreeException {
+pub(crate)  struct TreeException {
     music21exception: Music21Exception,
 }
 
 impl TreeException {
-    pub fn new() -> TreeException {
+    pub(crate)  fn new() -> TreeException {
         TreeException {
             music21exception: Music21Exception::new(),
         }

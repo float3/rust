@@ -1,20 +1,20 @@
-pub struct ABCSlurStart {
+pub(crate)  struct ABCSlurStart {
     abctoken: ABCToken,
     __slots__: ,
 }
 
 impl ABCSlurStart {
-    pub fn new() -> ABCSlurStart {
+    pub(crate)  fn new() -> ABCSlurStart {
         ABCSlurStart {
             abctoken: ABCToken::new(),
             __slots__: todo!(),
         }
     }
     
-    pub fn new(&self, src: String) {
+    pub(crate)  fn new(&self, src: String) {
         todo!()
     }
-    pub fn fillSlur(&self) {
+    pub(crate)  fn fillSlur(&self) {
         todo!()
     }
 }

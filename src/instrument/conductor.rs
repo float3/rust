@@ -1,15 +1,15 @@
-pub struct Conductor {
+pub(crate)  struct Conductor {
     instrument: Instrument,
 }
 
 impl Conductor {
-    pub fn new() -> Conductor {
+    pub(crate)  fn new() -> Conductor {
         Conductor {
             instrument: Instrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

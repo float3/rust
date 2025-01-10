@@ -1,15 +1,15 @@
-pub struct StreamStyle {
+pub(crate)  struct StreamStyle {
     style: Style,
 }
 
 impl StreamStyle {
-    pub fn new() -> StreamStyle {
+    pub(crate)  fn new() -> StreamStyle {
         StreamStyle {
             style: Style::new(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

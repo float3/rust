@@ -1,15 +1,15 @@
-pub struct Xylophone {
+pub(crate)  struct Xylophone {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Xylophone {
-    pub fn new() -> Xylophone {
+    pub(crate)  fn new() -> Xylophone {
         Xylophone {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

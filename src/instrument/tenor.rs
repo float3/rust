@@ -1,15 +1,15 @@
-pub struct Tenor {
+pub(crate)  struct Tenor {
     vocalist: Vocalist,
 }
 
 impl Tenor {
-    pub fn new() -> Tenor {
+    pub(crate)  fn new() -> Tenor {
         Tenor {
             vocalist: Vocalist::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

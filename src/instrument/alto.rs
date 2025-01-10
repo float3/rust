@@ -1,15 +1,15 @@
-pub struct Alto {
+pub(crate)  struct Alto {
     vocalist: Vocalist,
 }
 
 impl Alto {
-    pub fn new() -> Alto {
+    pub(crate)  fn new() -> Alto {
         Alto {
             vocalist: Vocalist::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

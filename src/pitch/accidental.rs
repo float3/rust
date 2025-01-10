@@ -1,4 +1,4 @@
-pub struct Accidental {
+pub(crate)  struct Accidental {
     prebase::protom21object: prebase::ProtoM21Object,
     _styleClass: ,
     __slots__: ,
@@ -6,7 +6,7 @@ pub struct Accidental {
 }
 
 impl Accidental {
-    pub fn new() -> Accidental {
+    pub(crate)  fn new() -> Accidental {
         Accidental {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             _styleClass: todo!(),
@@ -15,88 +15,88 @@ impl Accidental {
         }
     }
     
-    pub fn new(&self, specifier: ) {
+    pub(crate)  fn new(&self, specifier: ) {
         todo!()
     }
-    pub fn _hashValues(&self) {
+    pub(crate)  fn _hashValues(&self) {
         todo!()
     }
-    pub fn __hash__(&self) {
+    pub(crate)  fn __hash__(&self) {
         todo!()
     }
-    pub fn __deepcopy__(&self, memo: ) {
+    pub(crate)  fn __deepcopy__(&self, memo: ) {
         todo!()
     }
-    pub fn __eq__(&self, other: ) {
+    pub(crate)  fn __eq__(&self, other: ) {
         todo!()
     }
-    pub fn __ge__(&self, other: ) {
+    pub(crate)  fn __ge__(&self, other: ) {
         todo!()
     }
-    pub fn __gt__(&self, other: ) {
+    pub(crate)  fn __gt__(&self, other: ) {
         todo!()
     }
-    pub fn __le__(&self, other: ) {
+    pub(crate)  fn __le__(&self, other: ) {
         todo!()
     }
-    pub fn __lt__(&self, other: ) {
+    pub(crate)  fn __lt__(&self, other: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn __str__(&self) {
+    pub(crate)  fn __str__(&self) {
         todo!()
     }
-    pub fn listNames(&self, cls: ) {
+    pub(crate)  fn listNames(&self, cls: ) {
         todo!()
     }
-    pub fn set(&self, name: ) {
+    pub(crate)  fn set(&self, name: ) {
         todo!()
     }
-    pub fn isTwelveTone(&self) {
+    pub(crate)  fn isTwelveTone(&self) {
         todo!()
     }
-    pub fn setAttributeIndependently(&self, attribute: ) {
+    pub(crate)  fn setAttributeIndependently(&self, attribute: ) {
         todo!()
     }
-    pub fn inheritDisplay(&self, other: ) {
+    pub(crate)  fn inheritDisplay(&self, other: ) {
         todo!()
     }
-    pub fn name(&self) -> String {
+    pub(crate)  fn name(&self) -> String {
         todo!()
     }
-    pub fn name(&self, value: ) {
+    pub(crate)  fn name(&self, value: ) {
         todo!()
     }
-    pub fn alter(&self) -> f64 {
+    pub(crate)  fn alter(&self) -> f64 {
         todo!()
     }
-    pub fn alter(&self, value: ) {
+    pub(crate)  fn alter(&self, value: ) {
         todo!()
     }
-    pub fn modifier(&self) -> String {
+    pub(crate)  fn modifier(&self) -> String {
         todo!()
     }
-    pub fn modifier(&self, value: ) {
+    pub(crate)  fn modifier(&self, value: ) {
         todo!()
     }
-    pub fn displayType(&self) -> String {
+    pub(crate)  fn displayType(&self) -> String {
         todo!()
     }
-    pub fn displayType(&self, value: String) {
+    pub(crate)  fn displayType(&self, value: String) {
         todo!()
     }
-    pub fn displayStatus(&self) {
+    pub(crate)  fn displayStatus(&self) {
         todo!()
     }
-    pub fn displayStatus(&self, value: ) {
+    pub(crate)  fn displayStatus(&self, value: ) {
         todo!()
     }
-    pub fn unicode(&self) {
+    pub(crate)  fn unicode(&self) {
         todo!()
     }
-    pub fn fullName(&self) {
+    pub(crate)  fn fullName(&self) {
         todo!()
     }
 }

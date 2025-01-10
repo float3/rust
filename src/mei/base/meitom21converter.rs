@@ -1,16 +1,16 @@
-pub struct MeiToM21Converter {
+pub(crate)  struct MeiToM21Converter {
 }
 
 impl MeiToM21Converter {
-    pub fn new() -> MeiToM21Converter {
+    pub(crate)  fn new() -> MeiToM21Converter {
         MeiToM21Converter {
         }
     }
     
-    pub fn new(&self, theDocument: ) {
+    pub(crate)  fn new(&self, theDocument: ) {
         todo!()
     }
-    pub fn run(&self) {
+    pub(crate)  fn run(&self) {
         todo!()
     }
 }

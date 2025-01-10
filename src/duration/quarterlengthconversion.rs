@@ -1,11 +1,11 @@
-pub struct QuarterLengthConversion {
+pub(crate)  struct QuarterLengthConversion {
     t::namedtuple: t::NamedTuple,
     components: ,
     tuplet: ,
 }
 
 impl QuarterLengthConversion {
-    pub fn new() -> QuarterLengthConversion {
+    pub(crate)  fn new() -> QuarterLengthConversion {
         QuarterLengthConversion {
             t::namedtuple: t::NamedTuple::new(),
             components: todo!(),

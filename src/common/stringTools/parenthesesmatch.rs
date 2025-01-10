@@ -1,4 +1,4 @@
-pub struct ParenthesesMatch {
+pub(crate)  struct ParenthesesMatch {
     start: i32,
     end: i32,
     text: String,
@@ -6,7 +6,7 @@ pub struct ParenthesesMatch {
 }
 
 impl ParenthesesMatch {
-    pub fn new() -> ParenthesesMatch {
+    pub(crate)  fn new() -> ParenthesesMatch {
         ParenthesesMatch {
             start: todo!(),
             end: todo!(),

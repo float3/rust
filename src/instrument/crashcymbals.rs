@@ -1,15 +1,15 @@
-pub struct CrashCymbals {
+pub(crate)  struct CrashCymbals {
     cymbals: Cymbals,
 }
 
 impl CrashCymbals {
-    pub fn new() -> CrashCymbals {
+    pub(crate)  fn new() -> CrashCymbals {
         CrashCymbals {
             cymbals: Cymbals::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

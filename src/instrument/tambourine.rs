@@ -1,15 +1,15 @@
-pub struct Tambourine {
+pub(crate)  struct Tambourine {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Tambourine {
-    pub fn new() -> Tambourine {
+    pub(crate)  fn new() -> Tambourine {
         Tambourine {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

@@ -1,4 +1,4 @@
-pub struct MidiEvent {
+pub(crate)  struct MidiEvent {
     prebase::protom21object: prebase::ProtoM21Object,
     pitch: ,
     velocity: ,
@@ -6,7 +6,7 @@ pub struct MidiEvent {
 }
 
 impl MidiEvent {
-    pub fn new() -> MidiEvent {
+    pub(crate)  fn new() -> MidiEvent {
         MidiEvent {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             pitch: todo!(),
@@ -15,55 +15,55 @@ impl MidiEvent {
         }
     }
     
-    pub fn new(&self, track: ) {
+    pub(crate)  fn new(&self, track: ) {
         todo!()
     }
-    pub fn sortOrder(&self) -> i32 {
+    pub(crate)  fn sortOrder(&self) -> i32 {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn _setPitch(&self, value: ) {
+    pub(crate)  fn _setPitch(&self, value: ) {
         todo!()
     }
-    pub fn _getPitch(&self) {
+    pub(crate)  fn _getPitch(&self) {
         todo!()
     }
-    pub fn _setVelocity(&self, value: ) {
+    pub(crate)  fn _setVelocity(&self, value: ) {
         todo!()
     }
-    pub fn _getVelocity(&self) {
+    pub(crate)  fn _getVelocity(&self) {
         todo!()
     }
-    pub fn _setData(&self, value: ) {
+    pub(crate)  fn _setData(&self, value: ) {
         todo!()
     }
-    pub fn _getData(&self) {
+    pub(crate)  fn _getData(&self) {
         todo!()
     }
-    pub fn setPitchBend(&self, cents: ) {
+    pub(crate)  fn setPitchBend(&self, cents: ) {
         todo!()
     }
-    pub fn parseChannelVoiceMessage(&self, midiBytes: ) {
+    pub(crate)  fn parseChannelVoiceMessage(&self, midiBytes: ) {
         todo!()
     }
-    pub fn read(&self, midiBytes: ) {
+    pub(crate)  fn read(&self, midiBytes: ) {
         todo!()
     }
-    pub fn getBytes(&self) {
+    pub(crate)  fn getBytes(&self) {
         todo!()
     }
-    pub fn isNoteOn(&self) {
+    pub(crate)  fn isNoteOn(&self) {
         todo!()
     }
-    pub fn isNoteOff(&self) {
+    pub(crate)  fn isNoteOff(&self) {
         todo!()
     }
-    pub fn isDeltaTime(&self) {
+    pub(crate)  fn isDeltaTime(&self) {
         todo!()
     }
-    pub fn matchedNoteOff(&self, other: ) {
+    pub(crate)  fn matchedNoteOff(&self, other: ) {
         todo!()
     }
 }

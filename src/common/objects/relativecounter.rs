@@ -1,24 +1,24 @@
-pub struct RelativeCounter {
+pub(crate)  struct RelativeCounter {
     collections::counter: collections::Counter,
 }
 
 impl RelativeCounter {
-    pub fn new() -> RelativeCounter {
+    pub(crate)  fn new() -> RelativeCounter {
         RelativeCounter {
             collections::counter: collections::Counter::new(),
         }
     }
     
-    pub fn __iter__(&self) {
+    pub(crate)  fn __iter__(&self) {
         todo!()
     }
-    pub fn items(&self) {
+    pub(crate)  fn items(&self) {
         todo!()
     }
-    pub fn asProportion(&self) {
+    pub(crate)  fn asProportion(&self) {
         todo!()
     }
-    pub fn asPercentage(&self) {
+    pub(crate)  fn asPercentage(&self) {
         todo!()
     }
 }

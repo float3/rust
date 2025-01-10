@@ -1,9 +1,9 @@
-pub struct VariantStorage {
+pub(crate)  struct VariantStorage {
     stream: Stream,
 }
 
 impl VariantStorage {
-    pub fn new() -> VariantStorage {
+    pub(crate)  fn new() -> VariantStorage {
         VariantStorage {
             stream: Stream::new(),
         }

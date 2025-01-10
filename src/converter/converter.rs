@@ -1,69 +1,69 @@
-pub struct Converter {
+pub(crate)  struct Converter {
 
 }
 
 impl Converter {
-    pub fn new() -> Converter {
+    pub(crate)  fn new() -> Converter {
         Converter {
-            _DOC_ATTR: todo!(),
+
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn _getDownloadFp(&self, directory: , ext: String, url: String) {
+    pub(crate)  fn _getDownloadFp(&self, directory: , ext: String, url: String) {
         todo!()
     }
-    pub fn parseFileNoPickle(&self, fp: , forceSource: bool) {
+    pub(crate)  fn parseFileNoPickle(&self, fp: , forceSource: bool) {
         todo!()
     }
-    pub fn getFormatFromFileExtension(&self, fp: ) {
+    pub(crate)  fn getFormatFromFileExtension(&self, fp: ) {
         todo!()
     }
-    pub fn parseFile(&self, fp: ) {
+    pub(crate)  fn parseFile(&self, fp: ) {
         todo!()
     }
-    pub fn parseData(&self, dataStr: ) {
+    pub(crate)  fn parseData(&self, dataStr: ) {
         todo!()
     }
-    pub fn parseURL(&self, url: String) {
+    pub(crate)  fn parseURL(&self, url: String) {
         todo!()
     }
-    pub fn subconvertersList(&self, converterType: ) {
+    pub(crate)  fn subconvertersList(&self, converterType: ) {
         todo!()
     }
-    pub fn subConvertersList(&self, converterType: ) {
+    pub(crate)  fn subConvertersList(&self, converterType: ) {
         todo!()
     }
-    pub fn defaultSubconverters(&self) {
+    pub(crate)  fn defaultSubconverters(&self) {
         todo!()
     }
-    pub fn defaultSubConverters(&self) {
+    pub(crate)  fn defaultSubConverters(&self) {
         todo!()
     }
-    pub fn getSubconverterFormats(&self) {
+    pub(crate)  fn getSubconverterFormats(&self) {
         todo!()
     }
-    pub fn getSubConverterFormats(&self) {
+    pub(crate)  fn getSubConverterFormats(&self) {
         todo!()
     }
-    pub fn getSubConverterFromFormat(&self, converterFormat: String) {
+    pub(crate)  fn getSubConverterFromFormat(&self, converterFormat: String) {
         todo!()
     }
-    pub fn setSubconverterFromFormat(&self, converterFormat: String) {
+    pub(crate)  fn setSubconverterFromFormat(&self, converterFormat: String) {
         todo!()
     }
-    pub fn setSubConverterFromFormat(&self, converterFormat: String) {
+    pub(crate)  fn setSubConverterFromFormat(&self, converterFormat: String) {
         todo!()
     }
-    pub fn formatFromHeader(&self, dataStr: ) {
+    pub(crate)  fn formatFromHeader(&self, dataStr: ) {
         todo!()
     }
-    pub fn regularizeFormat(&self, fmt: String) {
+    pub(crate)  fn regularizeFormat(&self, fmt: String) {
         todo!()
     }
-    pub fn stream(&self) {
+    pub(crate)  fn stream(&self) {
         todo!()
     }
 }

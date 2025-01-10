@@ -1,15 +1,15 @@
-pub struct Gong {
+pub(crate)  struct Gong {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Gong {
-    pub fn new() -> Gong {
+    pub(crate)  fn new() -> Gong {
         Gong {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

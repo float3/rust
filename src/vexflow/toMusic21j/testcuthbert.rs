@@ -1,15 +1,15 @@
-pub struct TestCuthbert {
+pub(crate)  struct TestCuthbert {
     unittest::testcase: unittest::TestCase,
 }
 
 impl TestCuthbert {
-    pub fn new() -> TestCuthbert {
+    pub(crate)  fn new() -> TestCuthbert {
         TestCuthbert {
             unittest::testcase: unittest::TestCase::new(),
         }
     }
     
-    pub fn testCuthbertLocal(&self) {
+    pub(crate)  fn testCuthbertLocal(&self) {
         todo!()
     }
 }

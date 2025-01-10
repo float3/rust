@@ -1,23 +1,23 @@
-pub struct ABCTuplet {
+pub(crate)  struct ABCTuplet {
     abctoken: ABCToken,
     __slots__: ,
 }
 
 impl ABCTuplet {
-    pub fn new() -> ABCTuplet {
+    pub(crate)  fn new() -> ABCTuplet {
         ABCTuplet {
             abctoken: ABCToken::new(),
             __slots__: todo!(),
         }
     }
     
-    pub fn new(&self, src: String) {
+    pub(crate)  fn new(&self, src: String) {
         todo!()
     }
-    pub fn updateRatio(&self, timeSignatureObj: ) {
+    pub(crate)  fn updateRatio(&self, timeSignatureObj: ) {
         todo!()
     }
-    pub fn updateNoteCount(&self) {
+    pub(crate)  fn updateNoteCount(&self) {
         todo!()
     }
 }

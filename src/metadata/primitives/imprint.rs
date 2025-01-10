@@ -1,15 +1,15 @@
-pub struct Imprint {
+pub(crate)  struct Imprint {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl Imprint {
-    pub fn new() -> Imprint {
+    pub(crate)  fn new() -> Imprint {
         Imprint {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

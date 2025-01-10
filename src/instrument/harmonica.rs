@@ -1,15 +1,15 @@
-pub struct Harmonica {
+pub(crate)  struct Harmonica {
     instrument: Instrument,
 }
 
 impl Harmonica {
-    pub fn new() -> Harmonica {
+    pub(crate)  fn new() -> Harmonica {
         Harmonica {
             instrument: Instrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

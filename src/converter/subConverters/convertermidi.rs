@@ -1,4 +1,4 @@
-pub struct ConverterMidi {
+pub(crate)  struct ConverterMidi {
     subconverter: SubConverter,
     readBinary: bool,
     registerFormats: ,
@@ -7,7 +7,7 @@ pub struct ConverterMidi {
 }
 
 impl ConverterMidi {
-    pub fn new() -> ConverterMidi {
+    pub(crate)  fn new() -> ConverterMidi {
         ConverterMidi {
             subconverter: SubConverter::new(),
             readBinary: todo!(),
@@ -17,13 +17,13 @@ impl ConverterMidi {
         }
     }
     
-    pub fn parseData(&self, strData: ) {
+    pub(crate)  fn parseData(&self, strData: ) {
         todo!()
     }
-    pub fn parseFile(&self, filePath: ) {
+    pub(crate)  fn parseFile(&self, filePath: ) {
         todo!()
     }
-    pub fn write(&self, obj: ) {
+    pub(crate)  fn write(&self, obj: ) {
         todo!()
     }
 }

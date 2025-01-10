@@ -1,4 +1,4 @@
-pub struct SearchLanguage {
+pub(crate)  struct SearchLanguage {
     common::enums::strenum: common::enums::StrEnum,
     ALL: ,
     ENGLISH: ,
@@ -11,7 +11,7 @@ pub struct SearchLanguage {
 }
 
 impl SearchLanguage {
-    pub fn new() -> SearchLanguage {
+    pub(crate)  fn new() -> SearchLanguage {
         SearchLanguage {
             common::enums::strenum: common::enums::StrEnum::new(),
             ALL: todo!(),

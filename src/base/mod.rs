@@ -1,8 +1,8 @@
-// pub mod _splittuple;
-// pub mod contextsorttuple;
-// pub mod contexttuple;
-// pub mod elementexception;
-// pub mod elementwrapper;
-// pub mod groups;
-// pub mod music21object;
-// pub mod music21objectexception;
+// pub(crate)  mod _splittuple;
+// pub(crate)  mod contextsorttuple;
+// pub(crate)  mod contexttuple;
+// pub(crate)  mod elementexception;
+// pub(crate)  mod elementwrapper;
+// pub(crate)  mod groups;
+pub(crate)  mod music21object;
+pub(crate)  mod music21objectexception;

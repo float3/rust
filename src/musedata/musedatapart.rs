@@ -1,105 +1,105 @@
-pub struct MuseDataPart {
+pub(crate)  struct MuseDataPart {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl MuseDataPart {
-    pub fn new() -> MuseDataPart {
+    pub(crate)  fn new() -> MuseDataPart {
         MuseDataPart {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self, src: ) {
+    pub(crate)  fn new(&self, src: ) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn _determineStage(&self) {
+    pub(crate)  fn _determineStage(&self) {
         todo!()
     }
-    pub fn _scrubStage1(&self, src: ) {
+    pub(crate)  fn _scrubStage1(&self, src: ) {
         todo!()
     }
-    pub fn _getDigitsFollowingTag(&self, line: ) {
+    pub(crate)  fn _getDigitsFollowingTag(&self, line: ) {
         todo!()
     }
-    pub fn _getAlphasFollowingTag(&self, line: ) {
+    pub(crate)  fn _getAlphasFollowingTag(&self, line: ) {
         todo!()
     }
-    pub fn getWorkNumber(&self) {
+    pub(crate)  fn getWorkNumber(&self) {
         todo!()
     }
-    pub fn getMovementNumber(&self) {
+    pub(crate)  fn getMovementNumber(&self) {
         todo!()
     }
-    pub fn getDirective(&self) {
+    pub(crate)  fn getDirective(&self) {
         todo!()
     }
-    pub fn getSource(&self) {
+    pub(crate)  fn getSource(&self) {
         todo!()
     }
-    pub fn getWorkTitle(&self) {
+    pub(crate)  fn getWorkTitle(&self) {
         todo!()
     }
-    pub fn getMovementTitle(&self) {
+    pub(crate)  fn getMovementTitle(&self) {
         todo!()
     }
-    pub fn getPartName(&self) {
+    pub(crate)  fn getPartName(&self) {
         todo!()
     }
-    pub fn getGroupMemberships(&self) {
+    pub(crate)  fn getGroupMemberships(&self) {
         todo!()
     }
-    pub fn getGroupMembershipsTotal(&self, membership: ) {
+    pub(crate)  fn getGroupMembershipsTotal(&self, membership: ) {
         todo!()
     }
-    pub fn getGroupMembershipNumber(&self, membership: ) {
+    pub(crate)  fn getGroupMembershipNumber(&self, membership: ) {
         todo!()
     }
-    pub fn _getAttributesRecord(&self) {
+    pub(crate)  fn _getAttributesRecord(&self) {
         todo!()
     }
-    pub fn getKeyParameters(&self) {
+    pub(crate)  fn getKeyParameters(&self) {
         todo!()
     }
-    pub fn getKeySignature(&self) {
+    pub(crate)  fn getKeySignature(&self) {
         todo!()
     }
-    pub fn getTimeSignatureParameters(&self) {
+    pub(crate)  fn getTimeSignatureParameters(&self) {
         todo!()
     }
-    pub fn getTimeSignatureObject(&self) {
+    pub(crate)  fn getTimeSignatureObject(&self) {
         todo!()
     }
-    pub fn _getNumberOfStaves(&self) {
+    pub(crate)  fn _getNumberOfStaves(&self) {
         todo!()
     }
-    pub fn _getClefParameters(&self) {
+    pub(crate)  fn _getClefParameters(&self) {
         todo!()
     }
-    pub fn getClefObject(&self, voice: ) {
+    pub(crate)  fn getClefObject(&self, voice: ) {
         todo!()
     }
-    pub fn _getTranspositionParameters(&self) {
+    pub(crate)  fn _getTranspositionParameters(&self) {
         todo!()
     }
-    pub fn getTranspositionIntervalObject(&self) {
+    pub(crate)  fn getTranspositionIntervalObject(&self) {
         todo!()
     }
-    pub fn getDivisionsPerQuarterNote(&self) {
+    pub(crate)  fn getDivisionsPerQuarterNote(&self) {
         todo!()
     }
-    pub fn _getMeasureBoundaryIndices(&self, src: ) {
+    pub(crate)  fn _getMeasureBoundaryIndices(&self, src: ) {
         todo!()
     }
-    pub fn update(&self) {
+    pub(crate)  fn update(&self) {
         todo!()
     }
-    pub fn __iter__(&self) {
+    pub(crate)  fn __iter__(&self) {
         todo!()
     }
-    pub fn getMeasures(&self) {
+    pub(crate)  fn getMeasures(&self) {
         todo!()
     }
 }

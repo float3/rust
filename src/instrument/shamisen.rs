@@ -1,15 +1,15 @@
-pub struct Shamisen {
+pub(crate)  struct Shamisen {
     stringinstrument: StringInstrument,
 }
 
 impl Shamisen {
-    pub fn new() -> Shamisen {
+    pub(crate)  fn new() -> Shamisen {
         Shamisen {
             stringinstrument: StringInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

@@ -1,15 +1,15 @@
-pub struct Ukulele {
+pub(crate)  struct Ukulele {
     stringinstrument: StringInstrument,
 }
 
 impl Ukulele {
-    pub fn new() -> Ukulele {
+    pub(crate)  fn new() -> Ukulele {
         Ukulele {
             stringinstrument: StringInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

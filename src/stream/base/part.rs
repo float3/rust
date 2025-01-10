@@ -1,4 +1,4 @@
-pub struct Part {
+pub(crate)  struct Part {
     stream: Stream,
     recursionType: ,
     partName: ,
@@ -6,7 +6,7 @@ pub struct Part {
 }
 
 impl Part {
-    pub fn new() -> Part {
+    pub(crate)  fn new() -> Part {
         Part {
             stream: Stream::new(),
             recursionType: todo!(),
@@ -15,25 +15,25 @@ impl Part {
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn _getPartName(&self) {
+    pub(crate)  fn _getPartName(&self) {
         todo!()
     }
-    pub fn _setPartName(&self, newName: ) {
+    pub(crate)  fn _setPartName(&self, newName: ) {
         todo!()
     }
-    pub fn _getPartAbbreviation(&self) {
+    pub(crate)  fn _getPartAbbreviation(&self) {
         todo!()
     }
-    pub fn _setPartAbbreviation(&self, newName: ) {
+    pub(crate)  fn _setPartAbbreviation(&self, newName: ) {
         todo!()
     }
-    pub fn makeAccidentals(&self) {
+    pub(crate)  fn makeAccidentals(&self) {
         todo!()
     }
-    pub fn mergeAttributes(&self, other: ) {
+    pub(crate)  fn mergeAttributes(&self, other: ) {
         todo!()
     }
 }

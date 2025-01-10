@@ -1,15 +1,15 @@
-pub struct Maracas {
+pub(crate)  struct Maracas {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Maracas {
-    pub fn new() -> Maracas {
+    pub(crate)  fn new() -> Maracas {
         Maracas {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

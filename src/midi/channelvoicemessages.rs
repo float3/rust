@@ -1,4 +1,4 @@
-pub struct ChannelVoiceMessages {
+pub(crate)  struct ChannelVoiceMessages {
     _containsenum: _ContainsEnum,
     NOTE_OFF: ,
     NOTE_ON: ,
@@ -10,7 +10,7 @@ pub struct ChannelVoiceMessages {
 }
 
 impl ChannelVoiceMessages {
-    pub fn new() -> ChannelVoiceMessages {
+    pub(crate)  fn new() -> ChannelVoiceMessages {
         ChannelVoiceMessages {
             _containsenum: _ContainsEnum::new(),
             NOTE_OFF: todo!(),

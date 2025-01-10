@@ -1,15 +1,15 @@
-pub struct EnglishHorn {
+pub(crate)  struct EnglishHorn {
     woodwindinstrument: WoodwindInstrument,
 }
 
 impl EnglishHorn {
-    pub fn new() -> EnglishHorn {
+    pub(crate)  fn new() -> EnglishHorn {
         EnglishHorn {
             woodwindinstrument: WoodwindInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

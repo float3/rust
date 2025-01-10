@@ -1,4 +1,4 @@
-pub struct Measure {
+pub(crate)  struct Measure {
     stream: Stream,
     recursionType: ,
     isMeasure: bool,
@@ -8,7 +8,7 @@ pub struct Measure {
 }
 
 impl Measure {
-    pub fn new() -> Measure {
+    pub(crate)  fn new() -> Measure {
         Measure {
             stream: Stream::new(),
             recursionType: todo!(),
@@ -19,43 +19,43 @@ impl Measure {
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn measureNumberWithSuffix(&self) {
+    pub(crate)  fn measureNumberWithSuffix(&self) {
         todo!()
     }
-    pub fn _reprInternal(&self) {
+    pub(crate)  fn _reprInternal(&self) {
         todo!()
     }
-    pub fn mergeAttributes(&self, other: ) {
+    pub(crate)  fn mergeAttributes(&self, other: ) {
         todo!()
     }
-    pub fn makeNotation(&self, inPlace: ) {
+    pub(crate)  fn makeNotation(&self, inPlace: ) {
         todo!()
     }
-    pub fn barDurationProportion(&self, barDuration: ) {
+    pub(crate)  fn barDurationProportion(&self, barDuration: ) {
         todo!()
     }
-    pub fn padAsAnacrusis(&self, useGaps: ) {
+    pub(crate)  fn padAsAnacrusis(&self, useGaps: ) {
         todo!()
     }
-    pub fn barDuration(&self) {
+    pub(crate)  fn barDuration(&self) {
         todo!()
     }
-    pub fn bestTimeSignature(&self) {
+    pub(crate)  fn bestTimeSignature(&self) {
         todo!()
     }
-    pub fn _getLeftBarline(&self) {
+    pub(crate)  fn _getLeftBarline(&self) {
         todo!()
     }
-    pub fn _setLeftBarline(&self, barlineObj: ) {
+    pub(crate)  fn _setLeftBarline(&self, barlineObj: ) {
         todo!()
     }
-    pub fn _getRightBarline(&self) {
+    pub(crate)  fn _getRightBarline(&self) {
         todo!()
     }
-    pub fn _setRightBarline(&self, barlineObj: ) {
+    pub(crate)  fn _setRightBarline(&self, barlineObj: ) {
         todo!()
     }
 }

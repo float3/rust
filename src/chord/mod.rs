@@ -1,3 +1,3 @@
-pub mod chordexception;
-pub mod chordbase;
-pub mod chord;
+pub(crate)  mod chordexception;
+pub(crate)  mod chordbase;
+pub(crate)  mod chord;

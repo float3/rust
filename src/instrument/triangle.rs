@@ -1,15 +1,15 @@
-pub struct Triangle {
+pub(crate)  struct Triangle {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl Triangle {
-    pub fn new() -> Triangle {
+    pub(crate)  fn new() -> Triangle {
         Triangle {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

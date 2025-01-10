@@ -1,15 +1,15 @@
-pub struct Marimba {
+pub(crate)  struct Marimba {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Marimba {
-    pub fn new() -> Marimba {
+    pub(crate)  fn new() -> Marimba {
         Marimba {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

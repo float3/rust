@@ -1,2 +1,2 @@
-pub mod music21testrunner;
-pub mod modulegather;
+pub(crate)  mod music21testrunner;
+pub(crate)  mod modulegather;

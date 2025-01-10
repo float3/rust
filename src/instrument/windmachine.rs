@@ -1,15 +1,15 @@
-pub struct WindMachine {
+pub(crate)  struct WindMachine {
     unpitchedpercussion: UnpitchedPercussion,
 }
 
 impl WindMachine {
-    pub fn new() -> WindMachine {
+    pub(crate)  fn new() -> WindMachine {
         WindMachine {
             unpitchedpercussion: UnpitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

@@ -1,15 +1,15 @@
-pub struct Vocalist {
+pub(crate)  struct Vocalist {
     instrument: Instrument,
 }
 
 impl Vocalist {
-    pub fn new() -> Vocalist {
+    pub(crate)  fn new() -> Vocalist {
         Vocalist {
             instrument: Instrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

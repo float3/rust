@@ -1,15 +1,15 @@
-pub struct Piccolo {
+pub(crate)  struct Piccolo {
     flute: Flute,
 }
 
 impl Piccolo {
-    pub fn new() -> Piccolo {
+    pub(crate)  fn new() -> Piccolo {
         Piccolo {
             flute: Flute::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

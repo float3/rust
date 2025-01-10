@@ -1,23 +1,23 @@
-pub struct StringInstrument {
+pub(crate)  struct StringInstrument {
     instrument: Instrument,
     stringPitches: ,
 }
 
 impl StringInstrument {
-    pub fn new() -> StringInstrument {
+    pub(crate)  fn new() -> StringInstrument {
         StringInstrument {
             instrument: Instrument::new(),
             stringPitches: todo!(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn _getStringPitches(&self) {
+    pub(crate)  fn _getStringPitches(&self) {
         todo!()
     }
-    pub fn _setStringPitches(&self, newPitches: ) {
+    pub(crate)  fn _setStringPitches(&self, newPitches: ) {
         todo!()
     }
 }

@@ -1,15 +1,15 @@
-pub struct Banjo {
+pub(crate)  struct Banjo {
     stringinstrument: StringInstrument,
 }
 
 impl Banjo {
-    pub fn new() -> Banjo {
+    pub(crate)  fn new() -> Banjo {
         Banjo {
             stringinstrument: StringInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

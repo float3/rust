@@ -1,15 +1,15 @@
-pub struct PanFlute {
+pub(crate)  struct PanFlute {
     flute: Flute,
 }
 
 impl PanFlute {
-    pub fn new() -> PanFlute {
+    pub(crate)  fn new() -> PanFlute {
         PanFlute {
             flute: Flute::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

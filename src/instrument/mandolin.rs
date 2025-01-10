@@ -1,15 +1,15 @@
-pub struct Mandolin {
+pub(crate)  struct Mandolin {
     stringinstrument: StringInstrument,
 }
 
 impl Mandolin {
-    pub fn new() -> Mandolin {
+    pub(crate)  fn new() -> Mandolin {
         Mandolin {
             stringinstrument: StringInstrument::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

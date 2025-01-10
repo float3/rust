@@ -1,2 +1,2 @@
-pub mod verticalityexception;
-pub mod verticalitysequence;
+pub(crate)  mod verticalityexception;
+pub(crate)  mod verticalitysequence;

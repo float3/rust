@@ -1,4 +1,4 @@
-pub struct ConverterBraille {
+pub(crate)  struct ConverterBraille {
     subconverter: SubConverter,
     registerFormats: ,
     registerOutputExtensions: ,
@@ -6,7 +6,7 @@ pub struct ConverterBraille {
 }
 
 impl ConverterBraille {
-    pub fn new() -> ConverterBraille {
+    pub(crate)  fn new() -> ConverterBraille {
         ConverterBraille {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -15,10 +15,10 @@ impl ConverterBraille {
         }
     }
     
-    pub fn show(&self, obj: ) {
+    pub(crate)  fn show(&self, obj: ) {
         todo!()
     }
-    pub fn write(&self, obj: ) {
+    pub(crate)  fn write(&self, obj: ) {
         todo!()
     }
 }

@@ -1,11 +1,11 @@
-pub struct ConverterText {
+pub(crate)  struct ConverterText {
     subconverter: SubConverter,
     registerFormats: ,
     registerOutputExtensions: ,
 }
 
 impl ConverterText {
-    pub fn new() -> ConverterText {
+    pub(crate)  fn new() -> ConverterText {
         ConverterText {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,10 +13,10 @@ impl ConverterText {
         }
     }
     
-    pub fn write(&self, obj: ) {
+    pub(crate)  fn write(&self, obj: ) {
         todo!()
     }
-    pub fn show(&self, obj: ) {
+    pub(crate)  fn show(&self, obj: ) {
         todo!()
     }
 }

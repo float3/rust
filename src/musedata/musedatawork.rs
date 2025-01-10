@@ -1,24 +1,24 @@
-pub struct MuseDataWork {
+pub(crate)  struct MuseDataWork {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl MuseDataWork {
-    pub fn new() -> MuseDataWork {
+    pub(crate)  fn new() -> MuseDataWork {
         MuseDataWork {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn addFile(&self, fp: ) {
+    pub(crate)  fn addFile(&self, fp: ) {
         todo!()
     }
-    pub fn addString(&self, input_str: ) {
+    pub(crate)  fn addString(&self, input_str: ) {
         todo!()
     }
-    pub fn getParts(&self) {
+    pub(crate)  fn getParts(&self) {
         todo!()
     }
 }

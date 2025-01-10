@@ -1,9 +1,9 @@
-pub struct CorpusException {
+pub(crate)  struct CorpusException {
     music21exception: Music21Exception,
 }
 
 impl CorpusException {
-    pub fn new() -> CorpusException {
+    pub(crate)  fn new() -> CorpusException {
         CorpusException {
             music21exception: Music21Exception::new(),
         }

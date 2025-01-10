@@ -1,15 +1,15 @@
-pub struct Choir {
+pub(crate)  struct Choir {
     vocalist: Vocalist,
 }
 
 impl Choir {
-    pub fn new() -> Choir {
+    pub(crate)  fn new() -> Choir {
         Choir {
             vocalist: Vocalist::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

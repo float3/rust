@@ -1,11 +1,11 @@
-pub struct ConverterMEI {
+pub(crate)  struct ConverterMEI {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
 }
 
 impl ConverterMEI {
-    pub fn new() -> ConverterMEI {
+    pub(crate)  fn new() -> ConverterMEI {
         ConverterMEI {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,19 +13,19 @@ impl ConverterMEI {
         }
     }
     
-    pub fn parseData(&self, dataString: String, number: ) {
+    pub(crate)  fn parseData(&self, dataString: String, number: ) {
         todo!()
     }
-    pub fn parseFile(&self, filePath: ) {
+    pub(crate)  fn parseFile(&self, filePath: ) {
         todo!()
     }
-    pub fn checkShowAbility(&self) {
+    pub(crate)  fn checkShowAbility(&self) {
         todo!()
     }
-    pub fn show(&self, obj: ) {
+    pub(crate)  fn show(&self, obj: ) {
         todo!()
     }
-    pub fn write(&self, obj: ) {
+    pub(crate)  fn write(&self, obj: ) {
         todo!()
     }
 }

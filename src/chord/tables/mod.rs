@@ -1,1 +1,1 @@
-pub mod chordtablesexception;
+pub(crate)  mod chordtablesexception;

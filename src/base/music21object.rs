@@ -1,9 +1,9 @@
 use crate::prebase::protom21object::ProtoM21Object;
 
-#[derive(PartialEq)]
-pub struct Music21Object {
+#[derive(PartialEq, Clone, Debug)]
+pub(crate)  struct Music21Object {
     protom21object: ProtoM21Object,
-    class_sort_order: f32,
+    class_sort_order: f64,
     is_stream: bool,
     // _styleClass: Style,
     // equalityAttributes: ,
@@ -14,7 +14,7 @@ pub struct Music21Object {
 }
 
 impl Music21Object {
-    pub fn new(&self, id: i32) -> Music21Object {
+    pub(crate)  fn new(&self, id: i32) -> Music21Object {
         Music21Object {
             protom21object: ProtoM21Object::new(id),
             class_sort_order: 20.0,
@@ -27,194 +27,194 @@ impl Music21Object {
             // seconds: ,
         }
     }
-    pub fn id(&self) {
+    pub(crate)  fn id(&self) {
         todo!()
     }
-    pub fn set_id(&mut self, new_id: i32) {
+    pub(crate)  fn set_id(&mut self, new_id: i32) {
         self.protom21object.set_id(new_id);
     }
 
-    pub fn mergeAttributes(&self, other: Music21Object) {
+    pub(crate)  fn mergeAttributes(&self, other: Music21Object) {
         todo!()
     }
-    // pub fn _deepcopySubclassable(&self, memo: ) {
+    // pub(crate)  fn _deepcopySubclassable(&self, memo: ) {
     //     todo!()
     // }
-    // pub fn __deepcopy__(&self, memo: ) {
+    // pub(crate)  fn __deepcopy__(&self, memo: ) {
     //     todo!()
     // }
-    // pub fn __getstate__(&self) {
+    // pub(crate)  fn __getstate__(&self) {
     //     todo!()
     // }
-    // pub fn __setstate__(&self, state: ) {
+    // pub(crate)  fn __setstate__(&self, state: ) {
     //     todo!()
     // }
-    // pub fn _reprInternal(&self) -> String {
+    // pub(crate)  fn _reprInternal(&self) -> String {
     //     todo!()
     // }
-    // pub fn hasEditorialInformation(&self) -> bool {
+    // pub(crate)  fn hasEditorialInformation(&self) -> bool {
     //     todo!()
     // }
-    // pub fn editorial(&self) -> Editorial {
+    // pub(crate)  fn editorial(&self) -> Editorial {
     //     todo!()
     // }
-    // pub fn editorial(&self, ed: Editorial) {
+    // pub(crate)  fn editorial(&self, ed: Editorial) {
     //     todo!()
     // }
-    // pub fn hasStyleInformation(&self) -> bool {
+    // pub(crate)  fn hasStyleInformation(&self) -> bool {
     //     todo!()
     // }
-    // pub fn style(&self) -> Style {
+    // pub(crate)  fn style(&self) -> Style {
     //     todo!()
     // }
-    // pub fn style(&self, newStyle: Style) {
+    // pub(crate)  fn style(&self, newStyle: Style) {
     //     todo!()
     // }
-    // pub fn quarterLength(&self) {
+    // pub(crate)  fn quarterLength(&self) {
     //     todo!()
     // }
-    // pub fn quarterLength(&self, value: ) {
+    // pub(crate)  fn quarterLength(&self, value: ) {
     //     todo!()
     // }
-    // pub fn derivation(&self) -> Derivation {
+    // pub(crate)  fn derivation(&self) -> Derivation {
     //     todo!()
     // }
-    // pub fn derivation(&self, newDerivation: ) {
+    // pub(crate)  fn derivation(&self, newDerivation: ) {
     //     todo!()
     // }
-    // pub fn clearCache(&self) {
+    // pub(crate)  fn clearCache(&self) {
     //     todo!()
     // }
-    // pub fn getOffsetBySite(&self, site: ) {
+    // pub(crate)  fn getOffsetBySite(&self, site: ) {
     //     todo!()
     // }
-    // pub fn getOffsetBySite(&self, site: ) {
+    // pub(crate)  fn getOffsetBySite(&self, site: ) {
     //     todo!()
     // }
-    // pub fn getOffsetBySite(&self, site: ) {
+    // pub(crate)  fn getOffsetBySite(&self, site: ) {
     //     todo!()
     // }
-    // pub fn setOffsetBySite(&self, site: ) {
+    // pub(crate)  fn setOffsetBySite(&self, site: ) {
     //     todo!()
     // }
-    // pub fn getOffsetInHierarchy(&self, site: ) {
+    // pub(crate)  fn getOffsetInHierarchy(&self, site: ) {
     //     todo!()
     // }
-    // pub fn getSpannerSites(&self, spannerClassList: ) {
+    // pub(crate)  fn getSpannerSites(&self, spannerClassList: ) {
     //     todo!()
     // }
-    // pub fn purgeOrphans(&self, excludeStorageStreams: ) {
+    // pub(crate)  fn purgeOrphans(&self, excludeStorageStreams: ) {
     //     todo!()
     // }
-    // pub fn purgeLocations(&self, rescanIsDead: ) {
+    // pub(crate)  fn purgeLocations(&self, rescanIsDead: ) {
     //     todo!()
     // }
-    // pub fn getContextByClass(&self, className: ) {
+    // pub(crate)  fn getContextByClass(&self, className: ) {
     //     todo!()
     // }
-    // pub fn getContextByClass(&self, className: ) {
+    // pub(crate)  fn getContextByClass(&self, className: ) {
     //     todo!()
     // }
-    // pub fn getContextByClass(&self, className: ) {
+    // pub(crate)  fn getContextByClass(&self, className: ) {
     //     todo!()
     // }
-    // pub fn contextSites(&self) {
+    // pub(crate)  fn contextSites(&self) {
     //     todo!()
     // }
-    // pub fn contextSites(&self) {
+    // pub(crate)  fn contextSites(&self) {
     //     todo!()
     // }
-    // pub fn contextSites(&self) {
+    // pub(crate)  fn contextSites(&self) {
     //     todo!()
     // }
-    // pub fn getAllContextsByClass(&self, className: ) {
+    // pub(crate)  fn getAllContextsByClass(&self, className: ) {
     //     todo!()
     // }
-    // pub fn next(&self, className: ) {
+    // pub(crate)  fn next(&self, className: ) {
     //     todo!()
     // }
-    // pub fn previous(&self, className: ) {
+    // pub(crate)  fn previous(&self, className: ) {
     //     todo!()
     // }
-    // pub fn _getActiveSite(&self) {
+    // pub(crate)  fn _getActiveSite(&self) {
     //     todo!()
     // }
-    // pub fn _setActiveSite(&self, site: ) {
+    // pub(crate)  fn _setActiveSite(&self, site: ) {
     //     todo!()
     // }
-    // pub fn offset(&self) {
+    // pub(crate)  fn offset(&self) {
     //     todo!()
     // }
-    // pub fn offset(&self, value: ) {
+    // pub(crate)  fn offset(&self, value: ) {
     //     todo!()
     // }
-    // pub fn sortTuple(&self, useSite: , raiseExceptionOnMiss: bool) -> SortTuple {
+    // pub(crate)  fn sortTuple(&self, useSite: , raiseExceptionOnMiss: bool) -> SortTuple {
     //     todo!()
     // }
-    // pub fn duration(&self) -> Duration {
+    // pub(crate)  fn duration(&self) -> Duration {
     //     todo!()
     // }
-    // pub fn duration(&self, durationObj: Duration) {
+    // pub(crate)  fn duration(&self, durationObj: Duration) {
     //     todo!()
     // }
-    // pub fn informSites(&self, changedInformation: ) {
+    // pub(crate)  fn informSites(&self, changedInformation: ) {
     //     todo!()
     // }
-    // pub fn _getPriority(&self) {
+    // pub(crate)  fn _getPriority(&self) {
     //     todo!()
     // }
-    // pub fn _setPriority(&self, value: ) {
+    // pub(crate)  fn _setPriority(&self, value: ) {
     //     todo!()
     // }
-    // pub fn write(&self, fmt: ) {
+    // pub(crate)  fn write(&self, fmt: ) {
     //     todo!()
     // }
-    // pub fn _reprText(&self) {
+    // pub(crate)  fn _reprText(&self) {
     //     todo!()
     // }
-    // pub fn _reprTextLine(&self) {
+    // pub(crate)  fn _reprTextLine(&self) {
     //     todo!()
     // }
-    // pub fn show(&self, fmt: ) {
+    // pub(crate)  fn show(&self, fmt: ) {
     //     todo!()
     // }
-    // pub fn containerHierarchy(&self) {
+    // pub(crate)  fn containerHierarchy(&self) {
     //     todo!()
     // }
-    // pub fn splitAtQuarterLength(&self, quarterLength: ) -> _SplitTuple {
+    // pub(crate)  fn splitAtQuarterLength(&self, quarterLength: ) -> _SplitTuple {
     //     todo!()
     // }
-    // pub fn splitByQuarterLengths(&self, quarterLengthList: ) -> _SplitTuple {
+    // pub(crate)  fn splitByQuarterLengths(&self, quarterLengthList: ) -> _SplitTuple {
     //     todo!()
     // }
-    // pub fn splitAtDurations(&self) -> _SplitTuple {
+    // pub(crate)  fn splitAtDurations(&self) -> _SplitTuple {
     //     todo!()
     // }
-    // pub fn measureNumber(&self) {
+    // pub(crate)  fn measureNumber(&self) {
     //     todo!()
     // }
-    // pub fn _getMeasureOffset(&self, includeMeasurePadding: ) {
+    // pub(crate)  fn _getMeasureOffset(&self, includeMeasurePadding: ) {
     //     todo!()
     // }
-    // pub fn _getTimeSignatureForBeat(&self) {
+    // pub(crate)  fn _getTimeSignatureForBeat(&self) {
     //     todo!()
     // }
-    // pub fn beat(&self) {
+    // pub(crate)  fn beat(&self) {
     //     todo!()
     // }
-    // pub fn beatStr(&self) -> String {
+    // pub(crate)  fn beatStr(&self) -> String {
     //     todo!()
     // }
-    // pub fn beatDuration(&self) -> Duration {
+    // pub(crate)  fn beatDuration(&self) -> Duration {
     //     todo!()
     // }
-    // pub fn beatStrength(&self) -> f64 {
+    // pub(crate)  fn beatStrength(&self) -> f64 {
     //     todo!()
     // }
-    // pub fn _getSeconds(&self) -> f64 {
+    // pub(crate)  fn _getSeconds(&self) -> f64 {
     //     todo!()
     // }
-    // pub fn _setSeconds(&self, value: ) {
+    // pub(crate)  fn _setSeconds(&self, value: ) {
     //     todo!()
     // }
 }

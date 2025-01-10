@@ -1,69 +1,69 @@
-pub struct MuseDataRecord {
+pub(crate)  struct MuseDataRecord {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl MuseDataRecord {
-    pub fn new() -> MuseDataRecord {
+    pub(crate)  fn new() -> MuseDataRecord {
         MuseDataRecord {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub fn new(&self, src: String, parent: ) {
+    pub(crate)  fn new(&self, src: String, parent: ) {
         todo!()
     }
-    pub fn isRest(&self) -> bool {
+    pub(crate)  fn isRest(&self) -> bool {
         todo!()
     }
-    pub fn isTied(&self) {
+    pub(crate)  fn isTied(&self) {
         todo!()
     }
-    pub fn isNote(&self) {
+    pub(crate)  fn isNote(&self) {
         todo!()
     }
-    pub fn isChord(&self) {
+    pub(crate)  fn isChord(&self) {
         todo!()
     }
-    pub fn isCueOrGrace(&self) {
+    pub(crate)  fn isCueOrGrace(&self) {
         todo!()
     }
-    pub fn isBack(&self) {
+    pub(crate)  fn isBack(&self) {
         todo!()
     }
-    pub fn _getPitchParameters(&self) {
+    pub(crate)  fn _getPitchParameters(&self) {
         todo!()
     }
-    pub fn _getAccidentalObject(&self) {
+    pub(crate)  fn _getAccidentalObject(&self) {
         todo!()
     }
-    pub fn getPitchObject(&self) {
+    pub(crate)  fn getPitchObject(&self) {
         todo!()
     }
-    pub fn getQuarterLength(&self, divisionsPerQuarterNote: ) {
+    pub(crate)  fn getQuarterLength(&self, divisionsPerQuarterNote: ) {
         todo!()
     }
-    pub fn getDots(&self) {
+    pub(crate)  fn getDots(&self) {
         todo!()
     }
-    pub fn getLyrics(&self) {
+    pub(crate)  fn getLyrics(&self) {
         todo!()
     }
-    pub fn getBeams(&self) {
+    pub(crate)  fn getBeams(&self) {
         todo!()
     }
-    pub fn _getAdditionalNotations(&self) {
+    pub(crate)  fn _getAdditionalNotations(&self) {
         todo!()
     }
-    pub fn getArticulationObjects(&self) {
+    pub(crate)  fn getArticulationObjects(&self) {
         todo!()
     }
-    pub fn getExpressionObjects(&self) {
+    pub(crate)  fn getExpressionObjects(&self) {
         todo!()
     }
-    pub fn getDynamicObjects(&self) {
+    pub(crate)  fn getDynamicObjects(&self) {
         todo!()
     }
-    pub fn hasCautionaryAccidental(&self) {
+    pub(crate)  fn hasCautionaryAccidental(&self) {
         todo!()
     }
 }

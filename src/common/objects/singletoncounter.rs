@@ -1,14 +1,14 @@
-pub struct SingletonCounter {}
+pub(crate)  struct SingletonCounter {}
 
 impl SingletonCounter {
-    pub fn new() -> SingletonCounter {
+    pub(crate)  fn new() -> SingletonCounter {
         SingletonCounter {}
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn __call__(&self) {
+    pub(crate)  fn __call__(&self) {
         todo!()
     }
 }

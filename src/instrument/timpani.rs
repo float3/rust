@@ -1,15 +1,15 @@
-pub struct Timpani {
+pub(crate)  struct Timpani {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Timpani {
-    pub fn new() -> Timpani {
+    pub(crate)  fn new() -> Timpani {
         Timpani {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
 }

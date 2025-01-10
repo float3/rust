@@ -1,23 +1,23 @@
-pub struct UnpitchedPercussion {
+pub(crate)  struct UnpitchedPercussion {
     percussion: Percussion,
     modifier: ,
 }
 
 impl UnpitchedPercussion {
-    pub fn new() -> UnpitchedPercussion {
+    pub(crate)  fn new() -> UnpitchedPercussion {
         UnpitchedPercussion {
             percussion: Percussion::new(),
             modifier: todo!(),
         }
     }
     
-    pub fn new(&self) {
+    pub(crate)  fn new(&self) {
         todo!()
     }
-    pub fn _getModifier(&self) {
+    pub(crate)  fn _getModifier(&self) {
         todo!()
     }
-    pub fn _setModifier(&self, modifier: ) {
+    pub(crate)  fn _setModifier(&self, modifier: ) {
         todo!()
     }
 }
