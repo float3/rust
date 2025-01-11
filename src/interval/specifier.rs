@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use super::intervalexception::IntervalException;
 use crate::common::enums::intstring::IntString;
 
@@ -17,7 +19,7 @@ pub(crate) enum Specifier {
 }
 
 struct SpecifierMapping {
-    value: i32,
+    value: IntegerType,
     variants: &'static [&'static str],
     nice_name: &'static str,
 }
@@ -80,29 +82,56 @@ const SPECIFIER_MAPPINGS: &[SpecifierMapping] = &[
     },
 ];
 
+static STRING_TO_SPECIFIER: Lazy<HashMap<&'static str, Specifier>> = Lazy::new(|| {
+    let mut m = HashMap::new();
+    for mapping in SPECIFIER_MAPPINGS {
+        for &variant in mapping.variants {
+            m.insert(
+                variant.to_lowercase().as_str(),
+                Specifier::try_from(mapping.value).unwrap(),
+            );
+        }
+    }
+    m
+});
+
+impl TryFrom<IntegerType> for Specifier {
+    type Error = IntervalException;
+
+    fn try_from(value: IntegerType) -> Result<Self, Self::Error> {
+        match value {
+            1 => Ok(Specifier::PERFECT),
+            2 => Ok(Specifier::MAJOR),
+            3 => Ok(Specifier::MINOR),
+            4 => Ok(Specifier::AUGMENTED),
+            5 => Ok(Specifier::DIMINISHED),
+            6 => Ok(Specifier::DBLAUG),
+            7 => Ok(Specifier::DBLDIM),
+            8 => Ok(Specifier::TRPAUG),
+            9 => Ok(Specifier::TRPDIM),
+            10 => Ok(Specifier::QUADAUG),
+            11 => Ok(Specifier::QUADDIM),
+            _ => Err(IntervalException::new(format!(
+                "Invalid specifier: {}",
+                value
+            ))),
+        }
+    }
+}
+
 impl Specifier {
     pub(crate) fn parse_specifier(specifier: IntString) -> Result<Specifier, IntervalException> {
         match specifier {
-            IntString::Int(int) => SPECIFIER_MAPPINGS
-                .iter()
-                .find(|mapping| mapping.value == int)
-                .map(|mapping| unsafe { std::mem::transmute::<i32, Specifier>(mapping.value) })
-                .ok_or_else(|| IntervalException::new(format!("Invalid specifier: {}", int))),
-            IntString::String(string) => SPECIFIER_MAPPINGS
-                .iter()
-                .find(|mapping| {
-                    mapping
-                        .variants
-                        .iter()
-                        .any(|&s| s.eq_ignore_ascii_case(string))
-                })
-                .map(|mapping| unsafe { std::mem::transmute::<i32, Specifier>(mapping.value) })
+            IntString::Int(int) => Specifier::try_from(int),
+            IntString::String(string) => STRING_TO_SPECIFIER
+                .get(&string.to_lowercase()[..])
+                .cloned()
                 .ok_or_else(|| IntervalException::new(format!("Invalid specifier: {}", string))),
         }
     }
 
     pub(crate) fn nice_name(&self) -> Result<&'static str, IntervalException> {
-        let value = *self as i32;
+        let value = *self as IntegerType;
         SPECIFIER_MAPPINGS
             .iter()
             .find(|mapping| mapping.value == value)

@@ -1,73 +1,73 @@
 use super::generalnote::GeneralNote;
 
 #[derive(PartialEq, Clone, Debug)]
-pub(crate)  struct NotRest {
+pub(crate) struct NotRest {
     generalnote: GeneralNote,
     equality_attributes: &'static [&'static str],
 }
 
 impl NotRest {
-    pub(crate)  fn new() -> NotRest {
+    pub(crate) fn new() -> NotRest {
         todo!()
     }
-    pub(crate)  fn _deepcopySubclassable(&self, memo: ) {
+    pub(crate) fn _deepcopySubclassable(&self, memo: ) {
         todo!()
     }
-    pub(crate)  fn __deepcopy__(&self, memo: ) {
+    pub(crate) fn __deepcopy__(&self, memo: ) {
         todo!()
     }
-    pub(crate)  fn stemDirection(&self) -> String {
+    pub(crate) fn stemDirection(&self) -> String {
         todo!()
     }
-    pub(crate)  fn stemDirection(&self, direction: ) {
+    pub(crate) fn stemDirection(&self, direction: ) {
         todo!()
     }
-    pub(crate)  fn notehead(&self) -> String {
+    pub(crate) fn notehead(&self) -> String {
         todo!()
     }
-    pub(crate)  fn notehead(&self, value: ) {
+    pub(crate) fn notehead(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn noteheadFill(&self) {
+    pub(crate) fn noteheadFill(&self) {
         todo!()
     }
-    pub(crate)  fn noteheadFill(&self, value: ) {
+    pub(crate) fn noteheadFill(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn noteheadParenthesis(&self) -> bool {
+    pub(crate) fn noteheadParenthesis(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn noteheadParenthesis(&self, value: ) {
+    pub(crate) fn noteheadParenthesis(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn hasVolumeInformation(&self) -> bool {
+    pub(crate) fn hasVolumeInformation(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn _getVolume(&self, forceClient: ) {
+    pub(crate) fn _getVolume(&self, forceClient: ) {
         todo!()
     }
-    pub(crate)  fn _setVolume(&self, value: ) {
+    pub(crate) fn _setVolume(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn volume(&self) {
+    pub(crate) fn volume(&self) {
         todo!()
     }
-    pub(crate)  fn volume(&self, value: ) {
+    pub(crate) fn volume(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn storedInstrument(&self) {
+    pub(crate) fn storedInstrument(&self) {
         todo!()
     }
-    pub(crate)  fn storedInstrument(&self, newValue: ) {
+    pub(crate) fn storedInstrument(&self, newValue: ) {
         todo!()
     }
-    pub(crate)  fn getInstrument(&self) {
+    pub(crate) fn getInstrument(&self) {
         todo!()
     }
-    pub(crate)  fn getInstrument(&self) {
+    pub(crate) fn getInstrument(&self) {
         todo!()
     }
-    pub(crate)  fn getInstrument(&self) {
+    pub(crate) fn getInstrument(&self) {
         todo!()
     }
 }

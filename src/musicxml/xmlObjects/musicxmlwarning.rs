@@ -1,9 +1,9 @@
-pub(crate)  struct MusicXMLWarning {
+pub(crate) struct MusicXMLWarning {
     userwarning: UserWarning,
 }
 
 impl MusicXMLWarning {
-    pub(crate)  fn new() -> MusicXMLWarning {
+    pub(crate) fn new() -> MusicXMLWarning {
         MusicXMLWarning {
             userwarning: UserWarning::new(),
         }

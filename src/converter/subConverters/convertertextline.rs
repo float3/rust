@@ -1,11 +1,11 @@
-pub(crate)  struct ConverterTextLine {
+pub(crate) struct ConverterTextLine {
     subconverter: SubConverter,
     registerFormats: ,
     registerOutputExtensions: ,
 }
 
 impl ConverterTextLine {
-    pub(crate)  fn new() -> ConverterTextLine {
+    pub(crate) fn new() -> ConverterTextLine {
         ConverterTextLine {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,10 +13,10 @@ impl ConverterTextLine {
         }
     }
     
-    pub(crate)  fn write(&self, obj: ) {
+    pub(crate) fn write(&self, obj: ) {
         todo!()
     }
-    pub(crate)  fn show(&self, obj: ) {
+    pub(crate) fn show(&self, obj: ) {
         todo!()
     }
 }

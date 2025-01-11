@@ -1,36 +1,36 @@
-pub(crate)  struct Text {
+pub(crate) struct Text {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl Text {
-    pub(crate)  fn new() -> Text {
+    pub(crate) fn new() -> Text {
         Text {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub(crate)  fn new(&self, data: ) {
+    pub(crate) fn new(&self, data: ) {
         todo!()
     }
-    pub(crate)  fn __str__(&self) {
+    pub(crate) fn __str__(&self) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn __eq__(&self, other: ) -> bool {
+    pub(crate) fn __eq__(&self, other: ) -> bool {
         todo!()
     }
-    pub(crate)  fn __lt__(&self, other: ) {
+    pub(crate) fn __lt__(&self, other: ) {
         todo!()
     }
-    pub(crate)  fn language(&self) {
+    pub(crate) fn language(&self) {
         todo!()
     }
-    pub(crate)  fn language(&self, value: ) {
+    pub(crate) fn language(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn getNormalizedArticle(&self) {
+    pub(crate) fn getNormalizedArticle(&self) {
         todo!()
     }
 }

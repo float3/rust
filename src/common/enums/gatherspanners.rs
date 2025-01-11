@@ -1,4 +1,4 @@
-pub(crate)  struct GatherSpanners {
+pub(crate) struct GatherSpanners {
     booleanenum: BooleanEnum,
     ALL: bool,
     NONE: bool,
@@ -6,7 +6,7 @@ pub(crate)  struct GatherSpanners {
 }
 
 impl GatherSpanners {
-    pub(crate)  fn new() -> GatherSpanners {
+    pub(crate) fn new() -> GatherSpanners {
         GatherSpanners {
             booleanenum: BooleanEnum::new(),
             ALL: todo!(),

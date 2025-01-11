@@ -1,11 +1,11 @@
-pub(crate)  struct HumdrumSpine {
+pub(crate) struct HumdrumSpine {
     prebase::protom21object: prebase::ProtoM21Object,
     spineCollection: ,
     spineType: ,
 }
 
 impl HumdrumSpine {
-    pub(crate)  fn new() -> HumdrumSpine {
+    pub(crate) fn new() -> HumdrumSpine {
         HumdrumSpine {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             spineCollection: todo!(),
@@ -13,43 +13,43 @@ impl HumdrumSpine {
         }
     }
     
-    pub(crate)  fn new(&self, spineId: i32, eventList: ) {
+    pub(crate) fn new(&self, spineId: IntegerType, eventList: ) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn append(&self, event: ) {
+    pub(crate) fn append(&self, event: ) {
         todo!()
     }
-    pub(crate)  fn __iter__(&self) {
+    pub(crate) fn __iter__(&self) {
         todo!()
     }
-    pub(crate)  fn __next__(&self) {
+    pub(crate) fn __next__(&self) {
         todo!()
     }
-    pub(crate)  fn _getSpineCollection(&self) {
+    pub(crate) fn _getSpineCollection(&self) {
         todo!()
     }
-    pub(crate)  fn _setSpineCollection(&self, sc: ) {
+    pub(crate) fn _setSpineCollection(&self, sc: ) {
         todo!()
     }
-    pub(crate)  fn _getLocalSpineType(&self) {
+    pub(crate) fn _getLocalSpineType(&self) {
         todo!()
     }
-    pub(crate)  fn _getParentSpineType(&self) {
+    pub(crate) fn _getParentSpineType(&self) {
         todo!()
     }
-    pub(crate)  fn _getSpineType(&self) {
+    pub(crate) fn _getSpineType(&self) {
         todo!()
     }
-    pub(crate)  fn _setSpineType(&self, newSpineType: ) {
+    pub(crate) fn _setSpineType(&self, newSpineType: ) {
         todo!()
     }
-    pub(crate)  fn moveElementsIntoMeasures(&self, streamIn: ) {
+    pub(crate) fn moveElementsIntoMeasures(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn parse(&self) {
+    pub(crate) fn parse(&self) {
         todo!()
     }
 }

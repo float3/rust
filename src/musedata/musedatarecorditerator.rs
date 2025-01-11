@@ -1,19 +1,19 @@
-pub(crate)  struct MuseDataRecordIterator {
+pub(crate) struct MuseDataRecordIterator {
 }
 
 impl MuseDataRecordIterator {
-    pub(crate)  fn new() -> MuseDataRecordIterator {
+    pub(crate) fn new() -> MuseDataRecordIterator {
         MuseDataRecordIterator {
         }
     }
     
-    pub(crate)  fn new(&self, src: ) {
+    pub(crate) fn new(&self, src: ) {
         todo!()
     }
-    pub(crate)  fn __iter__(&self) {
+    pub(crate) fn __iter__(&self) {
         todo!()
     }
-    pub(crate)  fn __next__(&self) {
+    pub(crate) fn __next__(&self) {
         todo!()
     }
 }

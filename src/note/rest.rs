@@ -1,4 +1,4 @@
-pub(crate)  struct Rest {
+pub(crate) struct Rest {
     generalnote: GeneralNote,
     isRest: bool,
     name: ,
@@ -6,7 +6,7 @@ pub(crate)  struct Rest {
 }
 
 impl Rest {
-    pub(crate)  fn new() -> Rest {
+    pub(crate) fn new() -> Rest {
         Rest {
             generalnote: GeneralNote::new(),
             isRest: todo!(),
@@ -15,13 +15,13 @@ impl Rest {
         }
     }
     
-    pub(crate)  fn new(&self, length: ) {
+    pub(crate) fn new(&self, length: ) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn fullName(&self) -> String {
+    pub(crate) fn fullName(&self) -> String {
         todo!()
     }
 }

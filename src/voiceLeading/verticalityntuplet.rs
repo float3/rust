@@ -1,21 +1,21 @@
-pub(crate)  struct VerticalityNTuplet {
+pub(crate) struct VerticalityNTuplet {
     base::music21object: base::Music21Object,
 }
 
 impl VerticalityNTuplet {
-    pub(crate)  fn new() -> VerticalityNTuplet {
+    pub(crate) fn new() -> VerticalityNTuplet {
         VerticalityNTuplet {
             base::music21object: base::Music21Object::new(),
         }
     }
     
-    pub(crate)  fn new(&self, listOfVerticalities: ) {
+    pub(crate) fn new(&self, listOfVerticalities: ) {
         todo!()
     }
-    pub(crate)  fn _calcChords(&self) {
+    pub(crate) fn _calcChords(&self) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
 }

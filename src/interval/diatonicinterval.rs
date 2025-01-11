@@ -1,119 +1,153 @@
-use crate::common::enums::intstring::IntString;
+use crate::{common::enums::intstring::IntString, note::note::Note, pitch::pitch::Pitch};
 
-use super::{chromaticinterval::ChromaticInterval, direction::Direction, genericinterval::GenericInterval, intervalbase::IntervalBase, intervalexception::IntervalException, specifier::Specifier};
+use super::{
+    chromaticinterval::ChromaticInterval, direction::Direction, genericinterval::GenericInterval,
+    interval::Interval, intervalbase::IntervalBase, intervalexception::IntervalException,
+    specifier::Specifier,
+};
 
-pub(crate)  struct DiatonicInterval {
-    intervalbase: IntervalBase,
+pub(crate) struct DiatonicInterval {
     specifier: Specifier,
     generic: GenericInterval,
-
 }
 
 impl PartialEq for DiatonicInterval {
     fn eq(&self, other: &Self) -> bool {
-        self.generic == other.generic && self.specifier == other.specifier && self.direction() == other.direction()
+        self.generic == other.generic
+            && self.specifier == other.specifier
+            && self.direction() == other.direction()
     }
 }
 
 impl DiatonicInterval {
-    pub(crate)  fn new(specifier: IntString, generic: GenericInterval) -> Result<DiatonicInterval, IntervalException> {
+    pub(crate) fn new(
+        specifier: IntString,
+        generic: GenericInterval,
+    ) -> Result<DiatonicInterval, IntervalException> {
         let specifier = Specifier::parse_specifier(specifier)?;
 
-        if [Specifier::MAJOR,Specifier::MINOR].contains(&specifier) && generic.perfectable() {
-           return Err(IntervalException::new(format!("Cannot create a {} {}", specifier.nice_name()?, generic.nice_name()?)));
+        if [Specifier::MAJOR, Specifier::MINOR].contains(&specifier) && generic.perfectable() {
+            return Err(IntervalException::new(format!(
+                "Cannot create a {} {}",
+                specifier.nice_name()?,
+                generic.nice_name()
+            )));
         }
 
         if specifier == Specifier::PERFECT && generic.value() == -1 {
-            return Err(IntervalException::new("There is no such thing as a descending Perfect Unison".to_string()));
+            return Err(IntervalException::new(
+                "There is no such thing as a descending Perfect Unison".to_string(),
+            ));
         }
 
-        Ok(DiatonicInterval {
-            intervalbase: IntervalBase::new(),
-            specifier,
-            generic
-        })
+        Ok(DiatonicInterval { specifier, generic })
     }
-    
-    pub(crate)  fn _reprInternal(&self) -> String {
+
+    pub(crate) fn _repr_internal(&self) -> String {
         todo!()
     }
 
-    pub(crate)  fn __hash__(&self) {
+    pub(crate) fn __hash__(&self) {
         todo!()
     }
-    pub(crate)  fn name(&self) -> String {
+    pub(crate) fn name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn niceName(&self) -> String {
+    pub(crate) fn nice_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn specificName(&self) -> String {
+    pub(crate) fn specific_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn simpleName(&self) -> String {
+    pub(crate) fn simple_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn simpleNiceName(&self) -> String {
+    pub(crate) fn simple_nice_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn semiSimpleName(&self) -> String {
+    pub(crate) fn semi_simple_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn semiSimpleNiceName(&self) -> String {
+    pub(crate) fn semi_simple_nice_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn direction(&self) -> Direction {
+    pub(crate) fn direction(&self) -> Direction {
         todo!()
     }
-    pub(crate)  fn directedName(&self) -> String {
+    pub(crate) fn directed_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn directedNiceName(&self) -> String {
+    pub(crate) fn directed_nice_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn directedSimpleName(&self) -> String {
+    pub(crate) fn directed_simple_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn directedSimpleNiceName(&self) -> String {
+    pub(crate) fn directed_simple_nice_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn directedSemiSimpleName(&self) -> String {
+    pub(crate) fn directed_semi_simple_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn directedSemiSimpleNiceName(&self) -> String {
+    pub(crate) fn directed_semi_simple_nice_name(&self) -> String {
         todo!()
     }
-    pub(crate)  fn isStep(&self) -> bool {
+    pub(crate) fn is_step(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn isDiatonicStep(&self) -> bool {
+    pub(crate) fn is_diatonic_step(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn isSkip(&self) -> bool {
+    pub(crate) fn is_skip(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn perfectable(&self) -> bool {
+    pub(crate) fn perfectable(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn mod7inversion(&self) -> String {
+    pub(crate) fn mod7inversion(&self) -> String {
         todo!()
     }
-    pub(crate)  fn mod7(&self) -> String {
+    pub(crate) fn mod7(&self) -> String {
         todo!()
     }
-    pub(crate)  fn reverse(&self) -> DiatonicInterval {
+    pub(crate) fn reverse(&self) -> DiatonicInterval {
         todo!()
     }
-    pub(crate)  fn getChromatic(&self) -> ChromaticInterval {
+    pub(crate) fn get_chromatic(&self) -> ChromaticInterval {
         todo!()
     }
-    pub(crate)  fn transposePitch(&self, p: ) {
+
+    pub(crate) fn transpose_pitch(
+        &self,
+        pitch1: Pitch,
+        interval1: Interval,
+        inplace: bool,
+    ) -> Pitch {
         todo!()
     }
-    pub(crate)  fn specifierAbbreviation(&self) -> String {
+
+    pub(crate) fn specifier_abbreviation(&self) -> String {
         todo!()
     }
-    pub(crate)  fn cents(&self) -> f64 {
+    pub(crate) fn cents(&self) -> FloatType {
+        todo!()
+    }
+}
+
+impl IntervalBase for DiatonicInterval {
+    fn transpose_note(&self, note1: Note) -> Note {
+        todo!()
+    }
+
+    fn transpose_pitch(&self, pitch1: Pitch, inplace: bool) -> Pitch {
+        todo!()
+    }
+
+    fn reverse(&self) {
+        todo!()
+    }
+
+    fn clear_cache(&self) {
         todo!()
     }
 }

@@ -1,34 +1,34 @@
-pub(crate)  struct ModuleGather {
+pub(crate) struct ModuleGather {
 }
 
 impl ModuleGather {
-    pub(crate)  fn new() -> ModuleGather {
+    pub(crate) fn new() -> ModuleGather {
         ModuleGather {
         }
     }
     
-    pub(crate)  fn new(&self, useExtended: ) {
+    pub(crate) fn new(&self, useExtended: ) {
         todo!()
     }
-    pub(crate)  fn _visitFunc(&self, args: ) {
+    pub(crate) fn _visitFunc(&self, args: ) {
         todo!()
     }
-    pub(crate)  fn walk(&self) {
+    pub(crate) fn walk(&self) {
         todo!()
     }
-    pub(crate)  fn _getName(&self, fp: ) {
+    pub(crate) fn _getName(&self, fp: ) {
         todo!()
     }
-    pub(crate)  fn _getNamePeriod(&self, fp: ) {
+    pub(crate) fn _getNamePeriod(&self, fp: ) {
         todo!()
     }
-    pub(crate)  fn load(&self, restoreEnvironmentDefaults: ) {
+    pub(crate) fn load(&self, restoreEnvironmentDefaults: ) {
         todo!()
     }
-    pub(crate)  fn getModule(&self, fp: ) {
+    pub(crate) fn getModule(&self, fp: ) {
         todo!()
     }
-    pub(crate)  fn getModuleWithoutImp(&self, fp: ) {
+    pub(crate) fn getModuleWithoutImp(&self, fp: ) {
         todo!()
     }
 }

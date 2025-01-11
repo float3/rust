@@ -1,4 +1,4 @@
-pub(crate)  struct ConverterIPython {
+pub(crate) struct ConverterIPython {
     subconverter: SubConverter,
     registerFormats: ,
     registerOutputExtensions: ,
@@ -6,7 +6,7 @@ pub(crate)  struct ConverterIPython {
 }
 
 impl ConverterIPython {
-    pub(crate)  fn new() -> ConverterIPython {
+    pub(crate) fn new() -> ConverterIPython {
         ConverterIPython {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -15,7 +15,7 @@ impl ConverterIPython {
         }
     }
     
-    pub(crate)  fn show(&self, obj: ) {
+    pub(crate) fn show(&self, obj: ) {
         todo!()
     }
 }

@@ -1,35 +1,35 @@
-pub(crate)  struct RichMetadata {
+pub(crate) struct RichMetadata {
     metadata: Metadata,
     additionalRichMetadataAttributes: ,
 }
 
 impl RichMetadata {
-    pub(crate)  fn new() -> RichMetadata {
+    pub(crate) fn new() -> RichMetadata {
         RichMetadata {
             metadata: Metadata::new(),
             additionalRichMetadataAttributes: todo!(),
         }
     }
     
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn _getPluralAttribute(&self, attributeName: ) {
+    pub(crate) fn _getPluralAttribute(&self, attributeName: ) {
         todo!()
     }
-    pub(crate)  fn merge(&self, other: ) {
+    pub(crate) fn merge(&self, other: ) {
         todo!()
     }
-    pub(crate)  fn getSourcePath(&self, streamObj: ) -> String {
+    pub(crate) fn getSourcePath(&self, streamObj: ) -> String {
         todo!()
     }
-    pub(crate)  fn update(&self, streamObj: ) {
+    pub(crate) fn update(&self, streamObj: ) {
         todo!()
     }
-    pub(crate)  fn all(&self) {
+    pub(crate) fn all(&self) {
         todo!()
     }
-    pub(crate)  fn _isStandardUniqueName(&self, uniqueName: String) -> bool {
+    pub(crate) fn _isStandardUniqueName(&self, uniqueName: String) -> bool {
         todo!()
     }
 }

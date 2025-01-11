@@ -1,15 +1,15 @@
-pub(crate)  struct Vibraphone {
+pub(crate) struct Vibraphone {
     pitchedpercussion: PitchedPercussion,
 }
 
 impl Vibraphone {
-    pub(crate)  fn new() -> Vibraphone {
+    pub(crate) fn new() -> Vibraphone {
         Vibraphone {
             pitchedpercussion: PitchedPercussion::new(),
         }
     }
 
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
 }

@@ -1,44 +1,44 @@
-pub(crate)  struct MidiFile {
+pub(crate) struct MidiFile {
     prebase::protom21object: prebase::ProtoM21Object,
     headerId: ,
 }
 
 impl MidiFile {
-    pub(crate)  fn new() -> MidiFile {
+    pub(crate) fn new() -> MidiFile {
         MidiFile {
             prebase::protom21object: prebase::ProtoM21Object::new(),
             headerId: todo!(),
         }
     }
     
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn open(&self, filename: ) {
+    pub(crate) fn open(&self, filename: ) {
         todo!()
     }
-    pub(crate)  fn openFileLike(&self, fileLike: ) {
+    pub(crate) fn openFileLike(&self, fileLike: ) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn close(&self) {
+    pub(crate) fn close(&self) {
         todo!()
     }
-    pub(crate)  fn read(&self) {
+    pub(crate) fn read(&self) {
         todo!()
     }
-    pub(crate)  fn readstr(&self, midiBytes: ) {
+    pub(crate) fn readstr(&self, midiBytes: ) {
         todo!()
     }
-    pub(crate)  fn write(&self) {
+    pub(crate) fn write(&self) {
         todo!()
     }
-    pub(crate)  fn writestr(&self) {
+    pub(crate) fn writestr(&self) {
         todo!()
     }
-    pub(crate)  fn writeMThdStr(&self) {
+    pub(crate) fn writeMThdStr(&self) {
         todo!()
     }
 }

@@ -1,14 +1,14 @@
-pub(crate)  struct ActiveInformation {
+pub(crate) struct ActiveInformation {
     t::typeddict: t::TypedDict,
     stream: ,
-    elementIndex: i32,
+    elementIndex: IntegerType,
     iterSection: ,
-    sectionIndex: i32,
+    sectionIndex: IntegerType,
     lastYielded: ,
 }
 
 impl ActiveInformation {
-    pub(crate)  fn new() -> ActiveInformation {
+    pub(crate) fn new() -> ActiveInformation {
         ActiveInformation {
             t::typeddict: t::TypedDict::new(),
             stream: todo!(),

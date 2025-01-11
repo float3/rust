@@ -1,96 +1,96 @@
-pub(crate)  struct ElementTree {
+pub(crate) struct ElementTree {
     core::avltree: core::AVLTree,
     rootNode: ,
     nodeClass: ,
-    __slots__: ,
+
 }
 
 impl ElementTree {
-    pub(crate)  fn new() -> ElementTree {
+    pub(crate) fn new() -> ElementTree {
         ElementTree {
             core::avltree: core::AVLTree::new(),
             rootNode: todo!(),
             nodeClass: todo!(),
-            __slots__: todo!(),
+
         }
     }
     
-    pub(crate)  fn new(&self, elements: ) {
+    pub(crate) fn new(&self, elements: ) {
         todo!()
     }
-    pub(crate)  fn __contains__(&self, element: ) {
+    pub(crate) fn __contains__(&self, element: ) {
         todo!()
     }
-    pub(crate)  fn __eq__(&self, expr: ) {
+    pub(crate) fn __eq__(&self, expr: ) {
         todo!()
     }
-    pub(crate)  fn __getitem__(&self, i: ) {
+    pub(crate) fn __getitem__(&self, i: ) {
         todo!()
     }
-    pub(crate)  fn __hash__(&self) {
+    pub(crate) fn __hash__(&self) {
         todo!()
     }
-    pub(crate)  fn __len__(&self) {
+    pub(crate) fn __len__(&self) {
         todo!()
     }
-    pub(crate)  fn __repr__(&self) {
+    pub(crate) fn __repr__(&self) {
         todo!()
     }
-    pub(crate)  fn __setitem__(&self, i: ) {
+    pub(crate) fn __setitem__(&self, i: ) {
         todo!()
     }
-    pub(crate)  fn __str__(&self) {
+    pub(crate) fn __str__(&self) {
         todo!()
     }
-    pub(crate)  fn __iter__(&self) {
+    pub(crate) fn __iter__(&self) {
         todo!()
     }
-    pub(crate)  fn _updateNodes(&self, initialPosition: ) {
+    pub(crate) fn _updateNodes(&self, initialPosition: ) {
         todo!()
     }
-    pub(crate)  fn _updateParents(&self, oldPosition: ) {
+    pub(crate) fn _updateParents(&self, oldPosition: ) {
         todo!()
     }
-    pub(crate)  fn _removeElementAtPosition(&self, element: ) {
+    pub(crate) fn _removeElementAtPosition(&self, element: ) {
         todo!()
     }
-    pub(crate)  fn getPositionFromElementUnsafe(&self, el: ) {
+    pub(crate) fn getPositionFromElementUnsafe(&self, el: ) {
         todo!()
     }
-    pub(crate)  fn populateFromSortedList(&self, listOfTuples: ) {
+    pub(crate) fn populateFromSortedList(&self, listOfTuples: ) {
         todo!()
     }
-    pub(crate)  fn getNodeByIndex(&self, i: ) {
+    pub(crate) fn getNodeByIndex(&self, i: ) {
         todo!()
     }
-    pub(crate)  fn iterNodes(&self) {
+    pub(crate) fn iterNodes(&self) {
         todo!()
     }
-    pub(crate)  fn index(&self, element: ) {
+    pub(crate) fn index(&self, element: ) {
         todo!()
     }
-    pub(crate)  fn _getPositionsFromElements(&self, elements: ) {
+    pub(crate) fn _getPositionsFromElements(&self, elements: ) {
         todo!()
     }
-    pub(crate)  fn insert(&self, positionsOrElements: ) {
+    pub(crate) fn insert(&self, positionsOrElements: ) {
         todo!()
     }
-    pub(crate)  fn _insertCore(&self, position: ) {
+    pub(crate) fn _insertCore(&self, position: ) {
         todo!()
     }
-    pub(crate)  fn highestPosition(&self) {
+    pub(crate) fn highestPosition(&self) {
         todo!()
     }
-    pub(crate)  fn lowestPosition(&self) {
+    pub(crate) fn lowestPosition(&self) {
         todo!()
     }
-    pub(crate)  fn source(&self) {
+    pub(crate) fn source(&self) {
         todo!()
     }
-    pub(crate)  fn source(&self, expr: ) {
+    pub(crate) fn source(&self, expr: ) {
         todo!()
     }
-    pub(crate)  fn endTime(&self) {
+    pub(crate) fn endTime(&self) {
         todo!()
     }
 }

@@ -1,4 +1,4 @@
-pub(crate)  struct VexflowPickler {
+pub(crate) struct VexflowPickler {
     templateHtml: ,
     jsBodyScript: ,
     jsBody: ,
@@ -6,7 +6,7 @@ pub(crate)  struct VexflowPickler {
 }
 
 impl VexflowPickler {
-    pub(crate)  fn new() -> VexflowPickler {
+    pub(crate) fn new() -> VexflowPickler {
         VexflowPickler {
             templateHtml: todo!(),
             jsBodyScript: todo!(),
@@ -15,28 +15,28 @@ impl VexflowPickler {
         }
     }
     
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn fromObject(&self, thisObject: ) {
+    pub(crate) fn fromObject(&self, thisObject: ) {
         todo!()
     }
-    pub(crate)  fn splitLongJSON(&self, jsonString: ) {
+    pub(crate) fn splitLongJSON(&self, jsonString: ) {
         todo!()
     }
-    pub(crate)  fn getLoadTemplate(&self, urls: ) {
+    pub(crate) fn getLoadTemplate(&self, urls: ) {
         todo!()
     }
-    pub(crate)  fn getJSBodyScript(&self, dataSplit: ) {
+    pub(crate) fn getJSBodyScript(&self, dataSplit: ) {
         todo!()
     }
-    pub(crate)  fn getJSBody(&self, dataSplit: ) {
+    pub(crate) fn getJSBody(&self, dataSplit: ) {
         todo!()
     }
-    pub(crate)  fn getHTML(&self, dataSplit: ) {
+    pub(crate) fn getHTML(&self, dataSplit: ) {
         todo!()
     }
-    pub(crate)  fn fromStream(&self, thisStream: ) {
+    pub(crate) fn fromStream(&self, thisStream: ) {
         todo!()
     }
 }

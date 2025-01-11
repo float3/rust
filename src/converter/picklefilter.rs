@@ -1,22 +1,22 @@
-pub(crate)  struct PickleFilter {
+pub(crate) struct PickleFilter {
 }
 
 impl PickleFilter {
-    pub(crate)  fn new() -> PickleFilter {
+    pub(crate) fn new() -> PickleFilter {
         PickleFilter {
         }
     }
     
-    pub(crate)  fn new(&self, fp: ) {
+    pub(crate) fn new(&self, fp: ) {
         todo!()
     }
-    pub(crate)  fn getPickleFp(&self, directory: ) {
+    pub(crate) fn getPickleFp(&self, directory: ) {
         todo!()
     }
-    pub(crate)  fn removePickle(&self) {
+    pub(crate) fn removePickle(&self) {
         todo!()
     }
-    pub(crate)  fn status(&self) {
+    pub(crate) fn status(&self) {
         todo!()
     }
 }

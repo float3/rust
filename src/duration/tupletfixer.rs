@@ -1,22 +1,22 @@
-pub(crate)  struct TupletFixer {
+pub(crate) struct TupletFixer {
 }
 
 impl TupletFixer {
-    pub(crate)  fn new() -> TupletFixer {
+    pub(crate) fn new() -> TupletFixer {
         TupletFixer {
         }
     }
     
-    pub(crate)  fn new(&self, streamIn: ) {
+    pub(crate) fn new(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn setStream(&self, streamIn: ) {
+    pub(crate) fn setStream(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn findTupletGroups(&self, incorporateGroupings: bool) {
+    pub(crate) fn findTupletGroups(&self, incorporateGroupings: bool) {
         todo!()
     }
-    pub(crate)  fn fixBrokenTupletDuration(&self, tupletGroup: ) {
+    pub(crate) fn fixBrokenTupletDuration(&self, tupletGroup: ) {
         todo!()
     }
 }

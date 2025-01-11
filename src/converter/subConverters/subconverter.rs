@@ -1,4 +1,4 @@
-pub(crate)  struct SubConverter {
+pub(crate) struct SubConverter {
     readBinary: bool,
     canBePickled: bool,
     registerFormats: ,
@@ -13,7 +13,7 @@ pub(crate)  struct SubConverter {
 }
 
 impl SubConverter {
-    pub(crate)  fn new() -> SubConverter {
+    pub(crate) fn new() -> SubConverter {
         SubConverter {
             readBinary: todo!(),
             canBePickled: todo!(),
@@ -29,43 +29,43 @@ impl SubConverter {
         }
     }
     
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn parseData(&self, dataString: ) {
+    pub(crate) fn parseData(&self, dataString: ) {
         todo!()
     }
-    pub(crate)  fn parseFile(&self, filePath: ) {
+    pub(crate) fn parseFile(&self, filePath: ) {
         todo!()
     }
-    pub(crate)  fn _getStream(&self) {
+    pub(crate) fn _getStream(&self) {
         todo!()
     }
-    pub(crate)  fn _setStream(&self, newStream: ) {
+    pub(crate) fn _setStream(&self, newStream: ) {
         todo!()
     }
-    pub(crate)  fn checkShowAbility(&self) -> bool {
+    pub(crate) fn checkShowAbility(&self) -> bool {
         todo!()
     }
-    pub(crate)  fn launch(&self, filePath: ) {
+    pub(crate) fn launch(&self, filePath: ) {
         todo!()
     }
-    pub(crate)  fn show(&self, obj: ) {
+    pub(crate) fn show(&self, obj: ) {
         todo!()
     }
-    pub(crate)  fn getExtensionForSubformats(&self, subformats: ) -> String {
+    pub(crate) fn getExtensionForSubformats(&self, subformats: ) -> String {
         todo!()
     }
-    pub(crate)  fn getTemporaryFile(&self, subformats: ) {
+    pub(crate) fn getTemporaryFile(&self, subformats: ) {
         todo!()
     }
-    pub(crate)  fn write(&self, obj: ) {
+    pub(crate) fn write(&self, obj: ) {
         todo!()
     }
-    pub(crate)  fn writeDataStream(&self, fp: ) {
+    pub(crate) fn writeDataStream(&self, fp: ) {
         todo!()
     }
-    pub(crate)  fn toData(&self, obj: ) {
+    pub(crate) fn toData(&self, obj: ) {
         todo!()
     }
 }

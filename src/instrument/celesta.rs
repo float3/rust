@@ -1,15 +1,15 @@
-pub(crate)  struct Celesta {
+pub(crate) struct Celesta {
     keyboardinstrument: KeyboardInstrument,
 }
 
 impl Celesta {
-    pub(crate)  fn new() -> Celesta {
+    pub(crate) fn new() -> Celesta {
         Celesta {
             keyboardinstrument: KeyboardInstrument::new(),
         }
     }
 
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
 }

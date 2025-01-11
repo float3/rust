@@ -3,12 +3,12 @@ use std::{error::Error, fmt::Display};
 use crate::exceptions21::music21exception::Music21Exception;
 
 #[derive(Debug)]
-pub(crate)  struct ChordException {
+pub(crate) struct ChordException {
     music21exception: Music21Exception,
 }
 
 impl ChordException {
-    pub(crate)  fn new(error_message: String) -> ChordException {
+    pub(crate) fn new(error_message: String) -> ChordException {
         ChordException {
             music21exception: Music21Exception::new(error_message),
         }

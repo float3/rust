@@ -1,4 +1,4 @@
-pub(crate)  struct GlobalReferenceLine {
+pub(crate) struct GlobalReferenceLine {
     humdrumline: HumdrumLine,
     position: ,
     contents: ,
@@ -10,7 +10,7 @@ pub(crate)  struct GlobalReferenceLine {
 }
 
 impl GlobalReferenceLine {
-    pub(crate)  fn new() -> GlobalReferenceLine {
+    pub(crate) fn new() -> GlobalReferenceLine {
         GlobalReferenceLine {
             humdrumline: HumdrumLine::new(),
             position: todo!(),
@@ -23,7 +23,7 @@ impl GlobalReferenceLine {
         }
     }
     
-    pub(crate)  fn new(&self, position: i32, contents: String) {
+    pub(crate) fn new(&self, position: IntegerType, contents: String) {
         todo!()
     }
 }

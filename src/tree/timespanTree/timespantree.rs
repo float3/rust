@@ -1,71 +1,71 @@
-pub(crate)  struct TimespanTree {
+pub(crate) struct TimespanTree {
     trees::offsettree: trees::OffsetTree,
-    __slots__: ,
+
 }
 
 impl TimespanTree {
-    pub(crate)  fn new() -> TimespanTree {
+    pub(crate) fn new() -> TimespanTree {
         TimespanTree {
             trees::offsettree: trees::OffsetTree::new(),
-            __slots__: todo!(),
+
         }
     }
     
-    pub(crate)  fn _insertCorePayloadSortKey(&self, x: ) {
+    pub(crate) fn _insertCorePayloadSortKey(&self, x: ) {
         todo!()
     }
-    pub(crate)  fn elementEndTime(&self, el: ) {
+    pub(crate) fn elementEndTime(&self, el: ) {
         todo!()
     }
-    pub(crate)  fn index(&self, span: ) {
+    pub(crate) fn index(&self, span: ) {
         todo!()
     }
-    pub(crate)  fn offset(&self) {
+    pub(crate) fn offset(&self) {
         todo!()
     }
-    pub(crate)  fn removeTimespanList(&self, elements: ) {
+    pub(crate) fn removeTimespanList(&self, elements: ) {
         todo!()
     }
-    pub(crate)  fn removeTimespan(&self, elements: ) {
+    pub(crate) fn removeTimespan(&self, elements: ) {
         todo!()
     }
-    pub(crate)  fn findNextPitchedTimespanInSameStreamByClass(&self, pitchedTimespan: ) {
+    pub(crate) fn findNextPitchedTimespanInSameStreamByClass(&self, pitchedTimespan: ) {
         todo!()
     }
-    pub(crate)  fn findPreviousPitchedTimespanInSameStreamByClass(&self, pitchedTimespan: ) {
+    pub(crate) fn findPreviousPitchedTimespanInSameStreamByClass(&self, pitchedTimespan: ) {
         todo!()
     }
-    pub(crate)  fn getVerticalityAtOrBefore(&self, offset: ) {
+    pub(crate) fn getVerticalityAtOrBefore(&self, offset: ) {
         todo!()
     }
-    pub(crate)  fn iterateConsonanceBoundedVerticalities(&self) {
+    pub(crate) fn iterateConsonanceBoundedVerticalities(&self) {
         todo!()
     }
-    pub(crate)  fn iterateVerticalities(&self, reverse: bool) {
+    pub(crate) fn iterateVerticalities(&self, reverse: bool) {
         todo!()
     }
-    pub(crate)  fn iterateVerticalitiesNwise(&self, n: i32) {
+    pub(crate) fn iterateVerticalitiesNwise(&self, n: IntegerType) {
         todo!()
     }
-    pub(crate)  fn splitAt(&self, offsets: ) {
+    pub(crate) fn splitAt(&self, offsets: ) {
         todo!()
     }
-    pub(crate)  fn toPartwiseTimespanTrees(&self) {
+    pub(crate) fn toPartwiseTimespanTrees(&self) {
         todo!()
     }
-    pub(crate)  fn unwrapVerticalities(&self, verticalities: ) {
+    pub(crate) fn unwrapVerticalities(&self, verticalities: ) {
         todo!()
     }
-    pub(crate)  fn allParts(&self) {
+    pub(crate) fn allParts(&self) {
         todo!()
     }
-    pub(crate)  fn maximumOverlap(&self) {
+    pub(crate) fn maximumOverlap(&self) {
         todo!()
     }
-    pub(crate)  fn element(&self) {
+    pub(crate) fn element(&self) {
         todo!()
     }
-    pub(crate)  fn element(&self, expr: ) {
+    pub(crate) fn element(&self, expr: ) {
         todo!()
     }
 }

@@ -1,24 +1,24 @@
-pub(crate)  struct DeltaTime {
+pub(crate) struct DeltaTime {
     midievent: MidiEvent,
 }
 
 impl DeltaTime {
-    pub(crate)  fn new() -> DeltaTime {
+    pub(crate) fn new() -> DeltaTime {
         DeltaTime {
             midievent: MidiEvent::new(),
         }
     }
     
-    pub(crate)  fn new(&self, track: ) {
+    pub(crate) fn new(&self, track: ) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn readUntilLowByte(&self, oldBytes: ) {
+    pub(crate) fn readUntilLowByte(&self, oldBytes: ) {
         todo!()
     }
-    pub(crate)  fn getBytes(&self) {
+    pub(crate) fn getBytes(&self) {
         todo!()
     }
 }

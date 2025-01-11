@@ -1,11 +1,11 @@
-pub(crate)  struct ConverterVexflow {
+pub(crate) struct ConverterVexflow {
     subconverter: SubConverter,
     registerFormats: ,
     registerOutputExtensions: ,
 }
 
 impl ConverterVexflow {
-    pub(crate)  fn new() -> ConverterVexflow {
+    pub(crate) fn new() -> ConverterVexflow {
         ConverterVexflow {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -13,7 +13,7 @@ impl ConverterVexflow {
         }
     }
     
-    pub(crate)  fn write(&self, obj: ) {
+    pub(crate) fn write(&self, obj: ) {
         todo!()
     }
 }

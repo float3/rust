@@ -1,4 +1,6 @@
-pub(crate)  enum IntString {
-    Int(i32),
+use crate::defaults::IntegerType;
+
+pub(crate) enum IntString {
+    Int(IntegerType),
     String(String),
 }

@@ -1,4 +1,4 @@
-pub(crate)  enum AppendSpanners {
+pub(crate) enum AppendSpanners {
     NORMAL,
     RELATEDONLY,
     NONE,

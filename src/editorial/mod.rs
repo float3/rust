@@ -1,2 +1,2 @@
-pub(crate)  mod editorial;
-pub(crate)  mod comment;
+pub(crate) mod comment;
+pub(crate) mod editorial;

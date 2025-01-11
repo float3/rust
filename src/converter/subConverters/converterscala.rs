@@ -1,4 +1,4 @@
-pub(crate)  struct ConverterScala {
+pub(crate) struct ConverterScala {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
@@ -6,7 +6,7 @@ pub(crate)  struct ConverterScala {
 }
 
 impl ConverterScala {
-    pub(crate)  fn new() -> ConverterScala {
+    pub(crate) fn new() -> ConverterScala {
         ConverterScala {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),

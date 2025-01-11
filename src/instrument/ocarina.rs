@@ -1,15 +1,15 @@
-pub(crate)  struct Ocarina {
+pub(crate) struct Ocarina {
     flute: Flute,
 }
 
 impl Ocarina {
-    pub(crate)  fn new() -> Ocarina {
+    pub(crate) fn new() -> Ocarina {
         Ocarina {
             flute: Flute::new(),
         }
     }
 
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
 }

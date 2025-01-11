@@ -1,4 +1,4 @@
-pub(crate)  struct ShowNumber {
+pub(crate) struct ShowNumber {
     strenum: StrEnum,
     DEFAULT: ,
     ALWAYS: ,
@@ -6,7 +6,7 @@ pub(crate)  struct ShowNumber {
 }
 
 impl ShowNumber {
-    pub(crate)  fn new() -> ShowNumber {
+    pub(crate) fn new() -> ShowNumber {
         ShowNumber {
             strenum: StrEnum::new(),
             DEFAULT: todo!(),

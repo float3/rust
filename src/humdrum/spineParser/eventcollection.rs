@@ -1,31 +1,31 @@
-pub(crate)  struct EventCollection {
+pub(crate) struct EventCollection {
 }
 
 impl EventCollection {
-    pub(crate)  fn new() -> EventCollection {
+    pub(crate) fn new() -> EventCollection {
         EventCollection {
         }
     }
     
-    pub(crate)  fn new(&self, maxSpines: ) {
+    pub(crate) fn new(&self, maxSpines: ) {
         todo!()
     }
-    pub(crate)  fn addSpineEvent(&self, spineNum: ) {
+    pub(crate) fn addSpineEvent(&self, spineNum: ) {
         todo!()
     }
-    pub(crate)  fn addLastSpineEvent(&self, spineNum: ) {
+    pub(crate) fn addLastSpineEvent(&self, spineNum: ) {
         todo!()
     }
-    pub(crate)  fn addGlobalEvent(&self, globalEvent: ) {
+    pub(crate) fn addGlobalEvent(&self, globalEvent: ) {
         todo!()
     }
-    pub(crate)  fn getSpineEvent(&self, spineNum: ) {
+    pub(crate) fn getSpineEvent(&self, spineNum: ) {
         todo!()
     }
-    pub(crate)  fn getSpineOccurring(&self, spineNum: ) {
+    pub(crate) fn getSpineOccurring(&self, spineNum: ) {
         todo!()
     }
-    pub(crate)  fn getAllOccurring(&self) {
+    pub(crate) fn getAllOccurring(&self) {
         todo!()
     }
 }

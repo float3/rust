@@ -1,15 +1,15 @@
-pub(crate)  struct HarmSpine {
+pub(crate) struct HarmSpine {
     humdrumspine: HumdrumSpine,
 }
 
 impl HarmSpine {
-    pub(crate)  fn new() -> HarmSpine {
+    pub(crate) fn new() -> HarmSpine {
         HarmSpine {
             humdrumspine: HumdrumSpine::new(),
         }
     }
     
-    pub(crate)  fn parse(&self) {
+    pub(crate) fn parse(&self) {
         todo!()
     }
 }

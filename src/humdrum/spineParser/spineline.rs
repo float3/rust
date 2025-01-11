@@ -1,4 +1,4 @@
-pub(crate)  struct SpineLine {
+pub(crate) struct SpineLine {
     humdrumline: HumdrumLine,
     position: ,
     contents: ,
@@ -7,7 +7,7 @@ pub(crate)  struct SpineLine {
 }
 
 impl SpineLine {
-    pub(crate)  fn new() -> SpineLine {
+    pub(crate) fn new() -> SpineLine {
         SpineLine {
             humdrumline: HumdrumLine::new(),
             position: todo!(),
@@ -17,7 +17,7 @@ impl SpineLine {
         }
     }
     
-    pub(crate)  fn new(&self, position: i32, contents: String) {
+    pub(crate) fn new(&self, position: IntegerType, contents: String) {
         todo!()
     }
 }

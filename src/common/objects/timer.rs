@@ -1,26 +1,26 @@
-pub(crate)  struct Timer {}
+pub(crate) struct Timer {}
 
 impl Timer {
-    pub(crate)  fn new() -> Timer {
+    pub(crate) fn new() -> Timer {
         Timer {}
     }
 
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn start(&self) {
+    pub(crate) fn start(&self) {
         todo!()
     }
-    pub(crate)  fn stop(&self) {
+    pub(crate) fn stop(&self) {
         todo!()
     }
-    pub(crate)  fn clear(&self) {
+    pub(crate) fn clear(&self) {
         todo!()
     }
-    pub(crate)  fn __call__(&self) {
+    pub(crate) fn __call__(&self) {
         todo!()
     }
-    pub(crate)  fn __str__(&self) {
+    pub(crate) fn __str__(&self) {
         todo!()
     }
 }

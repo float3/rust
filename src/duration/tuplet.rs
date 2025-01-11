@@ -1,66 +1,66 @@
-pub(crate)  struct Tuplet {
+pub(crate) struct Tuplet {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl Tuplet {
-    pub(crate)  fn new() -> Tuplet {
+    pub(crate) fn new() -> Tuplet {
         Tuplet {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub(crate)  fn new(&self, numberNotesActual: i32, numberNotesNormal: i32, durationActual: ) {
+    pub(crate) fn new(&self, numberNotesActual: IntegerType, numberNotesNormal: IntegerType, durationActual: ) {
         todo!()
     }
-    pub(crate)  fn __eq__(&self, other: ) -> bool {
+    pub(crate) fn __eq__(&self, other: ) -> bool {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn _checkFrozen(&self) {
+    pub(crate) fn _checkFrozen(&self) {
         todo!()
     }
-    pub(crate)  fn augmentOrDiminish(&self, amountToScale: ) {
+    pub(crate) fn augmentOrDiminish(&self, amountToScale: ) {
         todo!()
     }
-    pub(crate)  fn setDurationType(&self, durType: , dots: i32) {
+    pub(crate) fn setDurationType(&self, durType: , dots: IntegerType) {
         todo!()
     }
-    pub(crate)  fn setRatio(&self, actual: i32, normal: i32) {
+    pub(crate) fn setRatio(&self, actual: IntegerType, normal: IntegerType) {
         todo!()
     }
-    pub(crate)  fn totalTupletLength(&self) {
+    pub(crate) fn totalTupletLength(&self) {
         todo!()
     }
-    pub(crate)  fn tupletMultiplier(&self) {
+    pub(crate) fn tupletMultiplier(&self) {
         todo!()
     }
-    pub(crate)  fn durationActual(&self) {
+    pub(crate) fn durationActual(&self) {
         todo!()
     }
-    pub(crate)  fn durationActual(&self, dA: ) {
+    pub(crate) fn durationActual(&self, dA: ) {
         todo!()
     }
-    pub(crate)  fn durationNormal(&self) {
+    pub(crate) fn durationNormal(&self) {
         todo!()
     }
-    pub(crate)  fn durationNormal(&self, dN: ) {
+    pub(crate) fn durationNormal(&self, dN: ) {
         todo!()
     }
-    pub(crate)  fn fullName(&self) {
+    pub(crate) fn fullName(&self) {
         todo!()
     }
-    pub(crate)  fn tupletActual(&self) {
+    pub(crate) fn tupletActual(&self) {
         todo!()
     }
-    pub(crate)  fn tupletActual(&self, tupList: ) {
+    pub(crate) fn tupletActual(&self, tupList: ) {
         todo!()
     }
-    pub(crate)  fn tupletNormal(&self) {
+    pub(crate) fn tupletNormal(&self) {
         todo!()
     }
-    pub(crate)  fn tupletNormal(&self, tupList: ) {
+    pub(crate) fn tupletNormal(&self, tupList: ) {
         todo!()
     }
 }

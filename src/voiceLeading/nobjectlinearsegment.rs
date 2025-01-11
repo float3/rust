@@ -1,18 +1,18 @@
-pub(crate)  struct NObjectLinearSegment {
+pub(crate) struct NObjectLinearSegment {
     base::music21object: base::Music21Object,
 }
 
 impl NObjectLinearSegment {
-    pub(crate)  fn new() -> NObjectLinearSegment {
+    pub(crate) fn new() -> NObjectLinearSegment {
         NObjectLinearSegment {
             base::music21object: base::Music21Object::new(),
         }
     }
     
-    pub(crate)  fn new(&self, objectList: ) {
+    pub(crate) fn new(&self, objectList: ) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
 }

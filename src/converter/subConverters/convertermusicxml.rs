@@ -1,4 +1,4 @@
-pub(crate)  struct ConverterMusicXML {
+pub(crate) struct ConverterMusicXML {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
@@ -7,7 +7,7 @@ pub(crate)  struct ConverterMusicXML {
 }
 
 impl ConverterMusicXML {
-    pub(crate)  fn new() -> ConverterMusicXML {
+    pub(crate) fn new() -> ConverterMusicXML {
         ConverterMusicXML {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -17,19 +17,19 @@ impl ConverterMusicXML {
         }
     }
     
-    pub(crate)  fn parseData(&self, xmlString: String, number: ) {
+    pub(crate) fn parseData(&self, xmlString: String, number: ) {
         todo!()
     }
-    pub(crate)  fn parseFile(&self, filePath: ) {
+    pub(crate) fn parseFile(&self, filePath: ) {
         todo!()
     }
-    pub(crate)  fn writeDataStream(&self, fp: ) {
+    pub(crate) fn writeDataStream(&self, fp: ) {
         todo!()
     }
-    pub(crate)  fn write(&self, obj: ) {
+    pub(crate) fn write(&self, obj: ) {
         todo!()
     }
-    pub(crate)  fn show(&self, obj: ) {
+    pub(crate) fn show(&self, obj: ) {
         todo!()
     }
 }

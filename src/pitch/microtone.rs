@@ -1,47 +1,47 @@
-pub(crate)  struct Microtone {
+pub(crate) struct Microtone {
     prebase::protom21object: prebase::ProtoM21Object,
-    __slots__: ,
+
 }
 
 impl Microtone {
-    pub(crate)  fn new() -> Microtone {
+    pub(crate) fn new() -> Microtone {
         Microtone {
             prebase::protom21object: prebase::ProtoM21Object::new(),
-            __slots__: todo!(),
+
         }
     }
     
-    pub(crate)  fn new(&self, centsOrString: ) {
+    pub(crate) fn new(&self, centsOrString: ) {
         todo!()
     }
-    pub(crate)  fn __deepcopy__(&self, memo: ) {
+    pub(crate) fn __deepcopy__(&self, memo: ) {
         todo!()
     }
-    pub(crate)  fn __eq__(&self, other: ) {
+    pub(crate) fn __eq__(&self, other: ) {
         todo!()
     }
-    pub(crate)  fn __hash__(&self) {
+    pub(crate) fn __hash__(&self) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
-    pub(crate)  fn __str__(&self) {
+    pub(crate) fn __str__(&self) {
         todo!()
     }
-    pub(crate)  fn _parseString(&self, value: ) {
+    pub(crate) fn _parseString(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn alter(&self) {
+    pub(crate) fn alter(&self) {
         todo!()
     }
-    pub(crate)  fn cents(&self) {
+    pub(crate) fn cents(&self) {
         todo!()
     }
-    pub(crate)  fn harmonicShift(&self) {
+    pub(crate) fn harmonicShift(&self) {
         todo!()
     }
-    pub(crate)  fn harmonicShift(&self, value: ) {
+    pub(crate) fn harmonicShift(&self, value: ) {
         todo!()
     }
 }

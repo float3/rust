@@ -1,5 +1,7 @@
+use crate::defaults::IntegerType;
+
 #[derive(Debug, Copy, Clone)]
-pub(crate)  enum Ordinal {
+pub(crate) enum Ordinal {
     Zeroth = 0,
     First = 1,
     Second = 2,
@@ -25,8 +27,41 @@ pub(crate)  enum Ordinal {
     TwentySecond = 22,
 }
 
+impl TryFrom<IntegerType> for Ordinal {
+    type Error = ();
+
+    fn try_from(value: IntegerType) -> Result<Self, Self::Error> {
+        match value {
+            0 => Ok(Ordinal::Zeroth),
+            1 => Ok(Ordinal::First),
+            2 => Ok(Ordinal::Second),
+            3 => Ok(Ordinal::Third),
+            4 => Ok(Ordinal::Fourth),
+            5 => Ok(Ordinal::Fifth),
+            6 => Ok(Ordinal::Sixth),
+            7 => Ok(Ordinal::Seventh),
+            8 => Ok(Ordinal::Eighth),
+            9 => Ok(Ordinal::Ninth),
+            10 => Ok(Ordinal::Tenth),
+            11 => Ok(Ordinal::Eleventh),
+            12 => Ok(Ordinal::Twelfth),
+            13 => Ok(Ordinal::Thirteenth),
+            14 => Ok(Ordinal::Fourteenth),
+            15 => Ok(Ordinal::Fifteenth),
+            16 => Ok(Ordinal::Sixteenth),
+            17 => Ok(Ordinal::Seventeenth),
+            18 => Ok(Ordinal::Eighteenth),
+            19 => Ok(Ordinal::Nineteenth),
+            20 => Ok(Ordinal::Twentieth),
+            21 => Ok(Ordinal::TwentyFirst),
+            22 => Ok(Ordinal::TwentySecond),
+            _ => Err(()),
+        }
+    }
+}
+
 impl Ordinal {
-    pub(crate)  fn from_string(value: &str) -> Option<Ordinal> {
+    pub(crate) fn from_string(value: &str) -> Option<Ordinal> {
         match value.to_lowercase().as_str() {
             "zeroth" => Some(Ordinal::Zeroth),
             "first" => Some(Ordinal::First),
@@ -55,7 +90,7 @@ impl Ordinal {
         }
     }
 
-    pub(crate)  fn to_string(&self) -> String {
+    pub(crate) fn to_string(&self) -> String {
         match self {
             Ordinal::Zeroth => "zeroth".to_string(),
             Ordinal::First => "first".to_string(),
@@ -80,35 +115,6 @@ impl Ordinal {
             Ordinal::Twentieth => "twentieth".to_string(),
             Ordinal::TwentyFirst => "twenty-first".to_string(),
             Ordinal::TwentySecond => "twenty-second".to_string(),
-        }
-    }
-
-    pub(crate)  fn from_number(num: i32) -> Option<Ordinal> {
-        match num {
-            0 => Some(Ordinal::Zeroth),
-            1 => Some(Ordinal::First),
-            2 => Some(Ordinal::Second),
-            3 => Some(Ordinal::Third),
-            4 => Some(Ordinal::Fourth),
-            5 => Some(Ordinal::Fifth),
-            6 => Some(Ordinal::Sixth),
-            7 => Some(Ordinal::Seventh),
-            8 => Some(Ordinal::Eighth),
-            9 => Some(Ordinal::Ninth),
-            10 => Some(Ordinal::Tenth),
-            11 => Some(Ordinal::Eleventh),
-            12 => Some(Ordinal::Twelfth),
-            13 => Some(Ordinal::Thirteenth),
-            14 => Some(Ordinal::Fourteenth),
-            15 => Some(Ordinal::Fifteenth),
-            16 => Some(Ordinal::Sixteenth),
-            17 => Some(Ordinal::Seventeenth),
-            18 => Some(Ordinal::Eighteenth),
-            19 => Some(Ordinal::Nineteenth),
-            20 => Some(Ordinal::Twentieth),
-            21 => Some(Ordinal::TwentyFirst),
-            22 => Some(Ordinal::TwentySecond),
-            _ => None,
         }
     }
 }

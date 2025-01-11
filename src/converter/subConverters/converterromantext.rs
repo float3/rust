@@ -1,4 +1,4 @@
-pub(crate)  struct ConverterRomanText {
+pub(crate) struct ConverterRomanText {
     subconverter: SubConverter,
     registerFormats: ,
     registerInputExtensions: ,
@@ -6,7 +6,7 @@ pub(crate)  struct ConverterRomanText {
 }
 
 impl ConverterRomanText {
-    pub(crate)  fn new() -> ConverterRomanText {
+    pub(crate) fn new() -> ConverterRomanText {
         ConverterRomanText {
             subconverter: SubConverter::new(),
             registerFormats: todo!(),
@@ -15,13 +15,13 @@ impl ConverterRomanText {
         }
     }
     
-    pub(crate)  fn parseData(&self, strData: ) {
+    pub(crate) fn parseData(&self, strData: ) {
         todo!()
     }
-    pub(crate)  fn parseFile(&self, filePath: ) {
+    pub(crate) fn parseFile(&self, filePath: ) {
         todo!()
     }
-    pub(crate)  fn write(&self, obj: ) {
+    pub(crate) fn write(&self, obj: ) {
         todo!()
     }
 }

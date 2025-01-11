@@ -1,29 +1,29 @@
-pub(crate)  struct DateSelection {
+pub(crate) struct DateSelection {
     dateprimitive: DatePrimitive,
     isSingle: bool,
 }
 
 impl DateSelection {
-    pub(crate)  fn new() -> DateSelection {
+    pub(crate) fn new() -> DateSelection {
         DateSelection {
             dateprimitive: DatePrimitive::new(),
             isSingle: todo!(),
         }
     }
     
-    pub(crate)  fn new(&self, data: ) {
+    pub(crate) fn new(&self, data: ) {
         todo!()
     }
-    pub(crate)  fn __str__(&self) {
+    pub(crate) fn __str__(&self) {
         todo!()
     }
-    pub(crate)  fn _prepareData(&self, data: ) {
+    pub(crate) fn _prepareData(&self, data: ) {
         todo!()
     }
-    pub(crate)  fn relevance(&self) {
+    pub(crate) fn relevance(&self) {
         todo!()
     }
-    pub(crate)  fn relevance(&self, value: ) {
+    pub(crate) fn relevance(&self, value: ) {
         todo!()
     }
 }

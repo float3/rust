@@ -1,42 +1,42 @@
-pub(crate)  struct HumdrumDataCollection {
+pub(crate) struct HumdrumDataCollection {
     prebase::protom21object: prebase::ProtoM21Object,
 }
 
 impl HumdrumDataCollection {
-    pub(crate)  fn new() -> HumdrumDataCollection {
+    pub(crate) fn new() -> HumdrumDataCollection {
         HumdrumDataCollection {
             prebase::protom21object: prebase::ProtoM21Object::new(),
         }
     }
     
-    pub(crate)  fn new(&self, dataStream: ) {
+    pub(crate) fn new(&self, dataStream: ) {
         todo!()
     }
-    pub(crate)  fn parse(&self) {
+    pub(crate) fn parse(&self) {
         todo!()
     }
-    pub(crate)  fn parseNonOpus(&self, dataStream: ) {
+    pub(crate) fn parseNonOpus(&self, dataStream: ) {
         todo!()
     }
-    pub(crate)  fn determineIfDataStreamIsOpus(&self, dataStream: ) {
+    pub(crate) fn determineIfDataStreamIsOpus(&self, dataStream: ) {
         todo!()
     }
-    pub(crate)  fn parseOpusDataCollections(&self, dataCollections: ) {
+    pub(crate) fn parseOpusDataCollections(&self, dataCollections: ) {
         todo!()
     }
-    pub(crate)  fn parseEventListFromDataStream(&self, dataStream: ) {
+    pub(crate) fn parseEventListFromDataStream(&self, dataStream: ) {
         todo!()
     }
-    pub(crate)  fn parseProtoSpinesAndEventCollections(&self) {
+    pub(crate) fn parseProtoSpinesAndEventCollections(&self) {
         todo!()
     }
-    pub(crate)  fn createHumdrumSpines(&self, protoSpines: ) {
+    pub(crate) fn createHumdrumSpines(&self, protoSpines: ) {
         todo!()
     }
-    pub(crate)  fn insertGlobalEvents(&self) {
+    pub(crate) fn insertGlobalEvents(&self) {
         todo!()
     }
-    pub(crate)  fn parseMetadata(&self, s: ) {
+    pub(crate) fn parseMetadata(&self, s: ) {
         todo!()
     }
 }

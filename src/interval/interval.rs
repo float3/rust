@@ -1,128 +1,146 @@
 use super::intervalbase::IntervalBase;
+use crate::{note::note::Note, pitch::pitch::Pitch};
 
-pub(crate)  struct Interval {
-    intervalbase: IntervalBase,
-}
+pub(crate) struct Interval {}
 
 impl Interval {
-    pub(crate)  fn new() -> Interval {
-        Interval {
-            intervalbase: IntervalBase::new(),
-        }
+    pub(crate) fn new() -> Interval {
+        Interval {}
     }
 
-    // pub(crate)  fn _reprInternal(&self) {
+    // pub(crate) fn _reprInternal(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn __eq__(&self, other: ) {
+    // pub(crate) fn __eq__(&self, other: ) {
     //     todo!()
     // }
-    // pub(crate)  fn __hash__(&self) {
+    // pub(crate) fn __hash__(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn generic(&self) -> GenericInterval {
+    // pub(crate) fn generic(&self) -> GenericInterval {
     //     todo!()
     // }
-    // pub(crate)  fn name(&self) -> String {
+    // pub(crate) fn name(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn niceName(&self) -> String {
+    // pub(crate) fn niceName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn simpleName(&self) -> String {
+    // pub(crate) fn simpleName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn simpleNiceName(&self) -> String {
+    // pub(crate) fn simpleNiceName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn semiSimpleName(&self) -> String {
+    // pub(crate) fn semiSimpleName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn semiSimpleNiceName(&self) -> String {
+    // pub(crate) fn semiSimpleNiceName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn directedName(&self) -> String {
+    // pub(crate) fn directedName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn directedNiceName(&self) -> String {
+    // pub(crate) fn directedNiceName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn directedSimpleName(&self) -> String {
+    // pub(crate) fn directedSimpleName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn directedSimpleNiceName(&self) -> String {
+    // pub(crate) fn directedSimpleNiceName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn semitones(&self) {
+    // pub(crate) fn semitones(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn direction(&self) {
+    // pub(crate) fn direction(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn specifier(&self) {
+    // pub(crate) fn specifier(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn specificName(&self) -> String {
+    // pub(crate) fn specificName(&self) -> String {
     //     todo!()
     // }
-    // pub(crate)  fn isDiatonicStep(&self) -> bool {
+    // pub(crate) fn isDiatonicStep(&self) -> bool {
     //     todo!()
     // }
-    // pub(crate)  fn isChromaticStep(&self) -> bool {
+    // pub(crate) fn isChromaticStep(&self) -> bool {
     //     todo!()
     // }
-    // pub(crate)  fn isStep(&self) -> bool {
+    // pub(crate) fn isStep(&self) -> bool {
     //     todo!()
     // }
-    // pub(crate)  fn isSkip(&self) -> bool {
+    // pub(crate) fn isSkip(&self) -> bool {
     //     todo!()
     // }
-    // pub(crate)  fn isConsonant(&self) -> bool {
+    // pub(crate) fn isConsonant(&self) -> bool {
     //     todo!()
     // }
-    // pub(crate)  fn complement(&self) -> Interval {
+    // pub(crate) fn complement(&self) -> Interval {
     //     todo!()
     // }
-    // pub(crate)  fn intervalClass(&self) -> i32 {
+    // pub(crate) fn intervalClass(&self) -> IntegerType {
     //     todo!()
     // }
-    // pub(crate)  fn cents(&self) -> f64 {
+    // pub(crate) fn cents(&self) -> FloatType {
     //     todo!()
     // }
-    // pub(crate)  fn _diatonicIntervalCentShift(&self) -> f64 {
+    // pub(crate) fn _diatonicIntervalCentShift(&self) -> FloatType {
     //     todo!()
     // }
-    // pub(crate)  fn transposePitch(&self, p: ) {
+    // pub(crate) fn transposePitch(&self, p: ) {
     //     todo!()
     // }
-    // pub(crate)  fn _diatonicTransposePitch(&self, p: ) {
+    // pub(crate) fn _diatonicTransposePitch(&self, p: ) {
     //     todo!()
     // }
-    // pub(crate)  fn reverse(&self) {
+    // pub(crate) fn reverse(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn pitchStart(&self) {
+    // pub(crate) fn pitchStart(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn pitchStart(&self, p: ) {
+    // pub(crate) fn pitchStart(&self, p: ) {
     //     todo!()
     // }
-    // pub(crate)  fn pitchEnd(&self) {
+    // pub(crate) fn pitchEnd(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn pitchEnd(&self, p: ) {
+    // pub(crate) fn pitchEnd(&self, p: ) {
     //     todo!()
     // }
-    // pub(crate)  fn noteStart(&self) {
+    // pub(crate) fn noteStart(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn noteStart(&self, n: ) {
+    // pub(crate) fn noteStart(&self, n: ) {
     //     todo!()
     // }
-    // pub(crate)  fn noteEnd(&self) {
+    // pub(crate) fn noteEnd(&self) {
     //     todo!()
     // }
-    // pub(crate)  fn noteEnd(&self, n: ) {
+    // pub(crate) fn noteEnd(&self, n: ) {
     //     todo!()
     // }
+}
+
+impl IntervalBase for Interval {
+    fn transpose_note(&self, note1: Note) -> Note {
+        let _ = note1;
+        todo!()
+    }
+
+    fn transpose_pitch(&self, pitch1: Pitch, inplace: bool) -> Pitch {
+        let _ = inplace;
+        let _ = pitch1;
+        todo!()
+    }
+
+    fn reverse(&self) {
+        todo!()
+    }
+
+    fn clear_cache(&self) {
+        todo!()
+    }
 }

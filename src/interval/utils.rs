@@ -1,13 +1,13 @@
 use super::{direction::Direction, intervalexception::IntervalException};
 use crate::common::{enums::intstring::IntString, numbertools::Ordinal};
 
-pub(crate)  fn convert_generic(value: IntString) -> Result<i32, IntervalException> {
+pub(crate) fn convert_generic(value: IntString) -> Result<IntegerType, IntervalException> {
     let mut direction_scalar = Direction::ASCENDING;
     let post = match value {
         IntString::Int(value) => value,
         IntString::String(value) => {
             let value = value.as_str();
-            let post: i32;
+            let post: IntegerType;
             let mut value: String = value.trim().to_lowercase();
 
             // Determine direction
@@ -23,7 +23,7 @@ pub(crate)  fn convert_generic(value: IntString) -> Result<i32, IntervalExceptio
             }
 
             match Ordinal::from_string(value.as_str()) {
-                Some(ordinal) => post = ordinal as i32,
+                Some(ordinal) => post = ordinal as IntegerType,
                 None => {
                     return Err(IntervalException::new(
                         format!("Cannot convert {} to an interval.", value).to_owned(),
@@ -33,5 +33,5 @@ pub(crate)  fn convert_generic(value: IntString) -> Result<i32, IntervalExceptio
             post
         }
     };
-    Ok(post * direction_scalar as i32)
+    Ok(post * direction_scalar as IntegerType)
 }

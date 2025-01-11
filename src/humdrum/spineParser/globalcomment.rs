@@ -1,18 +1,18 @@
-pub(crate)  struct GlobalComment {
+pub(crate) struct GlobalComment {
     base::music21object: base::Music21Object,
 }
 
 impl GlobalComment {
-    pub(crate)  fn new() -> GlobalComment {
+    pub(crate) fn new() -> GlobalComment {
         GlobalComment {
             base::music21object: base::Music21Object::new(),
         }
     }
     
-    pub(crate)  fn new(&self, comment: ) {
+    pub(crate) fn new(&self, comment: ) {
         todo!()
     }
-    pub(crate)  fn _reprInternal(&self) {
+    pub(crate) fn _reprInternal(&self) {
         todo!()
     }
 }

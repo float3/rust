@@ -1,15 +1,15 @@
-pub(crate)  struct Koto {
+pub(crate) struct Koto {
     stringinstrument: StringInstrument,
 }
 
 impl Koto {
-    pub(crate)  fn new() -> Koto {
+    pub(crate) fn new() -> Koto {
         Koto {
             stringinstrument: StringInstrument::new(),
         }
     }
 
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
 }

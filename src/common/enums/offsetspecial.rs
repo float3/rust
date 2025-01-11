@@ -1,4 +1,4 @@
-pub(crate)  struct OffsetSpecial {
+pub(crate) struct OffsetSpecial {
     strenum: StrEnum,
     AT_END: ,
     LOWEST_OFFSET: ,
@@ -6,7 +6,7 @@ pub(crate)  struct OffsetSpecial {
 }
 
 impl OffsetSpecial {
-    pub(crate)  fn new() -> OffsetSpecial {
+    pub(crate) fn new() -> OffsetSpecial {
         OffsetSpecial {
             strenum: StrEnum::new(),
             AT_END: todo!(),

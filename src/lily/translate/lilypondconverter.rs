@@ -1,4 +1,4 @@
-pub(crate)  struct LilypondConverter {
+pub(crate) struct LilypondConverter {
     fictaDef: ,
     colorDef: ,
     simplePaperDefinitionScm: ,
@@ -10,7 +10,7 @@ pub(crate)  struct LilypondConverter {
 }
 
 impl LilypondConverter {
-    pub(crate)  fn new() -> LilypondConverter {
+    pub(crate) fn new() -> LilypondConverter {
         LilypondConverter {
             fictaDef: todo!(),
             colorDef: todo!(),
@@ -23,157 +23,157 @@ impl LilypondConverter {
         }
     }
     
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn findLilyExec(&self) {
+    pub(crate) fn findLilyExec(&self) {
         todo!()
     }
-    pub(crate)  fn setupTools(&self) {
+    pub(crate) fn setupTools(&self) {
         todo!()
     }
-    pub(crate)  fn newContext(&self, newContext: ) {
+    pub(crate) fn newContext(&self, newContext: ) {
         todo!()
     }
-    pub(crate)  fn restoreContext(&self) {
+    pub(crate) fn restoreContext(&self) {
         todo!()
     }
-    pub(crate)  fn textFromMusic21Object(&self, m21ObjectIn: ) {
+    pub(crate) fn textFromMusic21Object(&self, m21ObjectIn: ) {
         todo!()
     }
-    pub(crate)  fn loadFromMusic21Object(&self, m21ObjectIn: ) {
+    pub(crate) fn loadFromMusic21Object(&self, m21ObjectIn: ) {
         todo!()
     }
-    pub(crate)  fn loadObjectFromOpus(&self, opusIn: ) {
+    pub(crate) fn loadObjectFromOpus(&self, opusIn: ) {
         todo!()
     }
-    pub(crate)  fn loadObjectFromScore(&self, scoreIn: ) {
+    pub(crate) fn loadObjectFromScore(&self, scoreIn: ) {
         todo!()
     }
-    pub(crate)  fn lyScoreBlockFromScore(&self, scoreIn: ) {
+    pub(crate) fn lyScoreBlockFromScore(&self, scoreIn: ) {
         todo!()
     }
-    pub(crate)  fn lyPartsAndOssiaInitFromScore(&self, scoreIn: ) {
+    pub(crate) fn lyPartsAndOssiaInitFromScore(&self, scoreIn: ) {
         todo!()
     }
-    pub(crate)  fn getLySpacersFromStream(&self, streamIn: ) {
+    pub(crate) fn getLySpacersFromStream(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn lyGroupedMusicListFromScoreWithParts(&self, scoreIn: ) {
+    pub(crate) fn lyGroupedMusicListFromScoreWithParts(&self, scoreIn: ) {
         todo!()
     }
-    pub(crate)  fn lyNewLyricsFromStream(&self, streamIn: ) {
+    pub(crate) fn lyNewLyricsFromStream(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn lyLyricElementFromM21Lyric(&self, m21Lyric: ) {
+    pub(crate) fn lyLyricElementFromM21Lyric(&self, m21Lyric: ) {
         todo!()
     }
-    pub(crate)  fn lySequentialMusicFromStream(&self, streamIn: ) {
+    pub(crate) fn lySequentialMusicFromStream(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn lyPrefixCompositeMusicFromStream(&self, streamIn: ) {
+    pub(crate) fn lyPrefixCompositeMusicFromStream(&self, streamIn: ) {
         todo!()
     }
-    pub(crate)  fn appendObjectsToContextFromStream(&self, streamObject: ) {
+    pub(crate) fn appendObjectsToContextFromStream(&self, streamObject: ) {
         todo!()
     }
-    pub(crate)  fn appendM21ObjectToContext(&self, thisObject: ) {
+    pub(crate) fn appendM21ObjectToContext(&self, thisObject: ) {
         todo!()
     }
-    pub(crate)  fn appendContextFromNoteOrRest(&self, noteOrRest: ) {
+    pub(crate) fn appendContextFromNoteOrRest(&self, noteOrRest: ) {
         todo!()
     }
-    pub(crate)  fn appendContextFromChord(&self, chord: ) {
+    pub(crate) fn appendContextFromChord(&self, chord: ) {
         todo!()
     }
-    pub(crate)  fn lySimpleMusicFromNoteOrRest(&self, noteOrRest: ) {
+    pub(crate) fn lySimpleMusicFromNoteOrRest(&self, noteOrRest: ) {
         todo!()
     }
-    pub(crate)  fn appendBeamCode(&self, noteOrChord: ) {
+    pub(crate) fn appendBeamCode(&self, noteOrChord: ) {
         todo!()
     }
-    pub(crate)  fn appendStemCode(&self, noteOrChord: ) {
+    pub(crate) fn appendStemCode(&self, noteOrChord: ) {
         todo!()
     }
-    pub(crate)  fn lySimpleMusicFromChord(&self, chordObj: ) {
+    pub(crate) fn lySimpleMusicFromChord(&self, chordObj: ) {
         todo!()
     }
-    pub(crate)  fn postEventsFromObject(&self, generalNote: ) {
+    pub(crate) fn postEventsFromObject(&self, generalNote: ) {
         todo!()
     }
-    pub(crate)  fn lyPitchFromPitch(&self, pitch: ) {
+    pub(crate) fn lyPitchFromPitch(&self, pitch: ) {
         todo!()
     }
-    pub(crate)  fn baseNameFromPitch(&self, pitch: ) {
+    pub(crate) fn baseNameFromPitch(&self, pitch: ) {
         todo!()
     }
-    pub(crate)  fn octaveCharactersFromPitch(&self, pitch: ) {
+    pub(crate) fn octaveCharactersFromPitch(&self, pitch: ) {
         todo!()
     }
-    pub(crate)  fn lyMultipliedDurationFromDuration(&self, durationObj: ) {
+    pub(crate) fn lyMultipliedDurationFromDuration(&self, durationObj: ) {
         todo!()
     }
-    pub(crate)  fn lyEmbeddedScmFromClef(&self, clefObj: ) {
+    pub(crate) fn lyEmbeddedScmFromClef(&self, clefObj: ) {
         todo!()
     }
-    pub(crate)  fn lyEmbeddedScmFromKeySignature(&self, keyObj: ) {
+    pub(crate) fn lyEmbeddedScmFromKeySignature(&self, keyObj: ) {
         todo!()
     }
-    pub(crate)  fn lyEmbeddedScmFromTimeSignature(&self, ts: ) {
+    pub(crate) fn lyEmbeddedScmFromTimeSignature(&self, ts: ) {
         todo!()
     }
-    pub(crate)  fn setContextForTupletStart(&self, inObj: ) {
+    pub(crate) fn setContextForTupletStart(&self, inObj: ) {
         todo!()
     }
-    pub(crate)  fn setContextForTimeFraction(&self, numerator: ) {
+    pub(crate) fn setContextForTimeFraction(&self, numerator: ) {
         todo!()
     }
-    pub(crate)  fn setContextForTupletStop(&self, inObj: ) {
+    pub(crate) fn setContextForTupletStop(&self, inObj: ) {
         todo!()
     }
-    pub(crate)  fn appendContextFromVariant(&self, variantObjectOrList: ) {
+    pub(crate) fn appendContextFromVariant(&self, variantObjectOrList: ) {
         todo!()
     }
-    pub(crate)  fn lyPrefixCompositeMusicFromRelatedVariants(&self, variantList: ) {
+    pub(crate) fn lyPrefixCompositeMusicFromRelatedVariants(&self, variantList: ) {
         todo!()
     }
-    pub(crate)  fn lyPrefixCompositeMusicFromVariant(&self, variantObject: ) {
+    pub(crate) fn lyPrefixCompositeMusicFromVariant(&self, variantObject: ) {
         todo!()
     }
-    pub(crate)  fn lyOssiaMusicFromVariant(&self, variantIn: ) {
+    pub(crate) fn lyOssiaMusicFromVariant(&self, variantIn: ) {
         todo!()
     }
-    pub(crate)  fn setHeaderFromMetadata(&self, metadataObject: ) {
+    pub(crate) fn setHeaderFromMetadata(&self, metadataObject: ) {
         todo!()
     }
-    pub(crate)  fn closeMeasure(&self, barChecksOnly: ) {
+    pub(crate) fn closeMeasure(&self, barChecksOnly: ) {
         todo!()
     }
-    pub(crate)  fn getSchemeForPadding(&self, measureObject: ) {
+    pub(crate) fn getSchemeForPadding(&self, measureObject: ) {
         todo!()
     }
-    pub(crate)  fn writeLyFile(&self, ext: ) {
+    pub(crate) fn writeLyFile(&self, ext: ) {
         todo!()
     }
-    pub(crate)  fn runThroughLily(&self, format: ) {
+    pub(crate) fn runThroughLily(&self, format: ) {
         todo!()
     }
-    pub(crate)  fn createPDF(&self, fileName: ) {
+    pub(crate) fn createPDF(&self, fileName: ) {
         todo!()
     }
-    pub(crate)  fn showPDF(&self) {
+    pub(crate) fn showPDF(&self) {
         todo!()
     }
-    pub(crate)  fn createPNG(&self, fileName: ) {
+    pub(crate) fn createPNG(&self, fileName: ) {
         todo!()
     }
-    pub(crate)  fn showPNG(&self) {
+    pub(crate) fn showPNG(&self) {
         todo!()
     }
-    pub(crate)  fn createSVG(&self, fileName: ) {
+    pub(crate) fn createSVG(&self, fileName: ) {
         todo!()
     }
-    pub(crate)  fn showSVG(&self, fileName: ) {
+    pub(crate) fn showSVG(&self, fileName: ) {
         todo!()
     }
 }

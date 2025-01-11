@@ -1,26 +1,26 @@
-pub(crate)  struct Groups {
+pub(crate) struct Groups {
     list: list,
-    __slots__: ,
+
 }
 
 impl Groups {
-    pub(crate)  fn new() -> Groups {
+    pub(crate) fn new() -> Groups {
         Groups {
             list: list::new(),
-            __slots__: todo!(),
+
         }
     }
     
-    pub(crate)  fn _validName(&self, value: String) {
+    pub(crate) fn _validName(&self, value: String) {
         todo!()
     }
-    pub(crate)  fn append(&self, value: String) {
+    pub(crate) fn append(&self, value: String) {
         todo!()
     }
-    pub(crate)  fn __setitem__(&self, i: ) {
+    pub(crate) fn __setitem__(&self, i: ) {
         todo!()
     }
-    pub(crate)  fn __eq__(&self, other: ) {
+    pub(crate) fn __eq__(&self, other: ) {
         todo!()
     }
 }

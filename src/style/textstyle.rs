@@ -1,4 +1,4 @@
-pub(crate)  struct TextStyle {
+pub(crate) struct TextStyle {
     style: Style,
     alignVertical: ,
     alignHorizontal: ,
@@ -8,7 +8,7 @@ pub(crate)  struct TextStyle {
 }
 
 impl TextStyle {
-    pub(crate)  fn new() -> TextStyle {
+    pub(crate) fn new() -> TextStyle {
         TextStyle {
             style: Style::new(),
             alignVertical: todo!(),
@@ -19,55 +19,55 @@ impl TextStyle {
         }
     }
     
-    pub(crate)  fn new(&self) {
+    pub(crate) fn new(&self) {
         todo!()
     }
-    pub(crate)  fn _getAlignVertical(&self) {
+    pub(crate) fn _getAlignVertical(&self) {
         todo!()
     }
-    pub(crate)  fn _setAlignVertical(&self, value: ) {
+    pub(crate) fn _setAlignVertical(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn _getAlignHorizontal(&self) {
+    pub(crate) fn _getAlignHorizontal(&self) {
         todo!()
     }
-    pub(crate)  fn _setAlignHorizontal(&self, value: ) {
+    pub(crate) fn _setAlignHorizontal(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn justify(&self) {
+    pub(crate) fn justify(&self) {
         todo!()
     }
-    pub(crate)  fn justify(&self, value: ) {
+    pub(crate) fn justify(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn fontStyle(&self) {
+    pub(crate) fn fontStyle(&self) {
         todo!()
     }
-    pub(crate)  fn fontStyle(&self, value: ) {
+    pub(crate) fn fontStyle(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn _getWeight(&self) {
+    pub(crate) fn _getWeight(&self) {
         todo!()
     }
-    pub(crate)  fn _setWeight(&self, value: ) {
+    pub(crate) fn _setWeight(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn _getSize(&self) {
+    pub(crate) fn _getSize(&self) {
         todo!()
     }
-    pub(crate)  fn _setSize(&self, value: ) {
+    pub(crate) fn _setSize(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn _getLetterSpacing(&self) {
+    pub(crate) fn _getLetterSpacing(&self) {
         todo!()
     }
-    pub(crate)  fn _setLetterSpacing(&self, value: ) {
+    pub(crate) fn _setLetterSpacing(&self, value: ) {
         todo!()
     }
-    pub(crate)  fn fontFamily(&self) {
+    pub(crate) fn fontFamily(&self) {
         todo!()
     }
-    pub(crate)  fn fontFamily(&self, newFamily: ) {
+    pub(crate) fn fontFamily(&self, newFamily: ) {
         todo!()
     }
 }

@@ -1,4 +1,4 @@
-pub(crate)  enum StepName {
+pub(crate) enum StepName {
     C = 0,
     D = 1,
     E = 2,
@@ -9,7 +9,7 @@ pub(crate)  enum StepName {
 }
 
 impl StepName {
-    pub(crate)  fn step_to_dnn_offset_reverse(n: StepType) -> Self {
+    pub(crate) fn step_to_dnn_offset_reverse(n: StepName) -> Self {
         match n {
             0 => Self::C,
             1 => Self::D,
@@ -22,7 +22,7 @@ impl StepName {
         }
     }
 
-    pub(crate)  fn step_to_dnn_offset(&self) -> StepType {
+    pub(crate) fn step_to_dnn_offset(&self) -> StepName {
         match self {
             StepName::C => 1,
             StepName::D => 2,
@@ -34,7 +34,7 @@ impl StepName {
         }
     }
 
-    pub(crate)  fn step_ref(&self) -> StepType {
+    pub(crate) fn step_ref(&self) -> StepName {
         match self {
             StepName::C => 0,
             StepName::D => 2,
@@ -46,7 +46,7 @@ impl StepName {
         }
     }
 
-    pub(crate)  fn step_ref_reverse(n: StepType) -> Self {
+    pub(crate) fn step_ref_reverse(n: StepName) -> Self {
         match n {
             0 => StepName::C,
             2 => StepName::D,
@@ -58,3 +58,4 @@ impl StepName {
             _ => panic!(),
         }
     }
+}

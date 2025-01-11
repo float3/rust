@@ -1,4 +1,4 @@
-pub(crate)  struct GivenElementsBehavior {
+pub(crate) struct GivenElementsBehavior {
     strenum: StrEnum,
     APPEND: ,
     OFFSETS: ,
@@ -6,7 +6,7 @@ pub(crate)  struct GivenElementsBehavior {
 }
 
 impl GivenElementsBehavior {
-    pub(crate)  fn new() -> GivenElementsBehavior {
+    pub(crate) fn new() -> GivenElementsBehavior {
         GivenElementsBehavior {
             strenum: StrEnum::new(),
             APPEND: todo!(),

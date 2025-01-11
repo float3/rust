@@ -1,4 +1,4 @@
-pub(crate)  struct ChannelModeMessages {
+pub(crate) struct ChannelModeMessages {
     _containsenum: _ContainsEnum,
     ALL_SOUND_OFF: ,
     RESET_ALL_CONTROLLERS: ,
@@ -11,7 +11,7 @@ pub(crate)  struct ChannelModeMessages {
 }
 
 impl ChannelModeMessages {
-    pub(crate)  fn new() -> ChannelModeMessages {
+    pub(crate) fn new() -> ChannelModeMessages {
         ChannelModeMessages {
             _containsenum: _ContainsEnum::new(),
             ALL_SOUND_OFF: todo!(),
