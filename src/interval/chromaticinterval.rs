@@ -1,5 +1,5 @@
 use super::intervalbase::IntervalBase;
-use crate::{note::note::Note, pitch::pitch::Pitch};
+use crate::{defaults::IntegerType, note::note::Note, pitch::pitch::Pitch};
 
 pub(crate) struct ChromaticInterval {
     semitones: IntegerType,
@@ -62,10 +62,13 @@ impl ChromaticInterval {
 
 impl IntervalBase for ChromaticInterval {
     fn transpose_note(&self, note1: Note) -> Note {
+        let _ = note1;
         todo!()
     }
 
     fn transpose_pitch(&self, pitch1: Pitch, inplace: bool) -> Pitch {
+        let _ = inplace;
+        let _ = pitch1;
         todo!()
     }
 

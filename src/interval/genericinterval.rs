@@ -2,8 +2,8 @@ use super::{
     intervalbase::IntervalBase, intervalexception::IntervalException, utils::convert_generic,
 };
 use crate::{
-    base::music21object::Music21Object, common::enums::intstring::IntString, note::note::Note,
-    pitch::pitch::Pitch,
+    base::music21object::Music21Object, common::enums::intstring::IntString, defaults::IntegerType,
+    note::note::Note, pitch::pitch::Pitch,
 };
 
 pub(crate) struct GenericInterval {
@@ -108,7 +108,8 @@ impl GenericInterval {
     pub(crate) fn perfectable(&self) -> bool {
         todo!()
     }
-    pub(crate) fn _name_from_int(&self, keyVal: IntegerType) -> String {
+    pub(crate) fn _name_from_int(&self, key_val: IntegerType) -> String {
+        let _ = key_val;
         todo!()
     }
     pub(crate) fn nice_name(&self) -> String {
@@ -148,9 +149,12 @@ impl GenericInterval {
 
 impl IntervalBase for GenericInterval {
     fn transpose_note(&self, note1: Note) -> Note {
+        let _ = note1;
         todo!()
     }
     fn transpose_pitch(&self, pitch1: Pitch, inplace: bool) -> Pitch {
+        let _ = inplace;
+        let _ = pitch1;
         todo!()
     }
     fn reverse(&self) {

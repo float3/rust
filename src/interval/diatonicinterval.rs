@@ -1,4 +1,6 @@
-use crate::{common::enums::intstring::IntString, note::note::Note, pitch::pitch::Pitch};
+use crate::{
+    common::enums::intstring::IntString, defaults::FloatType, note::note::Note, pitch::pitch::Pitch,
+};
 
 use super::{
     chromaticinterval::ChromaticInterval, direction::Direction, genericinterval::GenericInterval,
@@ -123,6 +125,9 @@ impl DiatonicInterval {
         interval1: Interval,
         inplace: bool,
     ) -> Pitch {
+        let _ = inplace;
+        let _ = interval1;
+        let _ = pitch1;
         todo!()
     }
 
@@ -136,10 +141,13 @@ impl DiatonicInterval {
 
 impl IntervalBase for DiatonicInterval {
     fn transpose_note(&self, note1: Note) -> Note {
+        let _ = note1;
         todo!()
     }
 
     fn transpose_pitch(&self, pitch1: Pitch, inplace: bool) -> Pitch {
+        let _ = inplace;
+        let _ = pitch1;
         todo!()
     }
 

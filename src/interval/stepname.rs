@@ -1,3 +1,5 @@
+use crate::defaults::IntegerType;
+
 pub(crate) enum StepName {
     C = 0,
     D = 1,
@@ -9,7 +11,7 @@ pub(crate) enum StepName {
 }
 
 impl StepName {
-    pub(crate) fn step_to_dnn_offset_reverse(n: StepName) -> Self {
+    pub(crate) fn step_to_dnn_offset_reverse(n: IntegerType) -> Self {
         match n {
             0 => Self::C,
             1 => Self::D,
@@ -22,7 +24,7 @@ impl StepName {
         }
     }
 
-    pub(crate) fn step_to_dnn_offset(&self) -> StepName {
+    pub(crate) fn step_to_dnn_offset(&self) -> IntegerType {
         match self {
             StepName::C => 1,
             StepName::D => 2,

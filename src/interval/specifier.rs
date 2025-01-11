@@ -1,7 +1,7 @@
-use std::collections::HashMap;
-
 use super::intervalexception::IntervalException;
-use crate::common::enums::intstring::IntString;
+use crate::{common::enums::intstring::IntString, defaults::IntegerType};
+use once_cell::sync::Lazy;
+use std::collections::HashMap;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub(crate) enum Specifier {
@@ -82,12 +82,12 @@ const SPECIFIER_MAPPINGS: &[SpecifierMapping] = &[
     },
 ];
 
-static STRING_TO_SPECIFIER: Lazy<HashMap<&'static str, Specifier>> = Lazy::new(|| {
+static STRING_TO_SPECIFIER: Lazy<HashMap<String, Specifier>> = Lazy::new(|| {
     let mut m = HashMap::new();
     for mapping in SPECIFIER_MAPPINGS {
         for &variant in mapping.variants {
             m.insert(
-                variant.to_lowercase().as_str(),
+                variant.to_lowercase(),
                 Specifier::try_from(mapping.value).unwrap(),
             );
         }
