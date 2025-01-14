@@ -1,15 +1,30 @@
+use crate::exceptions21::music21exception::{
+    Music21Exception, Music21ExceptionTrait
+};
+use std::{
+    error::Error,
+    fmt::{Display, Formatter, Result},
+};
+
+#[derive(Debug)]
 pub(crate) struct ImmutableStreamException {
-    streamexception: StreamException,
+    music21exception: Music21Exception,
 }
 
 impl ImmutableStreamException {
-    pub(crate) fn new() -> ImmutableStreamException {
+    pub(crate) fn new(error_message: String) -> ImmutableStreamException {
         ImmutableStreamException {
-            streamexception: StreamException::new(),
+            music21exception: Music21Exception::new(error_message),
         }
     }
-    
-    pub(crate) fn new(msg: ) {
-        todo!()
+}
+
+impl Display for ImmutableStreamException {
+    fn fmt(&self, f: &mut Formatter) -> Result {
+        write!(f, "ImmutableStreamException: {}", self.music21exception)
     }
 }
+
+impl Error for ImmutableStreamException {}
+
+impl Music21ExceptionTrait for ImmutableStreamException {}

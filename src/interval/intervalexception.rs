@@ -1,5 +1,10 @@
-use crate::exceptions21::music21exception::Music21Exception;
-use std::{error::Error, fmt::Display};
+use crate::exceptions21::music21exception::{
+    Music21Exception, Music21ExceptionTrait
+};
+use std::{
+    error::Error,
+    fmt::{Display, Formatter, Result},
+};
 
 #[derive(Debug)]
 pub(crate) struct IntervalException {
@@ -12,16 +17,14 @@ impl IntervalException {
             music21exception: Music21Exception::new(error_message),
         }
     }
-
-    pub(crate) fn error_message(&self) -> String {
-        self.music21exception.error_message()
-    }
 }
 
 impl Display for IntervalException {
-    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
-        write!(f, "{}", self.music21exception)
+    fn fmt(&self, f: &mut Formatter) -> Result {
+        write!(f, "IntervalException: {}", self.music21exception)
     }
 }
 
 impl Error for IntervalException {}
+
+impl Music21ExceptionTrait for IntervalException {}

@@ -1,11 +1,9 @@
+use crate::exceptions21::music21exception::{
+    Music21Exception, Music21ExceptionTrait
+};
 use std::{
     error::Error,
     fmt::{Display, Formatter, Result},
-};
-
-use crate::{
-    defaults::StringType,
-    exceptions21::music21exception::{Music21Exception, Music21ExceptionTrait},
 };
 
 #[derive(Debug)]
@@ -14,7 +12,7 @@ pub(crate) struct ChordException {
 }
 
 impl ChordException {
-    pub(crate) fn new(error_message: StringType) -> ChordException {
+    pub(crate) fn new(error_message: String) -> ChordException {
         ChordException {
             music21exception: Music21Exception::new(error_message),
         }
@@ -23,7 +21,7 @@ impl ChordException {
 
 impl Display for ChordException {
     fn fmt(&self, f: &mut Formatter) -> Result {
-        write!(f, "{}", self.music21exception)
+        write!(f, "ChordException: {}", self.music21exception)
     }
 }
 

@@ -9,19 +9,21 @@ impl Groups {
     //     todo!()
     // }
 
-    pub(crate) fn append(&self, value: String) {
+    pub(crate) fn append(&mut self, value: String) {
         // self._valid_name(value);
         if !self.list.contains(&value) {
             self.list.push(value);
         }
     }
 
-    pub(crate) fn __setitem__(&self, i: usize, value: String) {
+    pub(crate) fn __setitem__(&mut self, i: usize, value: String) {
         // self._valid_name(value);
-        self.list = value;
+        self.list[i] = value;
     }
+}
 
-    pub(crate) fn __eq__(&self, other: Groups) {
+impl PartialEq for Groups {
+    fn eq(&self, other: &Self) -> bool {
         if self.list.len() != other.list.len() {
             return false;
         }
@@ -32,6 +34,8 @@ impl Groups {
             }
         }
 
-        return true;
+        true
     }
 }
+
+impl Eq for Groups {}

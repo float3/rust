@@ -1,4 +1,6 @@
-use crate::exceptions21::music21exception::{Music21Exception, Music21ExceptionTrait};
+use crate::exceptions21::music21exception::{
+    Music21Exception, Music21ExceptionTrait
+};
 use std::{
     error::Error,
     fmt::{Display, Formatter, Result},

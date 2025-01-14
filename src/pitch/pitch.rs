@@ -3,6 +3,7 @@ use std::{cmp::Ordering, fmt::{Display, Formatter, Result}, hash::{Hash, Hasher}
 use crate::{base::groups::Groups, common::types::{Octave, StringOrIntegerOrFLoatOrAccidental, StringOrIntegerOrFloat}, defaults::{FloatType, IntegerType}, interval::stepname::StepName, prebase::protom21object::ProtoM21Object};
 use super::{accidental::Accidental, microtone::Microtone};
 
+#[derive(Clone, Debug)]
 pub(crate) struct Pitch {
     protom21object: ProtoM21Object,
     octave: Octave,

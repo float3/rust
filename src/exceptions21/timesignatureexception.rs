@@ -1,12 +1,30 @@
+use crate::exceptions21::music21exception::{
+    Music21Exception, Music21ExceptionTrait
+};
+use std::{
+    error::Error,
+    fmt::{Display, Formatter, Result},
+};
+
+#[derive(Debug)]
 pub(crate) struct TimeSignatureException {
-    meterexception: MeterException,
+    music21exception: Music21Exception,
 }
 
 impl TimeSignatureException {
-    pub(crate) fn new() -> TimeSignatureException {
+    pub(crate) fn new(error_message: String) -> TimeSignatureException {
         TimeSignatureException {
-            meterexception: MeterException::new(),
+            music21exception: Music21Exception::new(error_message),
         }
     }
-    
 }
+
+impl Display for TimeSignatureException {
+    fn fmt(&self, f: &mut Formatter) -> Result {
+        write!(f, "TimeSignatureException: {}", self.music21exception)
+    }
+}
+
+impl Error for TimeSignatureException {}
+
+impl Music21ExceptionTrait for TimeSignatureException {}

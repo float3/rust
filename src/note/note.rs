@@ -1,13 +1,14 @@
+use std::cmp::Ordering;
+
 use crate::{
-    common::types::Octave,
-    defaults::IntegerType,
-    interval::{interval::Interval, stepname::StepName},
+    common::types::{Octave, StringOrIntegerOrPitch},
+    interval::{intervalbase::IntervalBase, stepname::StepName},
     pitch::pitch::Pitch,
 };
 
 use super::{noteexception::NoteException, notrest::NotRest};
 
-#[derive(PartialEq, Clone, Debug)]
+#[derive(Clone, Debug)]
 pub(crate) struct Note {
     notrest: NotRest,
     is_note: bool,
@@ -21,34 +22,6 @@ impl Note {
 
     pub(crate) fn _repr_internal(&self) {
         todo!()
-    }
-
-    pub(crate) fn __lt__<T>(&self, other: T) -> bool
-    where
-        T: PitchTrait,
-    {
-        self.pitch() < other.pitch()
-    }
-
-    pub(crate) fn __gt__(&self, other: T) -> bool
-    where
-        T: PitchTrait,
-    {
-        self.pitch() > other.pitch()
-    }
-
-    pub(crate) fn __le__(&self, other: T) -> bool
-    where
-        T: PitchTrait,
-    {
-        self.pitch() <= other.pitch()
-    }
-
-    pub(crate) fn __ge__(&self, other: T) -> bool
-    where
-        T: PitchTrait,
-    {
-        self.pitch() >= other.pitch()
     }
 
     pub(crate) fn name(&self) -> String {
@@ -81,9 +54,10 @@ impl Note {
         self.pitch.octave()
     }
 
-    pub(crate) fn set_octave(&self, value: Octave) {
+    pub(crate) fn set_octave(&mut self, value: Octave) {
         self.pitch.set_octave(value);
     }
+
     pub(crate) fn pitches(&self) -> (Pitch,) {
         (self.pitch.clone(),)
     }
@@ -101,23 +75,44 @@ impl Note {
             }
         }
     }
-    pub(crate) fn transpose(&self, value: T) -> Note
+    pub(crate) fn transpose<T>(&self, value: T) -> Note
     where
         T: IntervalBase,
     {
         todo!()
     }
 
-    pub(crate) fn transpose_in_place(&mut self, value: T)
+    pub(crate) fn transpose_in_place<T>(&mut self, value: T)
     where
         T: IntervalBase,
     {
         todo!()
     }
+
     pub(crate) fn full_name(&self) -> String {
         todo!()
     }
     pub(crate) fn pitch_changed(&self) {
         todo!()
+    }
+}
+
+impl PartialEq for Note {
+    fn eq(&self, other: &Note) -> bool {
+        self.pitch == other.pitch
+    }
+}
+
+impl Eq for Note {}
+
+impl PartialOrd for Note {
+    fn partial_cmp(&self, other: &Note) -> Option<Ordering> {
+        self.pitch.partial_cmp(&other.pitch)
+    }
+}
+
+impl Ord for Note {
+    fn cmp(&self, other: &Note) -> Ordering {
+        self.pitch.cmp(&other.pitch)
     }
 }

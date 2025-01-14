@@ -18,7 +18,7 @@ impl PartialEq for EqualSlottedObjectMixin {
         if TypeId::of::<Self>() != TypeId::of::<Self>() {
             return false;
         }
-        for this_slot in self.slottedobjectmixin.get_slots_recursive() {
+        for this_slot in self.slottedobjectmixin._get_slots_recursive() {
             if this_slot == "id" {
                 continue;
             }

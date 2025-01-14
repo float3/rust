@@ -1,4 +1,6 @@
-use crate::exceptions21::music21exception::{Music21Exception, Music21ExceptionTrait};
+use crate::exceptions21::music21exception::{
+    Music21Exception, Music21ExceptionTrait
+};
 use std::{
     error::Error,
     fmt::{Display, Formatter, Result},
@@ -19,7 +21,7 @@ impl DurationException {
 
 impl Display for DurationException {
     fn fmt(&self, f: &mut Formatter) -> Result {
-        write!(f, "{}", self.music21exception)
+        write!(f, "DurationException: {}", self.music21exception)
     }
 }
 

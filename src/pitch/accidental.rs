@@ -1,4 +1,4 @@
-use crate::style::styletype::StyleType;
+use crate::{prebase::protom21object::ProtoM21Object, style::styletype::StyleType};
 
 pub(crate) struct Accidental {
     protom21object: ProtoM21Object,

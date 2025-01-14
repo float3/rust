@@ -1,3 +1,4 @@
+#[derive(Debug, Clone)]
 pub(crate) struct Microtone {
     protom21object: ProtoM21Object,
 }
