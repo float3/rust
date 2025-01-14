@@ -1,17 +1,17 @@
 pub(crate) struct MidiTrack {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
     headerId: ,
 }
 
 impl MidiTrack {
     pub(crate) fn new() -> MidiTrack {
         MidiTrack {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
             headerId: todo!(),
         }
     }
     
-    pub(crate) fn new(&self, index: ) {
+    pub(crate) fn new(index: ) {
         todo!()
     }
     pub(crate) fn length(&self) {

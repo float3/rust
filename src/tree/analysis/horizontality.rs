@@ -11,7 +11,7 @@ impl Horizontality {
         }
     }
     
-    pub(crate) fn new(&self, timespans: ) {
+    pub(crate) fn new(timespans: ) {
         todo!()
     }
     pub(crate) fn __getitem__(&self, item: ) {

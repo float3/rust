@@ -9,7 +9,7 @@ impl SpannerStorage {
         }
     }
     
-    pub(crate) fn new(&self, givenElements: ) {
+    pub(crate) fn new(givenElements: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

@@ -9,7 +9,7 @@ impl ABCChord {
         }
     }
     
-    pub(crate) fn new(&self, src: String) {
+    pub(crate) fn new(src: String) {
         todo!()
     }
     pub(crate) fn parse(&self, forceKeySignature: ) {

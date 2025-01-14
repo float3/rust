@@ -1,5 +1,5 @@
 pub(crate) struct HumdrumSpine {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
     spineCollection: ,
     spineType: ,
 }
@@ -7,13 +7,13 @@ pub(crate) struct HumdrumSpine {
 impl HumdrumSpine {
     pub(crate) fn new() -> HumdrumSpine {
         HumdrumSpine {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
             spineCollection: todo!(),
             spineType: todo!(),
         }
     }
     
-    pub(crate) fn new(&self, spineId: IntegerType, eventList: ) {
+    pub(crate) fn new(spineId: IntegerType, eventList: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

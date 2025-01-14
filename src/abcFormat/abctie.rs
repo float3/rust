@@ -11,7 +11,7 @@ impl ABCTie {
         }
     }
     
-    pub(crate) fn new(&self, src: ) {
+    pub(crate) fn new(src: ) {
         todo!()
     }
 }

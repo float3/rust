@@ -11,7 +11,7 @@ impl GlobalReference {
         }
     }
     
-    pub(crate) fn new(&self, codeOrAll: ) {
+    pub(crate) fn new(codeOrAll: ) {
         todo!()
     }
     pub(crate) fn updateMetadata(&self, md: ) {

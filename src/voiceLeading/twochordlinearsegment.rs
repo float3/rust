@@ -9,7 +9,7 @@ impl TwoChordLinearSegment {
         }
     }
     
-    pub(crate) fn new(&self, chordList: ) {
+    pub(crate) fn new(chordList: ) {
         todo!()
     }
     pub(crate) fn rootInterval(&self) {

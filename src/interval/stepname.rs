@@ -1,5 +1,8 @@
 use crate::defaults::IntegerType;
+use std::convert::TryFrom;
 
+#[repr(u8)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub(crate) enum StepName {
     C = 0,
     D = 1,
@@ -11,19 +14,6 @@ pub(crate) enum StepName {
 }
 
 impl StepName {
-    pub(crate) fn step_to_dnn_offset_reverse(n: IntegerType) -> Self {
-        match n {
-            0 => Self::C,
-            1 => Self::D,
-            2 => Self::E,
-            3 => Self::F,
-            4 => Self::G,
-            5 => Self::A,
-            6 => Self::B,
-            _ => panic!(),
-        }
-    }
-
     pub(crate) fn step_to_dnn_offset(&self) -> IntegerType {
         match self {
             StepName::C => 1,
@@ -36,7 +26,7 @@ impl StepName {
         }
     }
 
-    pub(crate) fn step_ref(&self) -> StepName {
+    pub(crate) fn step_ref(&self) -> IntegerType {
         match self {
             StepName::C => 0,
             StepName::D => 2,
@@ -47,17 +37,42 @@ impl StepName {
             StepName::B => 11,
         }
     }
+}
 
-    pub(crate) fn step_ref_reverse(n: StepName) -> Self {
+impl TryFrom<IntegerType> for StepName {
+    type Error = &'static str;
+
+    fn try_from(value: IntegerType) -> Result<Self, Self::Error> {
+        match value {
+            0 => Ok(StepName::C),
+            1 => Ok(StepName::D),
+            2 => Ok(StepName::E),
+            3 => Ok(StepName::F),
+            4 => Ok(StepName::G),
+            5 => Ok(StepName::A),
+            6 => Ok(StepName::B),
+            _ => Err("Invalid value for StepName"),
+        }
+    }
+}
+
+impl From<StepName> for IntegerType {
+    fn from(step: StepName) -> Self {
+        step as IntegerType
+    }
+}
+
+impl StepName {
+    pub(crate) fn step_ref_reverse(n: IntegerType) -> Result<Self, &'static str> {
         match n {
-            0 => StepName::C,
-            2 => StepName::D,
-            4 => StepName::E,
-            5 => StepName::F,
-            7 => StepName::G,
-            9 => StepName::A,
-            11 => StepName::B,
-            _ => panic!(),
+            0 => Ok(StepName::C),
+            2 => Ok(StepName::D),
+            4 => Ok(StepName::E),
+            5 => Ok(StepName::F),
+            7 => Ok(StepName::G),
+            9 => Ok(StepName::A),
+            11 => Ok(StepName::B),
+            _ => Err("Invalid value for StepName"),
         }
     }
 }

@@ -7,7 +7,7 @@ impl MeiToM21Converter {
         }
     }
     
-    pub(crate) fn new(&self, theDocument: ) {
+    pub(crate) fn new(theDocument: ) {
         todo!()
     }
     pub(crate) fn run(&self) {

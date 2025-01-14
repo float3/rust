@@ -9,7 +9,7 @@ impl Copyright {
         }
     }
     
-    pub(crate) fn new(&self, data: ) {
+    pub(crate) fn new(data: ) {
         todo!()
     }
     pub(crate) fn __eq__(&self, other: ) -> bool {

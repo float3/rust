@@ -1,5 +1,5 @@
 pub(crate) struct Date {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
     approximateSymbols: ,
     uncertainSymbols: ,
     priorTimeSymbols: ,
@@ -8,7 +8,7 @@ pub(crate) struct Date {
 impl Date {
     pub(crate) fn new() -> Date {
         Date {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
             approximateSymbols: todo!(),
             uncertainSymbols: todo!(),
             priorTimeSymbols: todo!(),

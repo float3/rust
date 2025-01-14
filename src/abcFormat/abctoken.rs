@@ -1,17 +1,15 @@
 pub(crate) struct ABCToken {
-    prebase::protom21object: prebase::ProtoM21Object,
-
+    protom21object: ProtoM21Object,
 }
 
 impl ABCToken {
     pub(crate) fn new() -> ABCToken {
         ABCToken {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
-
+            protom21object: ProtoM21Object::new(),
         }
     }
-    
-    pub(crate) fn new(&self, src: String) {
+
+    pub(crate) fn new(src: String) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

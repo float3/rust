@@ -1,5 +1,5 @@
 pub(crate) struct MidiEvent {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
     pitch: ,
     velocity: ,
     data: ,
@@ -8,14 +8,14 @@ pub(crate) struct MidiEvent {
 impl MidiEvent {
     pub(crate) fn new() -> MidiEvent {
         MidiEvent {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
             pitch: todo!(),
             velocity: todo!(),
             data: todo!(),
         }
     }
     
-    pub(crate) fn new(&self, track: ) {
+    pub(crate) fn new(track: ) {
         todo!()
     }
     pub(crate) fn sortOrder(&self) -> IntegerType {

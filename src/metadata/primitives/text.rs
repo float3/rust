@@ -1,15 +1,15 @@
 pub(crate) struct Text {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl Text {
     pub(crate) fn new() -> Text {
         Text {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, data: ) {
+    pub(crate) fn new(data: ) {
         todo!()
     }
     pub(crate) fn __str__(&self) {

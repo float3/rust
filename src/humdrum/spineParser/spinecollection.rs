@@ -1,11 +1,11 @@
 pub(crate) struct SpineCollection {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl SpineCollection {
     pub(crate) fn new() -> SpineCollection {
         SpineCollection {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     

@@ -19,7 +19,7 @@ impl VoiceLeadingQuartet {
         }
     }
     
-    pub(crate) fn new(&self, v1n1: ) {
+    pub(crate) fn new(v1n1: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

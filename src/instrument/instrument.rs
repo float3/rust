@@ -11,7 +11,7 @@ impl Instrument {
         }
     }
     
-    pub(crate) fn new(&self, instrumentName: ) {
+    pub(crate) fn new(instrumentName: ) {
         todo!()
     }
     pub(crate) fn __str__(&self) {

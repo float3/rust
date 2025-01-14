@@ -9,7 +9,7 @@ impl NChordLinearSegment {
         }
     }
     
-    pub(crate) fn new(&self, chordList: ) {
+    pub(crate) fn new(chordList: ) {
         todo!()
     }
     pub(crate) fn chordList(&self) {

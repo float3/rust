@@ -7,7 +7,7 @@ impl ModuleGather {
         }
     }
     
-    pub(crate) fn new(&self, useExtended: ) {
+    pub(crate) fn new(useExtended: ) {
         todo!()
     }
     pub(crate) fn _visitFunc(&self, args: ) {

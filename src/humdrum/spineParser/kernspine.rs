@@ -9,7 +9,7 @@ impl KernSpine {
         }
     }
     
-    pub(crate) fn new(&self, spineId: IntegerType, eventList: ) {
+    pub(crate) fn new(spineId: IntegerType, eventList: ) {
         todo!()
     }
     pub(crate) fn parse(&self) {

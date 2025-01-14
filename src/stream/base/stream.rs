@@ -29,7 +29,7 @@ impl Stream {
         }
     }
     
-    pub(crate) fn new(&self, givenElements: ) {
+    pub(crate) fn new(givenElements: ) {
         todo!()
     }
     pub(crate) fn __eq__(&self, other: ) {

@@ -1,5 +1,5 @@
 pub(crate) struct Editorial {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 
     predefinedLists: ,
     predefinedNones: ,
@@ -8,7 +8,7 @@ pub(crate) struct Editorial {
 impl Editorial {
     pub(crate) fn new() -> Editorial {
         Editorial {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
 
             predefinedLists: todo!(),
             predefinedNones: todo!(),

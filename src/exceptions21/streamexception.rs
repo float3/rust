@@ -8,5 +8,6 @@ impl StreamException {
             music21exception: Music21Exception::new(),
         }
     }
-    
 }
+
+impl Music21Exception for StreamException {}

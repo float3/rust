@@ -11,7 +11,7 @@ impl NNoteLinearSegment {
         }
     }
     
-    pub(crate) fn new(&self, noteList: ) {
+    pub(crate) fn new(noteList: ) {
         todo!()
     }
     pub(crate) fn noteList(&self) {

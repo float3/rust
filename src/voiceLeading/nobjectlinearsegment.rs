@@ -9,7 +9,7 @@ impl NObjectLinearSegment {
         }
     }
     
-    pub(crate) fn new(&self, objectList: ) {
+    pub(crate) fn new(objectList: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

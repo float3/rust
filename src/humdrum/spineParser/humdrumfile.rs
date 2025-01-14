@@ -9,7 +9,7 @@ impl HumdrumFile {
         }
     }
     
-    pub(crate) fn new(&self, filename: ) {
+    pub(crate) fn new(filename: ) {
         todo!()
     }
     pub(crate) fn parseFilename(&self, filename: ) {

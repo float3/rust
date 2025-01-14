@@ -9,7 +9,7 @@ impl OffsetIterator {
         }
     }
     
-    pub(crate) fn new(&self, srcStream: ) {
+    pub(crate) fn new(srcStream: ) {
         todo!()
     }
     pub(crate) fn __next__(&self) {

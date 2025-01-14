@@ -9,7 +9,7 @@ impl SpineComment {
         }
     }
     
-    pub(crate) fn new(&self, comment: ) {
+    pub(crate) fn new(comment: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

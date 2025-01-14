@@ -7,7 +7,7 @@ impl TupletFixer {
         }
     }
     
-    pub(crate) fn new(&self, streamIn: ) {
+    pub(crate) fn new(streamIn: ) {
         todo!()
     }
     pub(crate) fn setStream(&self, streamIn: ) {

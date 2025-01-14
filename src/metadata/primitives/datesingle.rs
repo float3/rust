@@ -9,7 +9,7 @@ impl DateSingle {
         }
     }
     
-    pub(crate) fn new(&self, data: ) {
+    pub(crate) fn new(data: ) {
         todo!()
     }
     pub(crate) fn __str__(&self) {

@@ -9,7 +9,7 @@ impl ABCBar {
         }
     }
     
-    pub(crate) fn new(&self, src: ) {
+    pub(crate) fn new(src: ) {
         todo!()
     }
     pub(crate) fn parse(&self) {

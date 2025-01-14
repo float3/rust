@@ -1,5 +1,5 @@
 use super::intervalexception::IntervalException;
-use crate::{common::enums::intstring::IntString, defaults::IntegerType};
+use crate::{common::types::IntegerOrString, defaults::IntegerType};
 use once_cell::sync::Lazy;
 use std::collections::HashMap;
 
@@ -86,45 +86,39 @@ static STRING_TO_SPECIFIER: Lazy<HashMap<String, Specifier>> = Lazy::new(|| {
     let mut m = HashMap::new();
     for mapping in SPECIFIER_MAPPINGS {
         for &variant in mapping.variants {
-            m.insert(
-                variant.to_lowercase(),
-                Specifier::try_from(mapping.value).unwrap(),
-            );
+            m.insert(variant.to_lowercase(), Specifier::from(mapping.value));
         }
     }
     m
 });
 
-impl TryFrom<IntegerType> for Specifier {
-    type Error = IntervalException;
-
-    fn try_from(value: IntegerType) -> Result<Self, Self::Error> {
+impl From<IntegerType> for Specifier {
+    fn from(value: IntegerType) -> Self {
         match value {
-            1 => Ok(Specifier::PERFECT),
-            2 => Ok(Specifier::MAJOR),
-            3 => Ok(Specifier::MINOR),
-            4 => Ok(Specifier::AUGMENTED),
-            5 => Ok(Specifier::DIMINISHED),
-            6 => Ok(Specifier::DBLAUG),
-            7 => Ok(Specifier::DBLDIM),
-            8 => Ok(Specifier::TRPAUG),
-            9 => Ok(Specifier::TRPDIM),
-            10 => Ok(Specifier::QUADAUG),
-            11 => Ok(Specifier::QUADDIM),
-            _ => Err(IntervalException::new(format!(
-                "Invalid specifier: {}",
-                value
-            ))),
+            1 => Specifier::PERFECT,
+            2 => Specifier::MAJOR,
+            3 => Specifier::MINOR,
+            4 => Specifier::AUGMENTED,
+            5 => Specifier::DIMINISHED,
+            6 => Specifier::DBLAUG,
+            7 => Specifier::DBLDIM,
+            8 => Specifier::TRPAUG,
+            9 => Specifier::TRPDIM,
+            10 => Specifier::QUADAUG,
+            11 => Specifier::QUADDIM,
+            _ => panic!("Invalid specifier: {}", value),
         }
     }
 }
 
 impl Specifier {
-    pub(crate) fn parse_specifier(specifier: IntString) -> Result<Specifier, IntervalException> {
+    pub(crate) fn parse_specifier(
+        specifier: IntegerOrString,
+    ) -> Result<Specifier, IntervalException> {
         match specifier {
-            IntString::Int(int) => Specifier::try_from(int),
-            IntString::String(string) => STRING_TO_SPECIFIER
-                .get(&string.to_lowercase()[..])
+            IntegerOrString::Int(int) => Ok(Specifier::from(int)),
+            IntegerOrString::String(string) => STRING_TO_SPECIFIER
+                .get(&string.to_lowercase())
                 .cloned()
                 .ok_or_else(|| IntervalException::new(format!("Invalid specifier: {}", string))),
         }

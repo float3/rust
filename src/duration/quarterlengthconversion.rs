@@ -1,16 +1,15 @@
+use super::{durationtuple::DurationTuple, tuplet::Tuplet};
+
 pub(crate) struct QuarterLengthConversion {
-    t::namedtuple: t::NamedTuple,
-    components: ,
-    tuplet: ,
+    components: Vec<DurationTuple>,
+    tuplet: Option<Tuplet>,
 }
 
 impl QuarterLengthConversion {
     pub(crate) fn new() -> QuarterLengthConversion {
         QuarterLengthConversion {
-            t::namedtuple: t::NamedTuple::new(),
-            components: todo!(),
-            tuplet: todo!(),
+            components: Vec::new(),
+            tuplet: None,
         }
     }
-    
 }

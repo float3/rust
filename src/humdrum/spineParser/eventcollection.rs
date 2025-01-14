@@ -7,7 +7,7 @@ impl EventCollection {
         }
     }
     
-    pub(crate) fn new(&self, maxSpines: ) {
+    pub(crate) fn new(maxSpines: ) {
         todo!()
     }
     pub(crate) fn addSpineEvent(&self, spineNum: ) {

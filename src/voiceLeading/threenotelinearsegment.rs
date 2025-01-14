@@ -23,7 +23,7 @@ impl ThreeNoteLinearSegment {
         }
     }
     
-    pub(crate) fn new(&self, noteListOrN1: ) {
+    pub(crate) fn new(noteListOrN1: ) {
         todo!()
     }
     pub(crate) fn _getN1(&self) {

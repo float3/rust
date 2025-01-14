@@ -1,15 +1,15 @@
 pub(crate) struct HumdrumDataCollection {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl HumdrumDataCollection {
     pub(crate) fn new() -> HumdrumDataCollection {
         HumdrumDataCollection {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, dataStream: ) {
+    pub(crate) fn new(dataStream: ) {
         todo!()
     }
     pub(crate) fn parse(&self) {

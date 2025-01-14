@@ -1,11 +1,14 @@
 use super::{direction::Direction, intervalexception::IntervalException};
-use crate::common::{enums::intstring::IntString, numbertools::Ordinal};
+use crate::{
+    common::{numbertools::Ordinal, types::IntegerOrString},
+    defaults::IntegerType,
+};
 
-pub(crate) fn convert_generic(value: IntString) -> Result<IntegerType, IntervalException> {
+pub(crate) fn convert_generic(value: IntegerOrString) -> Result<IntegerType, IntervalException> {
     let mut direction_scalar = Direction::ASCENDING;
     let post = match value {
-        IntString::Int(value) => value,
-        IntString::String(value) => {
+        IntegerOrString::Int(value) => value,
+        IntegerOrString::String(value) => {
             let value = value.as_str();
             let post: IntegerType;
             let mut value: String = value.trim().to_lowercase();

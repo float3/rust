@@ -9,7 +9,7 @@ impl ImmutableStreamException {
         }
     }
     
-    pub(crate) fn new(&self, msg: ) {
+    pub(crate) fn new(msg: ) {
         todo!()
     }
 }

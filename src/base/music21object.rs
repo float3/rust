@@ -1,5 +1,6 @@
 use crate::{
     defaults::{FloatType, IntegerType},
+    duration::duration::Duration,
     prebase::protom21object::ProtoM21Object,
 };
 
@@ -155,12 +156,12 @@ impl Music21Object {
     // pub(crate) fn sortTuple(&self, useSite: , raiseExceptionOnMiss: bool) -> SortTuple {
     //     todo!()
     // }
-    // pub(crate) fn duration(&self) -> Duration {
-    //     todo!()
-    // }
-    // pub(crate) fn duration(&self, durationObj: Duration) {
-    //     todo!()
-    // }
+    pub(crate) fn duration(&self) -> Duration {
+        todo!()
+    }
+    pub(crate) fn set_duration(&self, durationObj: Duration) {
+        todo!()
+    }
     // pub(crate) fn informSites(&self, changedInformation: ) {
     //     todo!()
     // }
@@ -221,4 +222,8 @@ impl Music21Object {
     // pub(crate) fn _setSeconds(&self, value: ) {
     //     todo!()
     // }
+}
+
+pub(crate) trait Music21ObjectTrait {
+    fn music21_object(&self) -> Music21Object;
 }

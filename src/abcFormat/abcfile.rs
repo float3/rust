@@ -1,15 +1,15 @@
 pub(crate) struct ABCFile {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl ABCFile {
     pub(crate) fn new() -> ABCFile {
         ABCFile {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, abcVersion: ) {
+    pub(crate) fn new(abcVersion: ) {
         todo!()
     }
     pub(crate) fn open(&self, filename: ) {

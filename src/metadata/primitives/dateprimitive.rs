@@ -1,15 +1,15 @@
 pub(crate) struct DatePrimitive {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl DatePrimitive {
     pub(crate) fn new() -> DatePrimitive {
         DatePrimitive {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, relevance: String) {
+    pub(crate) fn new(relevance: String) {
         todo!()
     }
     pub(crate) fn __eq__(&self, other: ) -> bool {

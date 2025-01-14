@@ -7,7 +7,7 @@ impl PickleFilter {
         }
     }
     
-    pub(crate) fn new(&self, fp: ) {
+    pub(crate) fn new(fp: ) {
         todo!()
     }
     pub(crate) fn getPickleFp(&self, directory: ) {

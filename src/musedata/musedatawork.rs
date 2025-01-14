@@ -1,11 +1,11 @@
 pub(crate) struct MuseDataWork {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl MuseDataWork {
     pub(crate) fn new() -> MuseDataWork {
         MuseDataWork {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     

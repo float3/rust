@@ -1,11 +1,11 @@
 pub(crate) struct Imprint {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl Imprint {
     pub(crate) fn new() -> Imprint {
         Imprint {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     

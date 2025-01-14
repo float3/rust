@@ -1,5 +1,5 @@
 use crate::{
-    common::enums::intstring::IntString, defaults::FloatType, note::note::Note, pitch::pitch::Pitch,
+    common::types::IntegerOrString, defaults::FloatType, note::note::Note, pitch::pitch::Pitch,
 };
 
 use super::{
@@ -23,7 +23,7 @@ impl PartialEq for DiatonicInterval {
 
 impl DiatonicInterval {
     pub(crate) fn new(
-        specifier: IntString,
+        specifier: IntegerOrString,
         generic: GenericInterval,
     ) -> Result<DiatonicInterval, IntervalException> {
         let specifier = Specifier::parse_specifier(specifier)?;

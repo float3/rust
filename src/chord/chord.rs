@@ -9,7 +9,7 @@ pub(crate) struct Chord {
 }
 
 impl Chord {
-    pub(crate) fn new(&self, notes: &[Note]) -> Chord {
+    pub(crate) fn new(notes: &[Note]) -> Chord {
         Chord {
             chordbase: ChordBase::new(notes),
             is_chord: todo!(),

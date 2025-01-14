@@ -11,7 +11,7 @@ impl Derivation {
         }
     }
     
-    pub(crate) fn new(&self, client: ) {
+    pub(crate) fn new(client: ) {
         todo!()
     }
     pub(crate) fn __deepcopy__(&self, memo: ) {

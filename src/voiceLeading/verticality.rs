@@ -15,7 +15,7 @@ impl Verticality {
         }
     }
     
-    pub(crate) fn new(&self, contentDict: ) {
+    pub(crate) fn new(contentDict: ) {
         todo!()
     }
     pub(crate) fn isConsonant(&self) {

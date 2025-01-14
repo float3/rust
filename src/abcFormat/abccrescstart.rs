@@ -11,7 +11,7 @@ impl ABCCrescStart {
         }
     }
     
-    pub(crate) fn new(&self, src: String) {
+    pub(crate) fn new(src: String) {
         todo!()
     }
     pub(crate) fn fillCresc(&self) {

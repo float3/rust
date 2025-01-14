@@ -1,5 +1,5 @@
 pub(crate) struct Contributor {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
     relevance: ,
     roleAbbreviationsDict: ,
     roleAbbreviations: ,
@@ -9,7 +9,7 @@ pub(crate) struct Contributor {
 impl Contributor {
     pub(crate) fn new() -> Contributor {
         Contributor {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
             relevance: todo!(),
             roleAbbreviationsDict: todo!(),
             roleAbbreviations: todo!(),

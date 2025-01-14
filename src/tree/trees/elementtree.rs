@@ -15,7 +15,7 @@ impl ElementTree {
         }
     }
     
-    pub(crate) fn new(&self, elements: ) {
+    pub(crate) fn new(elements: ) {
         todo!()
     }
     pub(crate) fn __contains__(&self, element: ) {

@@ -9,7 +9,7 @@ impl MiscTandem {
         }
     }
     
-    pub(crate) fn new(&self, tandem: ) {
+    pub(crate) fn new(tandem: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

@@ -6,3 +6,5 @@ pub(crate) type StringType = String;
 
 pub(crate) const PITCH_STEP: StepName = StepName::C;
 pub(crate) const PITCH_OCTAVE: IntegerType = 4;
+
+pub(crate) const TWELFTH_ROOT_OF_TWO : FloatType = 2.0f64.powf(1.0 / 12.0);

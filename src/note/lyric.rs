@@ -1,4 +1,4 @@
-use crate::{prebase::protom21object::ProtoM21Object, style::StyleType};
+use crate::{defaults::IntegerType, prebase::protom21object::ProtoM21Object, style::StyleType};
 
 pub(crate) struct Lyric {
     protom21object:ProtoM21Object,
@@ -7,45 +7,39 @@ pub(crate) struct Lyric {
 }
 
 impl Lyric {
-    pub(crate) fn new() -> Lyric {
-        Lyric {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
-            _style_class: todo!(),
-
-        }
-    }
-    
-    pub(crate) fn new(&self, text: String, number: IntegerType) {
+    pub(crate) fn new(text: String, number: IntegerType) {
+        let _ = number;
+        let _ = text;
         todo!()
     }
-    pub(crate) fn _reprInternal(&self) {
+    pub(crate) fn _repr_internal(&self) {
         todo!()
     }
-    pub(crate) fn isComposite(&self) -> bool {
+    pub(crate) fn is_composite(&self) -> bool {
         todo!()
     }
     pub(crate) fn text(&self) -> String {
         todo!()
     }
-    pub(crate) fn text(&self, newText: String) {
+    pub(crate) fn set_text(&self, newText: String) {
         todo!()
     }
     pub(crate) fn syllabic(&self) {
         todo!()
     }
-    pub(crate) fn syllabic(&self, newSyllabic: ) {
+    pub(crate) fn set_syllabic(&self, newSyllabic: ) {
         todo!()
     }
     pub(crate) fn identifier(&self) {
         todo!()
     }
-    pub(crate) fn identifier(&self, value: ) {
+    pub(crate) fn set_identifier(&self, value: ) {
         todo!()
     }
-    pub(crate) fn rawText(&self) -> String {
+    pub(crate) fn raw_text(&self) -> String {
         todo!()
     }
-    pub(crate) fn rawText(&self, rawTextIn: String) {
+    pub(crate) fn set_raw_text(&self, rawTextIn: String) {
         todo!()
     }
     pub(crate) fn number(&self) -> IntegerType {

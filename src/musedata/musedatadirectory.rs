@@ -1,15 +1,15 @@
 pub(crate) struct MuseDataDirectory {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl MuseDataDirectory {
     pub(crate) fn new() -> MuseDataDirectory {
         MuseDataDirectory {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, dirOrList: ) {
+    pub(crate) fn new(dirOrList: ) {
         todo!()
     }
     pub(crate) fn _prepareGroups(&self, dirOrList: ) {

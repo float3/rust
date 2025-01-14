@@ -13,7 +13,7 @@ impl ElementWrapper {
         }
     }
     
-    pub(crate) fn new(&self, obj: ) {
+    pub(crate) fn new(obj: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

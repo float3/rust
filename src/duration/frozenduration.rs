@@ -1,20 +1,28 @@
-pub(crate) struct FrozenDuration {
-    common::objects::frozenobject: common::objects::FrozenObject,
+use super::duration::Duration;
+use crate::common::objects::frozenobject::FrozenObject;
 
+pub(crate) struct FrozenDuration {
+    frozenobject: FrozenObject,
+    duration: Duration,
 }
 
 impl FrozenDuration {
     pub(crate) fn new() -> FrozenDuration {
-        FrozenDuration {
-            common::objects::frozenobject: common::objects::FrozenObject::new(),
+        let x = FrozenDuration {
+            frozenobject: FrozenObject::new(),
+            duration: Duration::new(),
+        };
 
-        }
+        x.update_components();
+        x.update_quarter_length();
+        x
     }
-    
-    pub(crate) fn new(&self) {
-        todo!()
+
+    fn update_components(&self) {
+        self.duration.update_components();
     }
-    pub(crate) fn __deepcopy__(&self, memo: ) {
-        todo!()
+
+    fn update_quarter_length(&self) {
+        self.duration.update_quarter_length();
     }
 }

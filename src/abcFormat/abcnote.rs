@@ -11,7 +11,7 @@ impl ABCNote {
         }
     }
     
-    pub(crate) fn new(&self, src: , carriedAccidental: String) {
+    pub(crate) fn new(src: , carriedAccidental: String) {
         todo!()
     }
     pub(crate) fn _splitChordSymbols(&self, strSrc: String) {

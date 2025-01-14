@@ -1,18 +1,16 @@
-pub(crate) struct OffsetSpecial {
-    strenum: StrEnum,
-    AT_END: ,
-    LOWEST_OFFSET: ,
-    HIGHEST_OFFSET: ,
+#[derive(Debug, Clone, PartialEq)]
+pub(crate) enum OffsetSpecial {
+    AtEnd,
+    LowestOffset,
+    HighestOffset,
 }
 
 impl OffsetSpecial {
-    pub(crate) fn new() -> OffsetSpecial {
-        OffsetSpecial {
-            strenum: StrEnum::new(),
-            AT_END: todo!(),
-            LOWEST_OFFSET: todo!(),
-            HIGHEST_OFFSET: todo!(),
+    pub const fn as_str(&self) -> &str {
+        match self {
+            OffsetSpecial::AtEnd => "atEnd",
+            OffsetSpecial::LowestOffset => "lowestOffset",
+            OffsetSpecial::HighestOffset => "highestOffset",
         }
     }
-    
 }

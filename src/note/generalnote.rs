@@ -1,4 +1,9 @@
-use crate::{base::music21object::Music21Object, style::StyleType};
+use std::collections::HashMap;
+
+use crate::{
+    base::music21object::{Music21Object, Music21ObjectTrait},
+    style::modname::StyleType,
+};
 
 #[derive(PartialEq, Clone, Debug)]
 pub(crate) struct GeneralNote {
@@ -6,12 +11,12 @@ pub(crate) struct GeneralNote {
     is_note: bool,
     is_rest: bool,
     is_chord: bool,
-    _style_class: StyleType,
+    _style_class: modname::StyleType,
     equality_attributes: String,
 }
 
 impl GeneralNote {
-    pub(crate) fn new() -> GeneralNote {
+    pub(crate) fn new(keywords: HashMap<String, String>) -> GeneralNote {
         GeneralNote {
             music21object: Music21Object::new(None),
             is_note: todo!(),
@@ -46,9 +51,9 @@ impl GeneralNote {
     // pub(crate) fn insertLyric(&self, text: ) {
     //     todo!()
     // }
-    // pub(crate) fn fullName(&self) -> String {
-    //     todo!()
-    // }
+    pub(crate) fn full_name(&self) -> String {
+        self.music21object.full_name()
+    }
     // pub(crate) fn pitches(&self) {
     //     todo!()
     // }
@@ -61,4 +66,10 @@ impl GeneralNote {
     // pub(crate) fn getGrace(&self) {
     //     todo!()
     // }
+}
+
+impl Music21ObjectTrait for GeneralNote {
+    fn music21_object(&self) -> Music21Object {
+        self.music21object
+    }
 }

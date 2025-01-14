@@ -1,12 +1,23 @@
+use crate::{defaults::StringType, exceptions21::music21exception::Music21Exception};
+use std::{error::Error, fmt::Display};
+
+#[derive(Debug)]
 pub(crate) struct NotRestException {
-    exceptions21::music21exception: exceptions21::Music21Exception,
+    music21exception: Music21Exception,
 }
 
 impl NotRestException {
-    pub(crate) fn new() -> NotRestException {
+    pub(crate) fn new(error_message: StringType) -> NotRestException {
         NotRestException {
-            exceptions21::music21exception: exceptions21::Music21Exception::new(),
+            music21exception: Music21Exception::new(error_message),
         }
     }
-    
 }
+
+impl Display for NotRestException {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "{}", self.music21exception)
+    }
+}
+
+impl Error for NotRestException {}

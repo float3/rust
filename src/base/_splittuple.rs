@@ -12,7 +12,7 @@ impl _SplitTuple {
     pub(crate) fn __new__(&self, cls: ) {
         todo!()
     }
-    pub(crate) fn new(&self, tupEls: ) {
+    pub(crate) fn new(tupEls: ) {
         todo!()
     }
     pub(crate) fn __eq__(&self, other: ) {

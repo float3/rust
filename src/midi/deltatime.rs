@@ -9,7 +9,7 @@ impl DeltaTime {
         }
     }
     
-    pub(crate) fn new(&self, track: ) {
+    pub(crate) fn new(track: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

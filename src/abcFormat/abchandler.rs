@@ -7,7 +7,7 @@ impl ABCHandler {
         }
     }
     
-    pub(crate) fn new(&self, abcVersion: ) {
+    pub(crate) fn new(abcVersion: ) {
         todo!()
     }
     pub(crate) fn _getLinearContext(&self, source: , i: IntegerType) {

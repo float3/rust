@@ -9,7 +9,7 @@ impl defaultlist {
         }
     }
     
-    pub(crate) fn new(&self, fx: ) {
+    pub(crate) fn new(fx: ) {
         todo!()
     }
     pub(crate) fn _fill(&self, index: ) {

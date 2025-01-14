@@ -2,7 +2,7 @@ use super::{
     intervalbase::IntervalBase, intervalexception::IntervalException, utils::convert_generic,
 };
 use crate::{
-    base::music21object::Music21Object, common::enums::intstring::IntString, defaults::IntegerType,
+    base::music21object::Music21Object, common::types::IntegerOrString, defaults::IntegerType,
     note::note::Note, pitch::pitch::Pitch,
 };
 
@@ -18,7 +18,7 @@ impl PartialEq for GenericInterval {
 }
 
 impl GenericInterval {
-    pub(crate) fn new(value: IntString) -> Result<GenericInterval, IntervalException> {
+    pub(crate) fn new(value: IntegerOrString) -> Result<GenericInterval, IntervalException> {
         Ok(GenericInterval {
             music21object: Music21Object::new(None),
             _value: match convert_generic(value) {
@@ -28,7 +28,7 @@ impl GenericInterval {
         })
     }
 
-    // pub(crate) fn new(&self, value: ) {
+    // pub(crate) fn new(value: ) {
     //     todo!()
     // }
     // pub(crate) fn _reprInternal(&self) {

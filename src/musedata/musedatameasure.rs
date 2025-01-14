@@ -1,15 +1,15 @@
 pub(crate) struct MuseDataMeasure {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl MuseDataMeasure {
     pub(crate) fn new() -> MuseDataMeasure {
         MuseDataMeasure {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, src: ) {
+    pub(crate) fn new(src: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {

@@ -9,7 +9,7 @@ impl VerticalityNTuplet {
         }
     }
     
-    pub(crate) fn new(&self, listOfVerticalities: ) {
+    pub(crate) fn new(listOfVerticalities: ) {
         todo!()
     }
     pub(crate) fn _calcChords(&self) {

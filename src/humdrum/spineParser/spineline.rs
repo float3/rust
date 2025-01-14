@@ -17,7 +17,7 @@ impl SpineLine {
         }
     }
     
-    pub(crate) fn new(&self, position: IntegerType, contents: String) {
+    pub(crate) fn new(position: IntegerType, contents: String) {
         todo!()
     }
 }

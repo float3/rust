@@ -21,3 +21,5 @@ impl Display for Music21Exception {
 }
 
 impl Error for Music21Exception {}
+
+pub(crate) trait Music21ExceptionTrait: Error + Display {}

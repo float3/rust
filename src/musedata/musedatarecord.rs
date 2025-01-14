@@ -1,15 +1,15 @@
 pub(crate) struct MuseDataRecord {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl MuseDataRecord {
     pub(crate) fn new() -> MuseDataRecord {
         MuseDataRecord {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, src: String, parent: ) {
+    pub(crate) fn new(src: String, parent: ) {
         todo!()
     }
     pub(crate) fn isRest(&self) -> bool {

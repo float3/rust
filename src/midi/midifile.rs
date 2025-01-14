@@ -1,12 +1,12 @@
 pub(crate) struct MidiFile {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
     headerId: ,
 }
 
 impl MidiFile {
     pub(crate) fn new() -> MidiFile {
         MidiFile {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
             headerId: todo!(),
         }
     }

@@ -1,15 +1,15 @@
 pub(crate) struct StreamIterator {
-    prebase::protom21object: prebase::ProtoM21Object,
+    protom21object: ProtoM21Object,
 }
 
 impl StreamIterator {
     pub(crate) fn new() -> StreamIterator {
         StreamIterator {
-            prebase::protom21object: prebase::ProtoM21Object::new(),
+            protom21object: ProtoM21Object::new(),
         }
     }
     
-    pub(crate) fn new(&self, srcStream: ) {
+    pub(crate) fn new(srcStream: ) {
         todo!()
     }
     pub(crate) fn _reprInternal(&self) {
